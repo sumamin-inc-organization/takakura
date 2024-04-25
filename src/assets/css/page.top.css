@@ -12,9 +12,20 @@ mainvisual
   padding-bottom: 50px;
   position: relative;
 }
+.mainvisual__wrap {
+  background-color: #FFB4C8;
+  height: fit-content;
+  position: relative;
+}
+.mainvisual__line {
+  position: absolute;
+  bottom: -2px;
+  z-index: 0;
+  display: block;
+}
 .mainvisual__top {
   align-items: center;
-  background-image: url(../images/top/img-top_mainvisualTopBg.svg);
+  /* background-image: url(../images/top/img-top_mainvisualTopBg.svg); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,6 +34,12 @@ mainvisual
   justify-content: center;
   position: relative;
   width: 100%;
+}
+.mainvisual__concent {
+  position: absolute;
+  width: 2.84vw;
+  bottom: 4.36vw;
+  left: 23.41vw;
 }
 .mainTitle__img {
   max-width: 512px;
@@ -35,6 +52,7 @@ mainvisual
   max-width: 13vw;
   position: absolute;
   width: 100%;
+  z-index: 2;
 }
 .mainvisualCardboard__img {
   bottom: -60px;
@@ -42,6 +60,7 @@ mainvisual
   position: absolute;
   right: 5vw;
   width: 100%;
+  z-index: 2;
 }
 .mainvisual__bottom {
   display: flex;
@@ -58,6 +77,7 @@ mainvisual
   position: relative;
   top: -100px;
   width: 100%;
+  z-index: 10;
 }
 .freeQuote__img {
   bottom: 0;
@@ -472,11 +492,11 @@ secret
   max-width: 1060px;
   position: relative;
   width: 100%;
-  /* z-index: 1; */
+  z-index: 1;
 } 
 
 .secretList__item--img {
-  border: 5px solid var(--textBlack);
+  border: 3px solid var(--textBlack);
   border-right: none;
 }
 .secretList__item--img img {
@@ -486,7 +506,7 @@ secret
 }
 .secretList__item--textArea {
   background-color: #fff;
-  border: 5px solid var(--textBlack);
+  border: 3px solid var(--textBlack);
   padding: 90px 70px 52px 78px;
   position: relative;
   /* z-index: 1; */
@@ -573,7 +593,7 @@ secret
   grid-template-columns: 61% auto;
 }
 .reverse .secretList__item--img {
-  border: 5px solid var(--textBlack);
+  border: 3px solid var(--textBlack);
   border-left: none;
 }
 .bgPinkText__inner.palePink {
@@ -810,6 +830,7 @@ message
   .message .page__title {
     display: flex;
     margin: 0 auto;
+    justify-content: center;
   }
   .message__leftInner--img {
     margin: 40px auto 0;
@@ -837,8 +858,17 @@ instagram
 mainvisual
 ----------------------------*/
   .mainvisual__top {
-    background-image: url(../images/top/img-top_mainvisualTopBg-sp.svg);
+    /* background-image: url(../images/top/img-top_mainvisualTopBg-sp.svg); */
     height: 380px;
+  }
+  .mainvisual__line {
+    bottom: 0px;
+    left: -40px;
+    width: 100vw;
+  }
+  .mainvisual__concent {
+    width: 21px;
+    bottom: 22px;
   }
   .mainTitle__img {
     max-width: 256px;
@@ -918,6 +948,7 @@ news
     margin: 0 auto;
     text-align: left;
     width: 240px;
+    font-weight: bold;
   }
   .about__charaInner {
     height: 284px;
@@ -1006,11 +1037,12 @@ about
   }
   .about .page__text {
     line-height: 2.187;
+    font-weight: bold;
   }
   .about__chara--img2 {
     bottom: -18px;
     left: -2vw;
-    max-width: 27vw;
+    max-width: 29vw;
   }
   .about__chara--img3 {
     bottom: -20px;
@@ -1039,7 +1071,7 @@ service
   }
   .service__column--img {
     height: 154px;
-    width: 154px;
+    width: unset;
   }
   .service__column--chara {
     position: absolute;
@@ -1066,12 +1098,14 @@ service
   }
   .service__minText {
     font-size: var(--fontSize14);
+    font-weight: bold;
   }
   /* -------------------------
 scrol
 ----------------------------*/
   .bg-yellow .scrolText {
     font-size: var(--fontSize18);
+    height: 50px;
   }
   /* -------------------------
 secret
@@ -1120,6 +1154,7 @@ secret
     grid-row: 1;
     grid-template-columns: 1fr;
     width: 100vw;
+    z-index: unset;
   }
   .secret .secretList__item {
     grid-template-columns: 1fr;
@@ -1199,6 +1234,7 @@ message
   }
   .message .page__text {
     line-height: 2.18;
+    font-weight: bold;
   }
   /* -------------------------
 online

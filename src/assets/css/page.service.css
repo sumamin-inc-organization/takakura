@@ -1,0 +1,37 @@
+/* -------------------------
+point
+----------------------------*/
+.point__column--title {
+    background-color: #64dc96;
+    border: 3px solid var(--textBlack);
+    border-radius: 50px;
+    color: #fff;
+    display: flex;
+    font-family: var(--fontZenMaruGothic);
+    font-size: var(--fontSize25);
+    font-weight: 700;
+    justify-content: center;
+    left: 50%;
+    margin-bottom: -30px;
+    padding: 15px 0;
+    position: relative;
+    transform: translateX(-50%);
+    width: 260px;
+    z-index: 10;
+    letter-spacing: 0.06rem;
+}
+.point__column--title:before,
+.point__column--title:after {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid var(--textBlack);
+    bottom: -10px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+.point__column--title:after {
+    border-top: 10px solid #64dc96;
+    bottom: -7px;
+}
