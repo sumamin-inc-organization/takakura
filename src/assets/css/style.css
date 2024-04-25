@@ -175,10 +175,10 @@ header
   display: grid;
   gap: 10px;
   grid-template-columns: 1fr;
-  position: absolute;
+  position: fixed;
   right: -13px;
   top: 147px;
-  z-index: 10;
+  z-index: 100;
 }
 .side_btn {
   align-items: center;
