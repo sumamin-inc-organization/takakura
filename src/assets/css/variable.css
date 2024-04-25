@@ -1,0 +1,38 @@
+:root {
+  --fontMacho: "Macho", sans-serif;
+  --fontRoboto: "Roboto", sans-serif;
+
+/* font-size clamp : https://min-max-calculator.9elements.com/ 
+        ------------------------------------------------------------------------*/
+  --fontSize12: clamp(.625rem, .58rem + .23vw, .75rem);
+  --fontSize14: clamp(.813rem, .786rem + .11vw, .875rem);
+
+/* --fontSize155: clamp(8.75rem, 8.409rem + 1.7vw, 9.688rem); */
+  --fontSize155: clamp(6.25rem, 5rem + 6.25vw, 9.688rem);
+  --fontSize16: clamp(.875rem, .821rem + .23vw, 1rem);
+  --fontSize18: clamp(1rem, .946rem + .23vw, 1.125rem);
+  --fontSize20: clamp(1rem, .892rem + .46vw, 1.25rem);
+  --fontSize22: clamp(1.125rem, 1.017rem + .46vw, 1.375rem);
+  --fontSize23: clamp(1.313rem, 1.267rem + .23vw, 1.438rem);
+  --fontSize25: clamp(1.25rem, 1.136rem + .57vw, 1.563rem);
+  --fontSize26: clamp(1.25rem, 1.088rem + .69vw, 1.625rem);
+  --fontSize30: clamp(1.75rem, 1.705rem + .23vw, 1.875rem);
+  --fontSize35: clamp(2rem, 1.932rem + .34vw, 2.188rem);
+  --fontSize36: clamp(1.5rem, 1.177rem + 1.38vw, 2.25rem);
+  --fontSize40: clamp(2.25rem, 2.159rem + .45vw, 2.5rem);
+  --fontSize44: clamp(2.25rem, 2.068rem + .91vw, 2.75rem);
+  --fontSize47: clamp(2.75rem, 2.682rem + .34vw, 2.938rem);
+  --fontSize70: clamp(3.75rem, 3.523rem + 1.14vw, 4.375rem);
+
+/* font-family 
+        ------------------------------------------------------------------------*/
+  --fontZenMaruGothic: "Zen Maru Gothic", sans-serif;
+
+/* color 
+        ------------------------------------------------------------------------*/
+  --main-color: #ffb4c8;
+  --palePink: #ff8aa1;
+  --paleYellow: #ffef7f;
+  --sub-color: #fddee8;
+  --textBlack: #231815;
+}
