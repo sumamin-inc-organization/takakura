@@ -927,6 +927,9 @@ instagram
   .mainvisualChara__img {
     padding-top: 6vw;
   }
+  .freeQuote__img {
+    max-width: 20vw;
+  }
   /* .mainvisualCardboard__img {
     width: 32vw;
   }
