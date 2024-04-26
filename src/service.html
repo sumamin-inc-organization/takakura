@@ -64,7 +64,89 @@
             </div>
         </div>
     </header>
-    <nav></nav>
+    <nav class="header__menu">
+        <div class="menu__container">
+            <div class="menu__wrap">
+                <div class="close__btn"><span class="dli-close"></span></div>
+                <div class="menu__inner">
+                    <ul class="menu__list">
+                        <li class="menu__item menu__item1">
+                            <a href="./index.html">
+                                <p class="menu__item--subTitle">TOP</p>
+                                <p class="menu__item--title">トップ</p>
+                            </a>
+                        </li>
+                        <li class="menu__item menu__item2">
+                            <a href="./about.html">
+                                <p class="menu__item--subTitle">ABOUT</p>
+                                <p class="menu__item--title">TMCの秘密</p>
+                            </a>
+                        </li>
+                        <li class="menu__item menu__item3">
+                            <a href="./news.html">
+                                <p class="menu__item--subTitle">NEWS</p>
+                                <p class="menu__item--title">おしらせ</p>
+                            </a>
+                        </li>
+                        <li class="menu__item menu__item4">
+                            <a href="./characters.html">
+                                <p class="menu__item--subTitle">CHARACTERS</p>
+                                <p class="menu__item--title">従業員紹介</p>
+                            </a>
+                        </li>
+                        <li class="menu__item menu__item5">
+                            <a href="./service.html">
+                                <p class="menu__item--subTitle">SERVICE</p>
+                                <p class="menu__item--title">サービス内容</p>
+                            </a>
+                        </li>
+                        <li class="menu__item menu__item6">
+                            <a href="/index.html">
+                                <p class="menu__item--subTitle">ONLINE STORE</p>
+                                <p class="menu__item--title">オンラインストア</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="menu__btns">
+                        <a href="./estimate.html"><div class="estimate__btn"><img src="./assets/images/click.svg" alt=""><span>無料お見積もり</span></div></a>
+                        <a href="tel:120374514">
+                            <div class="tel__btn">                        
+                                <a class="tel__btn--icon" href="#"><img src="./assets/images/icon_tel.svg" alt="tel" /></a>
+                                <div class="telNumberInner">
+                                    <p class="tel__telSpeech first">みんな</p>
+                                    <p class="tel__telSpeech second">ヨッコイショ！</p>
+                                    <p class="tel__telNumber">0120-37-4514</p>
+                                    <p class="tel__reception">受付時間 ●：●～●：●</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu__link">
+                        <ul class="link__list">
+                            <li class="link__item"><a href="">プライバシーポリシー</a></li>
+                            <li class="link__item icon__item1"><a href=""><span class="home__icon"><img src="./assets/images/icon_realestate.svg" alt=""><span>たかくら不動産屋さん</a></li>
+                            <li class="link__item"><a href="">特定商取引法に基づく表記</a></li>
+                            <li class="link__item icon__item2"><a href=""><span class="recycle__icon"><img src="./assets/images/icon_recycle.svg" alt=""></span>たかくらリサイクルセンター</a></li>
+                            <li class="link__item"><a href="">標準引越運送約款</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu__sns">
+                        <ul class="sns__list">
+                            <li class="sns__item">
+                                <a href=""><img src="./assets/images/icon_x.svg" alt="x" /></a>
+                            </li>
+                            <li class="sns__item">
+                                <a href=""><img src="./assets/images/icon_instagram.svg" alt="instaigram" /></a>
+                            </li>
+                            <li class="sns__item">
+                                <a href=""><img src="./assets/images/icon_line.svg" alt="line" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </nav>
     <main>
         <section class="lowermain">
             <div class="lowermain_inner">
@@ -90,12 +172,20 @@
                         alt="" />
                 </div>
                 <div class="lower__textInner">
-                    <p class="lower__textInner--title PinkBg">東京23区近郊の引越しはお任せを！</p>
-                    <p class="lower__textInner--title PinkBg">信頼の引越業者</p>
+                    <p class="lower__textInner--title PinkBg"><span>東京23区近郊の引越しはお任せを！</span></p>
+                    <p class="lower__textInner--title PinkBg"><span>信頼の引越業者</span></p>
                     <p class="lower__textInner--text">当社は清潔をモットーに、従業員すべてが非喫煙者！
                         <br>「引越はおもしろい！」そんな風に感じていただけるような
                         <br>サービスをお届けします。</p>
                 </div>
+                <div class="lower__deco">
+                    <img class="lower__deco--chara1" src="./assets/images/service/service_chara01.svg" alt="">
+                    <img class="lower__deco--bg1" src="./assets/images/top/about/img-about_surround1.svg" alt="">
+                    <img class="lower__deco--bg2" src="./assets/images/top/about/img-about_surround2.svg" alt="">
+                    <img class="lower__deco--chara2" src="./assets/images/service/service_chara02.svg" alt="">
+                    <img class="lower__deco--bg3" src="./assets/images/top/about/img-about_surround1.svg" alt="">
+                    <img class="lower__deco--bg4" src="./assets/images/top/about/img-about_surround2.svg" alt="">
+                </div> 
             </div>
             <div class="lowermain_deco">
                 <div class="deco__chara--img01">
@@ -111,10 +201,11 @@
                 <div class="point__column--item">
                     <p class="point__column--title">日本一小さな引越し屋</p>
                     <div class="point__column--img">
-                        <img class="point__column--chara" src="./assets/images/top/service/img-service_chara1.svg"
+                        <img class="point__column--chara" src=""
                             alt="" />
-                        <img class="point__column--bg" src="./assets/images/top/service/img-service_charaBg.svg"
-                            alt="" />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="290.509" height="288.298" viewBox="0 0 292.509 292.298">
+                            <path id="パス_397" data-name="パス 397" d="M444.434,3454c0,9.416-8.89,17.324-10.65,26.223-1.814,9.169,8.1,21.833,4.6,30.27-3.56,8.584-19.153,10.784-24.261,18.414-5.147,7.688-2.229,21.947-8.748,28.466s-18.232,7.4-25.92,12.55c-7.63,5.108-12.535,16.516-21.119,20.075-8.436,3.5-20.715-4.888-29.885-3.075-8.9,1.761-17.032,13.025-26.448,13.025s-18.067-8.646-26.966-10.406c-9.17-1.814-20.118,1.993-28.554-1.506-8.584-3.559-14.577-12.6-22.206-17.7-7.689-5.148-19.586-5.984-26.1-12.5s-6.848-18.756-11.995-26.444c-5.108-7.63-12.926-14-16.486-22.582-3.5-8.436-.592-18.832-2.406-28-1.76-8.9-11.358-17.387-11.358-26.8s10.024-17.819,11.785-26.719c1.813-9.169-3.629-20.524-.131-28.961,3.56-8.584,15.8-12.531,20.906-20.161,5.147-7.688,5.084-19.553,11.6-26.072s19.307-5.077,26.995-10.224c7.63-5.108,11.88-15.767,20.464-19.327,8.437-3.5,18.589-.891,27.759-2.7,8.9-1.76,17.278-8.181,26.694-8.181s18.316,3.789,27.215,5.549c9.17,1.814,20.518-2.3,28.955,1.2,8.584,3.559,12.559,16.207,20.188,21.315,7.689,5.147,19.938,4.956,26.456,11.474s7.276,18.133,12.423,25.821c5.108,7.63,16.283,12.457,19.843,21.041,3.5,8.436-5.009,20.54-3.2,29.709C435.645,3436.657,444.434,3444.584,444.434,3454Z" transform="translate(-155.925 -3311.65)" fill="#fff2f6" stroke="#231815" stroke-width="3"/>
+                        </svg>
                     </div>
                     <div class="point__column--text">
                         <p>東京23区均衡を中心とし、千葉・神奈川・埼玉エリアの引越しを対応しております。また、長距離や引越しに関するお悩み、相談も受け付けておりますので、お気軽にお問い合わせください。</p>
@@ -123,10 +214,11 @@
                 <div class="point__column--item bottom">
                     <p class="point__column--title">完全禁煙宣言</p>
                     <div class="point__column--img">
-                        <img class="point__column--chara" src="./assets/images/top/service/img-service_chara2.svg"
+                        <img class="point__column--chara" src=""
                             alt="" />
-                        <img class="point__column--bg" src="./assets/images/top/service/img-service_charaBg.svg"
-                            alt="" />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="290.509" height="288.298" viewBox="0 0 292.509 292.298">
+                            <path id="パス_397" data-name="パス 397" d="M444.434,3454c0,9.416-8.89,17.324-10.65,26.223-1.814,9.169,8.1,21.833,4.6,30.27-3.56,8.584-19.153,10.784-24.261,18.414-5.147,7.688-2.229,21.947-8.748,28.466s-18.232,7.4-25.92,12.55c-7.63,5.108-12.535,16.516-21.119,20.075-8.436,3.5-20.715-4.888-29.885-3.075-8.9,1.761-17.032,13.025-26.448,13.025s-18.067-8.646-26.966-10.406c-9.17-1.814-20.118,1.993-28.554-1.506-8.584-3.559-14.577-12.6-22.206-17.7-7.689-5.148-19.586-5.984-26.1-12.5s-6.848-18.756-11.995-26.444c-5.108-7.63-12.926-14-16.486-22.582-3.5-8.436-.592-18.832-2.406-28-1.76-8.9-11.358-17.387-11.358-26.8s10.024-17.819,11.785-26.719c1.813-9.169-3.629-20.524-.131-28.961,3.56-8.584,15.8-12.531,20.906-20.161,5.147-7.688,5.084-19.553,11.6-26.072s19.307-5.077,26.995-10.224c7.63-5.108,11.88-15.767,20.464-19.327,8.437-3.5,18.589-.891,27.759-2.7,8.9-1.76,17.278-8.181,26.694-8.181s18.316,3.789,27.215,5.549c9.17,1.814,20.518-2.3,28.955,1.2,8.584,3.559,12.559,16.207,20.188,21.315,7.689,5.147,19.938,4.956,26.456,11.474s7.276,18.133,12.423,25.821c5.108,7.63,16.283,12.457,19.843,21.041,3.5,8.436-5.009,20.54-3.2,29.709C435.645,3436.657,444.434,3444.584,444.434,3454Z" transform="translate(-155.925 -3311.65)" fill="#fff2f6" stroke="#231815" stroke-width="3"/>
+                        </svg>
                     </div>
                     <div class="point__column--text">
                         <p>徹底した「禁煙」体制を実現いたします。作業を行うスタッフは全員タバコを吸わない人を採用しており、 お客様の大事な荷物に臭いが付かないよう十分注意を払っております。</p>
@@ -135,10 +227,11 @@
                 <div class="point__column--item">
                     <p class="point__column--title">整理収納アドバイザー</p>
                     <div class="point__column--img">
-                        <img class="point__column--chara" src="./assets/images/top/service/img-service_chara3.svg"
+                        <img class="point__column--chara" src=""
                             alt="" />
-                        <img class="point__column--bg" src="./assets/images/top/service/img-service_charaBg.svg"
-                            alt="" />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="290.509" height="288.298" viewBox="0 0 292.509 292.298">
+                            <path id="パス_397" data-name="パス 397" d="M444.434,3454c0,9.416-8.89,17.324-10.65,26.223-1.814,9.169,8.1,21.833,4.6,30.27-3.56,8.584-19.153,10.784-24.261,18.414-5.147,7.688-2.229,21.947-8.748,28.466s-18.232,7.4-25.92,12.55c-7.63,5.108-12.535,16.516-21.119,20.075-8.436,3.5-20.715-4.888-29.885-3.075-8.9,1.761-17.032,13.025-26.448,13.025s-18.067-8.646-26.966-10.406c-9.17-1.814-20.118,1.993-28.554-1.506-8.584-3.559-14.577-12.6-22.206-17.7-7.689-5.148-19.586-5.984-26.1-12.5s-6.848-18.756-11.995-26.444c-5.108-7.63-12.926-14-16.486-22.582-3.5-8.436-.592-18.832-2.406-28-1.76-8.9-11.358-17.387-11.358-26.8s10.024-17.819,11.785-26.719c1.813-9.169-3.629-20.524-.131-28.961,3.56-8.584,15.8-12.531,20.906-20.161,5.147-7.688,5.084-19.553,11.6-26.072s19.307-5.077,26.995-10.224c7.63-5.108,11.88-15.767,20.464-19.327,8.437-3.5,18.589-.891,27.759-2.7,8.9-1.76,17.278-8.181,26.694-8.181s18.316,3.789,27.215,5.549c9.17,1.814,20.518-2.3,28.955,1.2,8.584,3.559,12.559,16.207,20.188,21.315,7.689,5.147,19.938,4.956,26.456,11.474s7.276,18.133,12.423,25.821c5.108,7.63,16.283,12.457,19.843,21.041,3.5,8.436-5.009,20.54-3.2,29.709C435.645,3436.657,444.434,3444.584,444.434,3454Z" transform="translate(-155.925 -3311.65)" fill="#fff2f6" stroke="#231815" stroke-width="3"/>
+                        </svg>
                     </div>
                     <div class="point__column--text">
                         <p>引越し先が住みやすい居住空間になるよう、整理収納の達人（ハウスキーピング協会から整理収納アドバイザーに認定された作業員）が、整理収納のアドバイスをしながら作業を進めることが可能です。</p>

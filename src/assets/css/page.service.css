@@ -1,6 +1,22 @@
 /* -------------------------
 point
 ----------------------------*/
+.service__point {
+    padding-top: 140px;
+}
+.point__column {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    gap: 50px;
+}
+.point__column--img {
+    display: flex;
+}
+.point__column--img svg {
+    margin: auto;
+}
 .point__column--title {
     background-color: #64dc96;
     border: 3px solid var(--textBlack);
@@ -34,4 +50,7 @@ point
 .point__column--title:after {
     border-top: 10px solid #64dc96;
     bottom: -7px;
+}
+.point__column--text {
+    margin-top: 45px;
 }

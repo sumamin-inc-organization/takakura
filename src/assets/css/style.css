@@ -794,6 +794,7 @@ lower common
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-top: 80px;
 }
 .lower__textInner .page__text {
   line-height: 2.5;
@@ -802,19 +803,20 @@ lower common
   color: var(--textBlack);
   font-family: var(--fontZenMaruGothic);
   font-size: var(--fontSize30);
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: .07em;
-  line-height: 1.87;
 }
 .PinkBg {
   display: inline;
   color: #fff;
-  background-color: var(--palePink);
   font-family: var(--fontZenMaruGothic);
   font-size: var(--fontSize25);
-  font-weight: 900;
   letter-spacing: .07em;
-  line-height: 3;
+  line-height: 2.4;
+}
+.PinkBg span {
+  background-color: var(--palePink);
+  padding: 2px 4px;
 }
 .lower__textInner--text {
   font-size: var(--fontSize18);
@@ -876,6 +878,66 @@ lower common
 .lower__whiteCircle.third {
   right: 18vw;
   top: 169px;
+}
+.lower__deco {
+  position: relative;
+  width: 100%;
+}
+.lower__deco--chara1 {
+  max-width: 193px;
+  width: 100%;
+  position: absolute;
+  top: -100px;
+  left: 18vw;
+  z-index: 10;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+}
+.lower__deco--bg1 {
+  width: 229px;
+  position: absolute;
+  top: -100px;
+  left: 18vw;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  z-index: 9;
+}
+.lower__deco--bg2 {
+  width: 286px;
+  position: absolute;
+  top: -100px;
+  left: 18vw;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  z-index: 8;
+}
+.lower__deco--chara2 {
+  max-width: 149px;
+  width: 100%;
+  position: absolute;
+  top: 12px;
+  right: 18vw;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(50%);
+  z-index: 10;
+}
+.lower__deco--bg3 {
+  width: 229px;
+  position: absolute;
+  top: 12px;
+  right: 18vw;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(50%);
+  z-index: 9;
+}
+.lower__deco--bg4 {
+  width: 286px;
+  position: absolute;
+  top: 12px;
+  right: 18vw;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(50%);
+  z-index: 8;
 }
 @media screen and (min-width:1513px) {
   .mainvisual__wrap {
