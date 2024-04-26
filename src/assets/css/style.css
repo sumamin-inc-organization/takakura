@@ -1091,6 +1091,15 @@ nav menu
     /* min-width: 257px; */
     width: 100%;
   }
+  .menu__item2 {
+    order: 4;
+  }
+  .menu__item4 {
+    order: 5;
+  }
+  .menu__item6 {
+    order: 6;
+  }
   .menu__inner .menu__list li:not(:last-child) {
     margin-bottom: 30px;
   }
