@@ -68,3 +68,30 @@ point
     line-height: 1.8;
     text-align: justify;
 }
+/* -------------------------
+about
+----------------------------*/
+.service__about {
+    padding-top: 120px;
+}
+.service__about--title {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+.service__about--title .headline__line {
+    border-top: 2px solid var(--textBlack);
+    border-bottom: 2px solid var(--textBlack);
+    height: 10px;
+    width: 40%;
+    margin-top: 8px;
+}
+.service__about--title h3 {
+    font-size: var(--fontSize25);
+    font-weight: 900;
+    letter-spacing: 0.17rem;
+    color: #fff;
+    text-shadow: rgb(35, 24, 21) 2px 0px 0px, rgb(35, 24, 21) 1.75517px 0.958851px 0px, rgb(35, 24, 21) 1.0806px 1.68294px 0px, rgb(35, 24, 21) 0.141474px 1.99499px 0px, rgb(35, 24, 21) -0.832294px 1.81859px 0px, rgb(35, 24, 21) -1.60229px 1.19694px 0px, rgb(35, 24, 21) -1.97998px 0.28224px 0px, rgb(35, 24, 21) -1.87291px -0.701566px 0px, rgb(35, 24, 21) -1.30729px -1.5136px 0px, rgb(35, 24, 21) -0.421592px -1.95506px 0px, rgb(35, 24, 21) 0.567324px -1.91785px 0px, rgb(35, 24, 21) 1.41734px -1.41108px 0px, rgb(35, 24, 21) 1.92034px -0.558831px 0px;
+}
