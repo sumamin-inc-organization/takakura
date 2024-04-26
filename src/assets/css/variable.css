@@ -16,6 +16,7 @@
   --fontSize23: clamp(1.313rem, 1.267rem + .23vw, 1.438rem);
   --fontSize25: clamp(1.25rem, 1.136rem + .57vw, 1.563rem);
   --fontSize26: clamp(1.25rem, 1.088rem + .69vw, 1.625rem);
+  --fontSize28: clamp(1.375rem, 1.245rem + 0.53vw, 1.75rem);
   --fontSize30: clamp(1.75rem, 1.705rem + .23vw, 1.875rem);
   --fontSize35: clamp(2rem, 1.932rem + .34vw, 2.188rem);
   --fontSize36: clamp(1.5rem, 1.177rem + 1.38vw, 2.25rem);

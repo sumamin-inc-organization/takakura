@@ -19,6 +19,7 @@ $(document).ready(function () {
     checkWindowWidth();
     $(window).resize(checkWindowWidth);
 
+    //無料お見積もりバナーをフッターで隠す
     $(window).scroll(function(){
         
         var footer = $('footer').innerHeight(); // footerの高さを取得
@@ -38,6 +39,24 @@ $(document).ready(function () {
             }, 400);
             // $('.freeQuote__img').show('slow');
         }
-        
     });
+
+    //nav menu開閉
+    $('.close__btn').on('click', function(){
+        // $('.header__menu').animate({
+        //     'marginRight' : '400px'}, 300
+        // );
+        $('body').removeClass('stop');
+        $('.header__menu').hide();
+        console.log('close');
+    });
+    $('.headerNavMenu').on('click', function(){
+        // $('.header__menu').animate({
+        //     'marginRight' : '0'}, 300
+        // );
+        $('body').addClass('stop');
+        $('.header__menu').show();
+        console.log('open');
+    });
+    
 });
