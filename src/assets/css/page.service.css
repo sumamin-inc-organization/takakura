@@ -1,3 +1,6 @@
+.service__page {
+    font-family: var(--fontZenMaruGothic);
+}
 /* -------------------------
 point
 ----------------------------*/
@@ -10,6 +13,9 @@ point
     flex-direction: row;
     max-width: 1200px;
     gap: 50px;
+}
+.point__column--item:nth-child(odd) {
+    padding-top: 60px;
 }
 .point__column--img {
     display: flex;
@@ -29,10 +35,10 @@ point
     justify-content: center;
     left: 50%;
     margin-bottom: -30px;
-    padding: 15px 0;
+    padding: 15px 32px;
+    width: fit-content;
     position: relative;
     transform: translateX(-50%);
-    width: 260px;
     z-index: 10;
     letter-spacing: 0.06rem;
 }
@@ -53,4 +59,12 @@ point
 }
 .point__column--text {
     margin-top: 45px;
+    width: 364px;
+}
+.point__column--text p {
+    font-size: var(--fontSize16);
+    font-weight: 700;
+    letter-spacing: 0.034rem;
+    line-height: 1.8;
+    text-align: justify;
 }
