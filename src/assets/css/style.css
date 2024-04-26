@@ -285,6 +285,10 @@ nav menu
   letter-spacing: 0.12rem;
   color: var(--textBlack);
   padding-top: 16px;
+  transition: all 0.3s;
+}
+.menu__item--title:hover {
+  color: var(--palePink);
 }
 .menu__item--title.active {
   color: var(--palePink);
@@ -312,8 +316,13 @@ nav menu
   width: 100%;
   z-index: 10;
   letter-spacing: 0.06rem;
+  transition: all 0.2s ease-out;
+  top: 0;
   text-shadow: rgb(35, 24, 21) 2px 0px 0px, rgb(35, 24, 21) 1.75517px 0.958851px 0px, rgb(35, 24, 21) 1.0806px 1.68294px 0px, rgb(35, 24, 21) 0.141474px 1.99499px 0px, rgb(35, 24, 21) -0.832294px 1.81859px 0px, rgb(35, 24, 21) -1.60229px 1.19694px 0px, rgb(35, 24, 21) -1.97998px 0.28224px 0px, rgb(35, 24, 21) -1.87291px -0.701566px 0px, rgb(35, 24, 21) -1.30729px -1.5136px 0px, rgb(35, 24, 21) -0.421592px -1.95506px 0px, rgb(35, 24, 21) 0.567324px -1.91785px 0px, rgb(35, 24, 21) 1.41734px -1.41108px 0px, rgb(35, 24, 21) 1.92034px -0.558831px 0px;
   cursor: pointer;
+}
+.menu__btns .estimate__btn:hover {
+  top: -6px;
 }
 .menu__btns .estimate__btn img {
   width: 66px;
@@ -328,6 +337,12 @@ nav menu
   color: var(--palePink);
   padding: 22px 0 38px 0;
   cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease-out;
+  top: 0;
+}
+.tel__btn:hover {
+  top: -6px;
 }
 .tel__btn--icon img {
   border: 2px solid #000;
@@ -408,6 +423,13 @@ nav menu
   width: 50%;
   margin-bottom: 16px;
 }
+.link__list .link__item a {
+  color: var(--textBlack);
+  transition: all 0.3s;
+}
+.link__list .link__item a:hover {
+  color: var(--palePink);
+}
 .link__list .link__item span {
   vertical-align: middle;
 }
@@ -427,8 +449,14 @@ nav menu
   gap: 20px;
 }
 .sns__list .sns__item {
+  position: relative;
   border: 2px solid var(--textBlack);
   border-radius: 50%;
+  top: 0;
+  transition: all 0.2s ease-out;
+}
+.sns__list .sns__item:hover {
+  top: -6px;
 }
 .close__btn {
   border: 2px solid var(--textBlack);
