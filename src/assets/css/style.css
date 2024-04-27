@@ -264,6 +264,7 @@ nav menu
 .menu__inner .menu__list {
   display: flex;
   flex-wrap: wrap;
+  min-width: 512px;
 }
 .menu__inner .menu__list .menu__item {
   /* min-width: 257px; */
@@ -795,6 +796,9 @@ lower common
   flex-direction: column;
   text-align: center;
   margin-top: 80px;
+  position: relative;
+  z-index: 20;
+  
 }
 .lower__textInner .page__text {
   line-height: 2.5;
@@ -1176,6 +1180,7 @@ nav menu
   .menu__inner .menu__list {
     display: flex;
     flex-wrap: wrap;
+    min-width: unset;
   }
   .menu__inner .menu__list .menu__item {
     /* min-width: 257px; */
