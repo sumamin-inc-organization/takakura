@@ -237,3 +237,31 @@ introduction
 .introduction__size img {
     border: 3px solid var(--textBlack);
 }
+.introduction__point {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    padding-top: 113px;
+}
+.introduction__point .point__img {
+    max-width: 670px;
+    max-height: 460px;
+    width: 44.3vw;
+    height: 30.42vw;
+    border: 3px solid var(--textBlack);
+    position: relative;
+    z-index: 2;
+}
+.introduction__point .point__content {
+    max-width: 622px;
+    max-height: 460px;
+    width: 41.13vw;
+    height: 30.42vw;
+    border: 3px solid var(--textBlack);
+    background-color: #fff;
+    margin-top: 40px;
+    margin-left: -90px;
+}
