@@ -14,7 +14,8 @@ function initializeSlider() {
         arrows: true,
         variableWidth: true,
         centerMode: true,
-        slidesToShow: 5,
+        centerMode: true,
+        centerPadding: "15%",
     });
 }
 
