@@ -701,3 +701,139 @@ introduction
         line-height: 1.8;
     }
 }
+
+@media screen and (max-width:767px) {
+    /* -------------------------
+    point
+    ----------------------------*/
+    .service__point {
+        padding-top: 160px;
+    }
+    .point__column {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        max-width: none;
+        gap: 40px;
+    }
+    .point__column--item:nth-child(odd) {
+        padding-top: 0;
+    }
+    .point__column--img svg {
+        width: 270px;
+        height: 270px;
+    }
+    .point__column--title {
+        border: 2px solid var(--textBlack);
+        font-size: var(--fontSize20);
+        margin-bottom: -30px;
+        padding: 12px 28px;
+        letter-spacing: 0.07rem;
+    }
+    .point__column--title:before,
+    .point__column--title:after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-top: 8px solid var(--textBlack);
+        bottom: -8px;
+    }
+    .point__column--title:after {
+        border-top: 8px solid #64dc96;
+        bottom: -7px;
+    }
+    .point__column--text {
+        margin-top: 30px;
+        width: 100%;
+    }
+    .point__column--text p {
+        font-size: var(--fontSize16);
+        letter-spacing: 0.04rem;
+        line-height: 1.8;
+    }
+    /* -------------------------
+    about
+    ----------------------------*/
+    .service__about {
+        padding-top: 70px;
+        padding-bottom: 60px;
+    }
+    .service__about--title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+        max-width: 1200px;
+        margin: auto;
+    }
+    .service__about--title .headline__line {
+        border-top: 2px solid var(--textBlack);
+        border-bottom: 2px solid var(--textBlack);
+        height: 4px;
+        width: 40%;
+        margin-top: 8px;
+    }
+    .service__about--title h3 {
+        min-width: 140px;
+        font-size: var(--fontSize25);
+        font-weight: 900;
+        letter-spacing: 0.17rem;
+        color: #fff;
+        text-shadow: rgb(35, 24, 21) 2px 0px 0px, rgb(35, 24, 21) 1.75517px 0.958851px 0px, rgb(35, 24, 21) 1.0806px 1.68294px 0px, rgb(35, 24, 21) 0.141474px 1.99499px 0px, rgb(35, 24, 21) -0.832294px 1.81859px 0px, rgb(35, 24, 21) -1.60229px 1.19694px 0px, rgb(35, 24, 21) -1.97998px 0.28224px 0px, rgb(35, 24, 21) -1.87291px -0.701566px 0px, rgb(35, 24, 21) -1.30729px -1.5136px 0px, rgb(35, 24, 21) -0.421592px -1.95506px 0px, rgb(35, 24, 21) 0.567324px -1.91785px 0px, rgb(35, 24, 21) 1.41734px -1.41108px 0px, rgb(35, 24, 21) 1.92034px -0.558831px 0px;
+    }
+    .about__column {
+        grid-template-columns:1fr 1fr;
+        gap: 10px;
+        max-width: none;
+        width: 89.76vw;
+        margin: auto;
+        padding-top: 40px;
+    }
+    .about__column--item {
+        max-width: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .about__column--img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding: 40px 0 20px;
+    }
+    .about__column--img::before {
+        content: url(../images/service/service_about_itemBg.svg);
+        max-width: 84px;
+        max-height: 84px;
+        width: 84px;
+        height: 84px;
+        top: 54%;
+        left: 50%;
+    }
+    .about__column--img img {
+        height: 90px;
+        width: auto;
+        position: relative;
+        z-index: 2;
+    }
+    .about__column--text {
+        font-size: var(--fontSize16);
+        letter-spacing: 0.01rem;
+        margin-bottom: 30px;
+    }
+    .about__column--text .small {
+        font-size: 12px;
+        letter-spacing: 0.03rem;
+    }
+    .service__about--description {
+        margin: auto;
+        padding-top: 26px;
+    }
+    .service__about--description p {
+        font-size: var(--fontSize14);
+        letter-spacing: 0.04rem;
+    }
+    .service__about .more__btn--container {
+        margin-top: 30px;
+    }
+}
