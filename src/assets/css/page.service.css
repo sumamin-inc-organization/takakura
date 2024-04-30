@@ -177,6 +177,13 @@ flow
     background-color: var(--main-color);
     border-top: 3px solid var(--textBlack);
     border-bottom: 3px solid var(--textBlack);
+    position: relative;
+}
+.flow__chara {
+    position: absolute;
+    top: -140px;
+    right: 120px;
+    width: 278px;
 }
 .flow__item:nth-child(2) {
     margin-top: 110px;
@@ -314,7 +321,7 @@ flow
 introduction
 ----------------------------*/
 .service__introduction {
-    padding-top: 140px;
+    padding: 140px 0;
     position: relative;
     overflow: hidden;
 }
@@ -485,8 +492,8 @@ introduction
 /* 背景のピンクのテキスト ↓*/
 .bgPinkText__inner {
     overflow: visible;
-    position: relative;
-    top: 550px;
+    position: absolute;
+    top: 480px;
     z-index: -1;
 }
 .bgPinkText {
@@ -514,9 +521,6 @@ introduction
 /* -------------------------
 service message
 ----------------------------*/
-.service__message {
-    margin-top: 140px;
-}
 .footer {
     background-color: var(--paleYellow);
 }
@@ -647,6 +651,14 @@ about
     }
     .service__about .more__btn--container {
         margin-top: 75px;
+    }
+/* -------------------------
+flow
+----------------------------*/
+    .flow__chara {
+        width: 18.38vw;
+        top: -9.25vw;
+        right: 7.93vw;
     }
 /* -------------------------
 introduction
