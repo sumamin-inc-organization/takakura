@@ -16,6 +16,15 @@ function initializeSlider() {
         centerMode: true,
         centerMode: true,
         centerPadding: "15%",
+        responsive: [
+            {
+                breakpoint: 767, // 399px以下のサイズに適用
+                settings: {
+                    centerPadding: "0%",
+                    slidesToShow: 1
+                },
+            },
+        ],
     });
 }
 
