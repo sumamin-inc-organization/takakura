@@ -7,6 +7,15 @@ function initializeSlider() {
         centerMode: true,
         slidesToShow: 1,
     });
+
+    $(".js-slide--service").slick({
+        autoplay: true,
+        dots: true,
+        arrows: true,
+        variableWidth: true,
+        centerMode: true,
+        slidesToShow: 5,
+    });
 }
 
 function checkWindowWidth() {
