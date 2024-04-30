@@ -1513,6 +1513,163 @@ footer
   .copyright {
     font-size: var(--fontSize14);
   }
+  /* -------------------------
+  lower common
+  ----------------------------*/
+  .lowermain {
+    margin-top: 120px;
+  }
+  .lowermain_inner {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  /* アニメーションの部分 */
+  .lower__charaInner {
+    height: 530px;
+    margin: -155px auto -150px;
+  }
+  .lower__chara--img1,
+  .lower__chara--surround1,
+  .lower__chara--surround2 {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .lower__chara--img1 {
+    max-width: 140px;
+  }
+  .lower__chara--surround1 {
+    max-width: 232px;
+  }
+  .lower__chara--surround2 {
+    max-width: 290px;
+  }
+  /* アニメーションの部分 ↑*/
+  .lower__textInner {
+    margin-top: -8px;
+  }
+  .lower__textInner .page__text {
+    line-height: 2.5;
+  }
+  .lower__textInner--title {
+    color: var(--textBlack);
+    font-family: var(--fontZenMaruGothic);
+    font-size: var(--fontSize30);
+    font-weight: 700;
+    letter-spacing: .07em;
+  }
+  .PinkBg {
+    color: #fff;
+    font-size: var(--fontSize20);
+    letter-spacing: .07em;
+    line-height: 2.4;
+  }
+  .PinkBg span {
+    background-color: var(--palePink);
+    padding: 2px 4px;
+  }
+  .lower__textInner--text {
+    font-size: var(--fontSize16);
+    letter-spacing: 0.04rem;
+    line-height: 2.6;
+    margin-top: 10px;
+  }
+  /* kirakira */
+  .lower__pinkCircle,
+  .lower__whiteCircle {
+    position: absolute;
+  }
+  .lower__pinkCircle.first,
+  .lower__pinkCircle.fifth,
+  .lower__whiteCircle.first,
+  .lower__whiteCircle.second {
+    height: auto;
+    width: 10px;
+  }
+  .lower__pinkCircle.second,
+  .lower__pinkCircle.third,
+  .lower__pinkCircle.forth,
+  .lower__pinkCircle.sixth,
+  .lower__whiteCircle.third {
+    height: auto;
+    width: 15px;
+  } 
+  .lower__pinkCircle.first {
+    left: 7vw;
+    top: 234px;
+  }
+  .lower__pinkCircle.second {
+    bottom: 201px;
+    left: 14vw;
+  }
+  .lower__pinkCircle.third {
+    left: 15vw;
+    top: 207px;
+  }
+  .lower__pinkCircle.forth {
+    right: 27vw;
+    top: 201px;
+  }
+  .lower__pinkCircle.fifth {
+    right: 15vw;
+    top: 240px;
+  }
+  .lower__pinkCircle.sixth {
+    bottom: 228px;
+    right: 10vw;
+  }
+  .lower__whiteCircle.first {
+    left: 22vw;
+    top: 284px;
+  }
+  .lower__whiteCircle.second {
+    bottom: 251px;
+    right: 22vw;
+  }
+  .lower__whiteCircle.third {
+    right: 6vw;
+    top: 206px;
+  }
+  .lower__deco {
+    position: relative;
+    width: 100%;
+    min-height: 60px;
+  }
+  .lower__deco--chara1 {
+    max-width: 113px;
+    top: 60px;
+    left: 29vw;
+  }
+  .lower__deco--bg1 {
+    width: 152px;
+    top: 60px;
+    left: 29vw;
+  }
+  .lower__deco--bg2 {
+    width: 190px;
+    top: 60px;
+    left: 29vw;
+  }
+  .lower__deco--chara2 {
+    max-width: 81px;
+    top: 132px;
+    right: 27vw;
+  }
+  .lower__deco--bg3 {
+    width: 112px;
+    top: 132px;
+    right: 27vw;
+  }
+  .lower__deco--bg4 {
+    width: 140px;
+    top: 132px;
+    right: 27vw;
+  }
 }
 @media screen and (max-width:370px) {
   .footer__tel {
