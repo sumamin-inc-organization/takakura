@@ -115,13 +115,16 @@ about
     max-width: 285px;
     /* width: 18.85vw; */
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .about__column--img {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    padding: 30px 0;
+    padding: 40px 0 20px;
 }
 .about__column--img::before {
     content: url(../images/service/service_about_itemBg.svg);
@@ -130,7 +133,7 @@ about
     width: 140px;
     height: 140px;
     position: absolute;
-    top: 50%;
+    top: 54%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
     -webkit-transform: translateY(-50%) translateX(-50%);
