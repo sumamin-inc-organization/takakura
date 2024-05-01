@@ -23,6 +23,7 @@
   --fontSize40: clamp(2.25rem, 2.159rem + .45vw, 2.5rem);
   --fontSize44: clamp(2.25rem, 2.068rem + .91vw, 2.75rem);
   --fontSize47: clamp(2.75rem, 2.682rem + .34vw, 2.938rem);
+  --fontSize54: clamp(3rem, 2.87rem + 0.53vw, 3.375rem);
   --fontSize70: clamp(3.75rem, 3.523rem + 1.14vw, 4.375rem);
 
 /* font-family 

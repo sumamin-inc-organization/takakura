@@ -149,4 +149,180 @@ history
 ----------------------------*/
 .about__history {
     padding-top: 145px;
+    position: relative;
+    margin: auto;
+}
+.history__line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    width: 3px;
+    height: 106%;
+    background-color: var(--textBlack);
+    margin-top: 20px;
+}
+.history__column {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    position: relative;
+    margin-top: 80px;
+}
+.history__item {
+    position: relative;
+    /* width: 45%; */
+}
+.history__item:nth-child(3) {
+    margin-top: 30px;
+}
+.history__item:nth-child(4), .history__item:nth-child(5) {
+    margin-top: 110px;
+}
+.history__item.left {
+    margin-right: 55%;
+    text-align: right;
+}
+.history__item.right {
+    margin-left: 55%;
+}
+.history__item.left::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border: 3px solid var(--textBlack);
+    border-radius: 50%;
+    position: absolute;
+    right: -13.8%;
+    top: 10px;
+}
+.history__item.right::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border: 3px solid var(--textBlack);
+    border-radius: 50%;
+    position: absolute;
+    left: -13.8%;
+    top: 10px;
+}
+.history__item--year {
+    font-size: var(--fontSize54);
+    letter-spacing: 0.24rem;
+    font-weight: 900;
+    color: #FDDEE8;
+    text-shadow: rgb(35, 24, 21) 3px 0px 0px, rgb(35, 24, 21) 2.83487px 0.981584px 0px, rgb(35, 24, 21) 2.35766px 1.85511px 0px, rgb(35, 24, 21) 1.62091px 2.52441px 0px, rgb(35, 24, 21) 0.705713px 2.91581px 0px, rgb(35, 24, 21) -0.287171px 2.98622px 0px, rgb(35, 24, 21) -1.24844px 2.72789px 0px, rgb(35, 24, 21) -2.07227px 2.16926px 0px, rgb(35, 24, 21) -2.66798px 1.37182px 0px, rgb(35, 24, 21) -2.96998px 0.42336px 0px, rgb(35, 24, 21) -2.94502px -0.571704px 0px, rgb(35, 24, 21) -2.59586px -1.50383px 0px, rgb(35, 24, 21) -1.96093px -2.27041px 0px, rgb(35, 24, 21) -1.11013px -2.78704px 0px, rgb(35, 24, 21) -0.137119px -2.99686px 0px, rgb(35, 24, 21) 0.850987px -2.87677px 0px, rgb(35, 24, 21) 1.74541px -2.43999px 0px, rgb(35, 24, 21) 2.44769px -1.73459px 0px, rgb(35, 24, 21) 2.88051px -0.838247px 0px;
+}
+.history__item--year .small {
+    font-size: var(--fontSize25);
+    padding-left: 6px;
+}
+.histroy__item--text {
+    font-size: var(--fontSize18);
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 0.16rem;
+    margin-top: 30px;
+    max-width: 440px;
+    width: 100%;
+}
+.history__item.left .histroy__item--text {
+    max-width: none;
+}
+.history__chara1 {
+    max-width: 180px;
+    width: 100%;
+    position: absolute;
+    right: 100px;
+    top: -130px;
+}
+.history__chara2 {
+    max-width: 240px;
+    width: 100%;
+    position: absolute;
+    top: -110px;
+    left: 160px;
+}
+.history__chara3 {
+    max-width: 162px;
+    width: 100%;
+    position: absolute;
+    right: 130px;
+    top: -20px;
+}
+.history__chara4 {
+    max-width: 190px;
+    width: 100%;
+    position: absolute;
+    top: -80px;
+    left: 150px;
+}
+.history__bgText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    z-index: -1;
+}
+.history__bgText p {
+    font-family: var(--fontMacho);
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    font-size: 210px;
+    color: #fff;
+    opacity: 0.5;
+}
+/* -------------------------
+company
+----------------------------*/
+.about__company {
+    padding-top: 170px;
+    padding-bottom: 150px;
+}
+.company__wrap {
+    max-width: 1010px;
+    width: 100%;
+    padding: 70px 75px 80px 75px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow : 
+        0 0 0 3px var(--textBlack),
+        0 0 0 16px var(--paleGreen),
+        0 0 0 19px var(--textBlack);
+}
+.company__table {
+    margin: auto;
+    padding-top: 18px;
+    width: 83%;
+}
+.company__table tr {
+    border-bottom: 2px solid var(--textBlack);
+}
+.company__table th, .company__table td {
+    padding-bottom: 34px;
+    padding-top: 32px;
+    font-size: var(--fontSize16);
+    letter-spacing: 0.04rem;
+}
+.company__table th {
+    text-align: left;
+    width: 270px;
+}
+
+@media screen and (min-width:1600px) {
+/* -------------------------
+message
+----------------------------*/
+    .message__content {
+        border: 3px solid var(--textBlack);
+        margin-right: 5vw;
+    }
 }
