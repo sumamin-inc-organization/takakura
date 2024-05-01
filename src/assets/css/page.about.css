@@ -1,0 +1,152 @@
+.about__page {
+    font-family: var(--fontZenMaruGothic);
+}
+/* -------------------------
+lower main
+----------------------------*/
+.about__page .lower__chara--img1 {
+    max-width: 373px;
+}
+.about__page .lower__textInner {
+    margin-top: 60px;
+}
+/* -------------------------
+point
+----------------------------*/
+.about__point {
+    padding-top: 140px;
+}
+.point__grid {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding-top: 90px;
+    padding-bottom: 44px;
+}
+.point__grid--item {
+    border: 3px solid var(--textBlack);
+    padding: 30px;
+}
+.point__grid--item:nth-child(1), .point__grid--item:nth-child(4) {
+    background-color: var(--main-color);
+}
+.point__grid--item:nth-child(2), .point__grid--item:nth-child(5) {
+    background-color: var(--paleYellow);
+}
+.point__grid--item:nth-child(3), .point__grid--item:nth-child(6) {
+    background-color: var(--paleGreen);
+}
+.point__grid--item img {
+    border: 3px solid var(--textBlack);
+}
+.point__grid--title {
+    margin-top: 20px;
+    font-size: var(--fontSize25);
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.06rem;
+    color: #fff;
+    text-shadow: rgb(35, 24, 21) 2px 0px 0px, rgb(35, 24, 21) 1.75517px 0.958851px 0px, rgb(35, 24, 21) 1.0806px 1.68294px 0px, rgb(35, 24, 21) 0.141474px 1.99499px 0px, rgb(35, 24, 21) -0.832294px 1.81859px 0px, rgb(35, 24, 21) -1.60229px 1.19694px 0px, rgb(35, 24, 21) -1.97998px 0.28224px 0px, rgb(35, 24, 21) -1.87291px -0.701566px 0px, rgb(35, 24, 21) -1.30729px -1.5136px 0px, rgb(35, 24, 21) -0.421592px -1.95506px 0px, rgb(35, 24, 21) 0.567324px -1.91785px 0px, rgb(35, 24, 21) 1.41734px -1.41108px 0px, rgb(35, 24, 21) 1.92034px -0.558831px 0px;
+}
+.point__grid--text {
+    margin-top: 16px;
+}
+.point__grid--text p {
+    font-size: var(--fontSize16);
+    letter-spacing: 0rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+/* -------------------------
+message
+----------------------------*/
+.about__message {
+    padding-top: 140px;
+}
+.message__column {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 19.17vw;
+    position: relative;
+}
+.message__img {
+    position: absolute;
+    left: -8.79vw;
+}
+.message__img img {
+    max-width: 496px;
+    width: 32.8vw;
+    border: 3px solid var(--textBlack);
+}
+.message__img svg {
+    max-width: 253.96px;
+    max-height: 99.76px;
+    width: 16.73vw;
+    height: 6.54vw;
+    position: absolute;
+    top: -40px;
+    left: -26px;
+}
+.message__img p {
+    font-size: var(--fontSize22);
+    letter-spacing: 0.15rem;
+    color: #fff;
+    position: absolute;
+    top: -4px;
+    left: -7px;
+    z-index: 10;
+    transform: rotate(349deg);
+}
+.message__content {
+    background-color: var(--main-color);
+    margin-top: 60px;
+    
+    padding: 80px 0 80px 29.23vw;
+    border-top: 3px solid var(--textBlack);
+    border-left: 3px solid var(--textBlack);
+    border-bottom: 3px solid var(--textBlack);
+}
+.message__deco {
+    position: absolute;
+    max-width: 220px;
+    width: 14.55vw;
+    right: 11.37vw;
+    top: -4.8vw;
+}
+.page__title--inner.left {
+    text-align: left;
+}
+.message__content--text {
+    margin-top: 60px;
+    font-size: var(--fontSize16);
+    letter-spacing: 0.04rem;
+    line-height: 2.2;
+    max-width: 600px;
+    text-align: justify;
+}
+.message__content--name {
+    margin-top: 75px;
+    text-align: right;
+    max-width: 600px;
+    font-size: var(--fontSize18);
+    letter-spacing: 0.01rem;
+    font-weight: bold;
+}
+.message__content--name span:nth-child(1) {
+    margin-right: 35px;
+}
+.message__content--name span:nth-child(2) {
+    margin-right: 20px;
+}
+.message__content--name .large {
+    font-size: var(--fontSize25);
+}
+/* -------------------------
+history
+----------------------------*/
+.about__history {
+    padding-top: 145px;
+}
