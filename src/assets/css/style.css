@@ -588,6 +588,9 @@ footer
   width: 120vw;
   z-index: 10;
 }
+.movingChara__load img {
+  width: 100%;
+}
 .footer__container {
   margin: 0 auto;
   width: 100%;
@@ -1152,7 +1155,7 @@ common
   .more__btn {
     border: 2px solid var(--textBlack);
     font-size: var(--fontSize16);
-    padding: 10px 35px 12px;
+    padding: 7px 32px 9px;
   }
   .twoColumnTitle,
   .twoColumnTitle img {
@@ -1424,6 +1427,35 @@ nav menu
     transform: rotate(90deg);
   }
   /* -------------------------
+  message
+  ----------------------------*/
+  .lower__message {
+    padding: 80px 0 20px 0;
+    border-top: 2px solid var(--textBlack);
+  }
+  .lower__message .message__bg--title {
+    max-width: 334px;
+    width: 100%;
+  }
+  .lower__message .message__chara--img {
+    margin-top: -10px;
+    max-width: 136px;
+    width: 34.87vw;
+  }
+  .lower__message .message__inner {
+    margin-top: 30px;
+  }
+  .lower__message .message__inner .message__text {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.06rem;
+    line-height: 2;
+    text-align: center;
+  }
+  .lower__message .more__btn--container {
+    margin-top: 40px;
+  }
+  /* -------------------------
 footer
 ----------------------------*/
   .movingChara {
@@ -1566,7 +1598,7 @@ footer
   }
   .PinkBg {
     color: #fff;
-    font-size: var(--fontSize20);
+    font-size: 20px;
     letter-spacing: .07em;
     line-height: 2.4;
   }
@@ -1575,7 +1607,7 @@ footer
     padding: 2px 4px;
   }
   .lower__textInner--text {
-    font-size: var(--fontSize16);
+    font-size: 16px;
     letter-spacing: 0.04rem;
     line-height: 2.6;
     margin-top: 10px;
