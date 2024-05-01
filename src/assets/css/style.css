@@ -501,7 +501,7 @@ nav menu
 /* -------------------------
 message
 ----------------------------*/
-.message {
+.lower__message {
   padding: 80px 0 100px 0;
   background-color: var(--paleYellow);
   display: flex;
@@ -510,26 +510,26 @@ message
   position: relative;
   border-top: 3px solid var(--textBlack);
 }
-.message__bg--title {
+.lower__message .message__bg--title {
   max-width: 814px;
   width: 53.83vw;
 }
-.message__chara--img {
+.lower__message .message__chara--img {
   margin-top: -50px;
   max-width: 183px;
   width: 12.1vw;
 }
-.message__inner {
+.lower__message .message__inner {
   margin-top: 44px;
 }
-.message__inner .message__text {
+.lower__message .message__inner .message__text {
   font-size: var(--fontSize18);
   font-weight: bold;
   letter-spacing: 0.06rem;
   line-height: 2.6;
   text-align: center;
 }
-.message .more__btn--container {
+.lower__message .more__btn--container {
   margin-top: 65px;
 }
 /* -------------------------
@@ -862,6 +862,7 @@ lower common
   font-size: var(--fontSize18);
   letter-spacing: 0.06rem;
   line-height: 2.6;
+  font-weight: 700;
 }
 /* kirakira */
 .lower__pinkCircle,

@@ -1151,6 +1151,7 @@ service
 ----------------------------*/
   .service {
     padding: 64px 0 54px 0;
+    border-top: 2px solid var(--textBlack);
   }
   .service__column {
     gap: 22px;
@@ -1349,4 +1350,15 @@ instagram
     max-width: 90%;
   }
 }
-
+@media screen and (max-width:380px) {
+  /* -------------------------
+  service
+  ----------------------------*/
+  .service {
+    padding: 64px 0 54px 0;
+  }
+  .service__column {
+    gap: 22px;
+    width: calc(100% - 40px);
+  }
+}
