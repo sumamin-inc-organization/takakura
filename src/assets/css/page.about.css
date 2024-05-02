@@ -10,6 +10,36 @@ lower main
 .about__page .lower__textInner {
     margin-top: 60px;
 }
+.about__page .lower__deco--chara1 {
+    width: 150px;
+    top: 130px;
+    left: 24.5vw;
+}
+.about__page .lower__deco--bg1 {
+    width: 206px;
+    top: 130px;
+    left: 24vw;
+}
+.about__page .lower__deco--bg2 {
+    width: 258px;
+    top: 130px;
+    left: 24vw;
+}
+.about__page .lower__deco--chara2 {
+    width: 145px;
+    top: -78px;
+    right: 20.5vw;
+}
+.about__page .lower__deco--bg3 {
+    width: 230px;
+    top: -78px;
+    right: 20vw;
+}
+.about__page .lower__deco--bg4 {
+    width: 287px;
+    top: -78px;
+    right: 20vw;
+}
 /* -------------------------
 point
 ----------------------------*/
@@ -240,7 +270,7 @@ history
     max-width: 180px;
     width: 100%;
     position: absolute;
-    right: 100px;
+    left: 260px;
     top: -130px;
 }
 .history__chara2 {
@@ -248,13 +278,13 @@ history
     width: 100%;
     position: absolute;
     top: -110px;
-    left: 160px;
+    right: 140px;
 }
 .history__chara3 {
     max-width: 162px;
     width: 100%;
     position: absolute;
-    right: 130px;
+    left: 260px;
     top: -20px;
 }
 .history__chara4 {
@@ -262,29 +292,63 @@ history
     width: 100%;
     position: absolute;
     top: -80px;
-    left: 150px;
+    right: 200px;
 }
 .history__bgText {
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
     z-index: -1;
+    height: 100%;
 }
 .history__bgText p {
     font-family: var(--fontMacho);
-    font-weight: 500;
-    letter-spacing: 0.2rem;
+    font-weight: 700;
+    letter-spacing: 0.4rem;
     font-size: 210px;
     color: #fff;
     opacity: 0.5;
+    margin-left:3px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+/* .history__bgText p::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border: 3px solid var(--textBlack);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 3px);
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    opacity: 1;
+} */
+.history__bgText p:nth-child(1) {
+    top: 0;
+}
+.history__bgText p:nth-child(2) {
+    top: 268px;
+}
+.history__bgText p:nth-child(3) {
+    top: 545px;
+}
+.history__bgText p:nth-child(4) {
+    top: 794px;
 }
 /* -------------------------
 company
 ----------------------------*/
 .about__company {
-    padding-top: 170px;
+    padding-top: 180px;
     padding-bottom: 150px;
 }
 .company__wrap {
@@ -324,5 +388,99 @@ message
     .message__content {
         border: 3px solid var(--textBlack);
         margin-right: 5vw;
+    }
+}
+
+@media screen and (max-width:1240px) {
+    /* -------------------------
+    point
+    ----------------------------*/
+    .point__grid {
+        gap: 2.64vw;
+        max-width: none;
+        width: calc(100% - 5.28vw);
+        margin: auto 2.64vw;
+    }
+    .point__grid--item {
+        padding: 1.98vw;
+    }
+    .point__grid--title {
+        line-height: 1.4;
+    }
+    .point__grid--text {
+        margin-top: 16px;
+    }
+    .point__grid--text p {
+        letter-spacing: 0rem;
+        line-height: 1.8;
+    }
+    /* -------------------------
+    message
+    ----------------------------*/
+    .message__column {
+        margin-left: 11.4vw;
+    }
+    .message__content {
+        padding: 80px 10vw 80px 29.23vw;
+    }
+    /* -------------------------
+    history
+    ----------------------------*/
+    .history__line {
+        width: 3px;
+        height: 106%;
+        background-color: var(--textBlack);
+        margin-top: 20px;
+    }
+    .history__column {
+        max-width: none;
+        width: calc(100% - 5.28vw);
+        margin: auto 2.64vw;
+    }
+    .history__item:nth-child(3) {
+        margin-top: 30px;
+    }
+    .history__item:nth-child(4), .history__item:nth-child(5) {
+        margin-top: 110px;
+    }
+    .history__chara1 {
+        max-width: 144px;
+        width: 100%;
+        left: 24vw;
+        top: -100px;
+    }
+    .history__chara2 {
+        max-width: 192px;
+        width: 100%;
+        top: -70px;
+        right: 16.25vw;
+    }
+    .history__chara3 {
+        max-width: 129.6px;
+        width: 100%;
+        left: 26vw;
+        top: 10px;
+    }
+    .history__chara4 {
+        max-width: 152px;
+        width: 100%;
+        top: -50px;
+        right: 19.22vw;
+    }
+    .history__bgText p {
+        font-size: 180px;
+    }
+    /* -------------------------
+    company
+    ----------------------------*/
+    .about__company {
+        margin: auto 3.9vw;
+    }
+    .company__wrap {
+        max-width: none;
+        padding: 4.63vw 0 5.29vw 0;
+    }
+    .company__table th, .company__table td {
+        line-height: 1.6;
     }
 }

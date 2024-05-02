@@ -1307,6 +1307,8 @@ message
 ----------------------------*/
   .message {
     padding: 70px 0 60px;
+    border-top: 2px solid var(--textBlack);
+    border-bottom: 2px solid var(--textBlack);
   }
   .message__container {
     gap: 7px 0;
@@ -1337,6 +1339,9 @@ online
   }
   .online__chara--img {
     display: none;
+  }
+  .online__column--item img {
+    border: 2px solid var(--textBlack);
   }
   /* -------------------------
 instagram
