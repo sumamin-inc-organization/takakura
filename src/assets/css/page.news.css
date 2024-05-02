@@ -196,7 +196,7 @@ news
         width: 84%;
     }
     .news__table tr {
-        border-bottom: 2px solid var(--textBlack);
+        border-bottom: 1px solid var(--textBlack);
     }
     .news__table th, .news__table td {
         font-size: var(--fontSize16);

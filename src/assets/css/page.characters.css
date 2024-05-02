@@ -1,0 +1,12 @@
+.characters__page {
+    font-family: var(--fontZenMaruGothic);
+}
+/* -------------------------
+lower main
+----------------------------*/
+.characters__page .lower__textInner {
+    margin-top: 28px;
+}
+.characters__page .lower__chara--img1 {
+    max-width: 441px;
+}
