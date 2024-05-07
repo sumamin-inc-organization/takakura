@@ -435,7 +435,7 @@ message
     .history__column {
         max-width: none;
         width: calc(100% - 5.28vw);
-        margin: auto 2.64vw;
+        margin: 80px 2.64vw auto;
     }
     .history__item.right::before {
         left: -13.9%;
