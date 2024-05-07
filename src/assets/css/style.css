@@ -1034,7 +1034,6 @@ lower common
   }
   .footer__telNumber {
     font-size: var(--fontSize26);
-    -webkit-text-stroke: 1px #000;
   }
   .footer__reception {
     bottom: -5px;
@@ -1108,7 +1107,7 @@ lower common
   }
   .footer__telNumber {
     font-size: var(--fontSize25);
-    -webkit-text-stroke: .5px #000;
+    /* -webkit-text-stroke: .5px #000; */
   }
   .footer__reception {
     font-size: var(--fontSize12);
@@ -1727,6 +1726,6 @@ footer
 
   .footer__telNumber a {
     color: var(--palePink);
-    -webkit-text-stroke: 1px #000;
+    /* -webkit-text-stroke: 1px #000; */
   }
 }
