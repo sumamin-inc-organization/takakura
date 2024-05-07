@@ -1028,7 +1028,7 @@ introduction
     }
     .service__column--title_sp {
         background-color: #64dc96;
-        border: 3px solid var(--textBlack);
+        border: 2px solid var(--textBlack);
         border-radius: 50px;
         color: #fff;
         display: flex;
