@@ -151,6 +151,7 @@ about
     font-weight: bold;
     text-align: center;
     margin-bottom: 30px;
+    line-height: 1.4;
 }
 .about__column--text .small {
     font-size: var(--fontSize16);
@@ -756,7 +757,7 @@ introduction
         width: 100%;
     }
     .point__column--text p {
-        font-size: var(--fontSize16);
+        font-size: 16px;
         letter-spacing: 0.04rem;
         line-height: 1.8;
     }

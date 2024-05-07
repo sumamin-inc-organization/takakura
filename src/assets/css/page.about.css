@@ -349,7 +349,7 @@ company
 ----------------------------*/
 .about__company {
     padding-top: 180px;
-    padding-bottom: 150px;
+    padding-bottom: 120px;
 }
 .company__wrap {
     max-width: 1010px;
@@ -478,6 +478,7 @@ message
     ----------------------------*/
     .about__company {
         margin: auto 3.9vw;
+        padding-bottom: 7.93vw;
     }
     .company__wrap {
         max-width: none;
@@ -656,6 +657,8 @@ message
     .message__content--text {
         margin: auto;
         margin-top: 30px;
+        font-size: 16px;
+        line-height: 1.8;
     }
     .message__content--name {
         margin-top: 30px;
