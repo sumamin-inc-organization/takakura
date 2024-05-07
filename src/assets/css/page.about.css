@@ -617,6 +617,7 @@ message
         max-width: none;
         max-height: none;
         width: 53vw;
+        max-width: 220px;
         height: auto;
         top: -42px;
         left: -26px;
