@@ -34,6 +34,22 @@ function checkWindowWidth() {
     // }
 }
 
+function charaSliderSetting(){
+    var width = $(window).width();
+    if(width <= 767){
+        $('.member__spSlider').not('.slick-initialized').slick({
+            autoplay: true,
+            arrows: true,
+            infinite: true,
+            dots: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        });
+    } else {
+        $('.slide.slick-initialized').slick('unslick');
+    }
+}
+
 $(document).ready(function () {
     checkWindowWidth();
     $(window).resize(checkWindowWidth);
@@ -76,6 +92,12 @@ $(document).ready(function () {
         $('body').addClass('stop');
         $('.header__menu').show();
         console.log('open');
+    });
+
+    //従業員紹介ページのspのみslick
+    charaSliderSetting();
+    $(window).resize(function(){
+        charaSliderSetting();
     });
     
 });
