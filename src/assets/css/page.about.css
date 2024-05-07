@@ -572,6 +572,8 @@ message
     .point__grid--item {
         border: 2px solid var(--textBlack);
         padding: 20px;
+        max-width: 360px;
+        margin: auto;
     }
     .point__grid--item img {
         border: 2px solid var(--textBlack);
@@ -652,6 +654,7 @@ message
         text-align: center;
     }
     .message__content--text {
+        margin: auto;
         margin-top: 30px;
     }
     .message__content--name {
