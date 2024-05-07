@@ -62,6 +62,8 @@ a:hover {
   -1px 3px 0 var(--textBlack),
   -2px 2px 0 var(--textBlack),
   -3px -1px 0 var(--textBlack);
+  position: relative;
+  z-index: 20;
 }
 
 .page__subtitle,
@@ -371,7 +373,7 @@ nav menu
   position: absolute;
 }
 .tel__btn .tel__telSpeech.first {
-  left: 140px;
+  left: 150px;
   top: -40px;
 }
 .tel__btn .tel__telSpeech.second {
@@ -651,7 +653,7 @@ footer
   position: absolute;
 }
 .footer__telSpeech.first {
-  left: 140px;
+  left: 150px;
   top: -40px;
 }
 .footer__telSpeech.second {
@@ -984,6 +986,12 @@ lower common
   -webkit-transform: translateY(-50%) translateX(50%);
   z-index: 8;
 }
+@media screen and (min-width:1400px) {
+  .footer__tel--wrap {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
 @media screen and (min-width:1513px) {
   .mainvisual__wrap {
     background-color: #FFB4C8;
@@ -1044,7 +1052,7 @@ lower common
     font-size: var(--fontSize14);
   }
   .footer__telSpeech.first {
-    left: 65px;
+    left: 73px;
   }
   .footer__telSpeech.second {
     right: -40px;
@@ -1114,7 +1122,7 @@ lower common
   }
   .footer__telSpeech.first {
     font-size: var(--fontSize12);
-    left: 55px;
+    left: 74px;
   }
   .footer__telSpeech.second {
     font-size: var(--fontSize12);
@@ -1331,7 +1339,7 @@ nav menu
     padding: 6px 5px;
   }
   .tel__btn .tel__telSpeech.first {
-    left: 90px;
+    left: 93px;
     top: -31px;
   }
   .tel__btn .tel__telSpeech.second {
@@ -1493,7 +1501,7 @@ footer
     padding: 15px 0 30px;
   }
   .footer__telSpeech.first {
-    left: 95px;
+    left: 102px;
   }
   .footer__telSpeech.second {
     right: -14px;
@@ -1712,7 +1720,7 @@ footer
     font-size: var(--fontSize30);
   }
   .footer__telSpeech.first {
-    left: 75px;
+    left: 84px;
   }
   .footer__telSpeech.second {
     right: -25px;
