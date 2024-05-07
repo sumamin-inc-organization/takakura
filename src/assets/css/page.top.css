@@ -819,6 +819,9 @@ service
   .scrolTextInner.bg-yellow {
     border-bottom: 2px solid var(--textBlack);
   }
+  .page__subtitle, .page__subtitle img {
+    height: unset;
+  }
   /* -------------------------
 secret
 ----------------------------*/
@@ -1024,7 +1027,7 @@ news
     margin-left: -7%;
   }
   .news__inner--textArea {
-    top: 125px;
+    top: 175px;
   }
   .news__inner--man {
     left: -23px;
@@ -1375,6 +1378,11 @@ instagram
     grid-template-columns: repeat(2, 1fr);
     margin: 40px auto;
     max-width: 90%;
+  }
+}
+@media screen and (max-width:450px) {
+  .news__inner--textArea {
+    top: 125px;
   }
 }
 @media screen and (max-width:388px) {

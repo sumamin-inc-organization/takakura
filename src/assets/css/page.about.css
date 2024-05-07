@@ -151,7 +151,7 @@ message
 }
 .message__content--text {
     margin-top: 60px;
-    font-size: var(--fontSize16);
+    font-size: 16px;
     letter-spacing: 0.04rem;
     line-height: 2.2;
     max-width: 600px;

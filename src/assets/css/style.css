@@ -25,6 +25,9 @@ a:hover {
 .sp-br {
   display: none;
 }
+.tb-br {
+  display: none;
+}
 .pc-br
 .spHide {
   display: block;
@@ -1013,6 +1016,9 @@ lower common
   }
 }
 @media screen and (max-width:1200px) {
+  .tb-br {
+    display: block;
+  }
   .lower__deco--chara1, .lower__deco--bg1, .lower__deco--bg2 {
     left: 14vw;
   }
