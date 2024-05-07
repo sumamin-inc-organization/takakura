@@ -10,3 +10,132 @@ lower main
 .characters__page .lower__chara--img1 {
     max-width: 441px;
 }
+/* -------------------------
+member
+----------------------------*/
+.member__wrap {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding-top: 130px;
+}
+.member__grid {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap: 40px;
+    width: 100%;
+    margin: auto;
+}
+.member__item {
+    border: 3px solid var(--textBlack);
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 0 26px 0;
+    max-width: 374px;
+    width: 100%;
+    margin-top: 127px;
+}
+.member__img {
+    position: absolute;
+    left: 50%;
+    top: -108px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    border: 3px solid var(--textBlack);
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+}
+.member__tag {
+    background-color: var(--paleGreen);
+    color: #fff;
+    border-radius: 50px;
+    height: 26px;
+    text-align: center;
+    width: 158px;
+    font-size: var(--fontSize18);
+    letter-spacing: 0.23rem;
+    font-weight: bold;
+}
+.member__tag span {
+    vertical-align: middle;
+}
+.member__name {
+    padding-top: 20px;
+    text-align: center;
+}
+.member__name--kanji {
+    font-size: var(--fontSize25);
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+.member__name--romaji {
+    font-size: var(--fontSize16);
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    padding-top: 12px;
+}
+.member__discription {
+    margin-top: 20px;
+    padding: 26px 0 28px 0;
+    width: 314px;
+    border-radius: 10px;
+    background-color: #FFF9D1;
+    text-align: center;
+}
+.member__discription--title {
+    font-size: var(--fontSize16);
+    font-weight: 500;
+    letter-spacing: 0.04rem;
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+.member__discription--title::before {
+    content: url(../images/characters/heart.svg);
+    position: absolute;
+    width: 19px;
+    left: -27px;
+}
+.member__discription--title::after {
+    content: url(../images/characters/heart.svg);
+    position: absolute;
+    width: 19px;
+    right: -27px;
+}
+.member__discription--text {
+    padding-top: 16px;
+    font-size: var(--fontSize18);
+    font-weight: bold;
+    letter-spacing: 0.04rem;
+}
+.lineBtn__wrap {
+    padding-top: 80px;
+    margin: auto;
+}
+.lineBtn {
+    background-color: var(--lineGreen);
+    border: 3px solid var(--textBlack);
+    border-radius: 60px;
+    box-shadow: 0 3px 0 var(--textBlack);
+    cursor: pointer;
+    display: inline-block;
+    font-family: var(--fontZenMaruGothic);
+    font-size: var(--fontSize18);
+    font-weight: bold;
+    letter-spacing: .14em;
+    line-height: 2.2;
+    padding: 6px 72px 9px;
+    text-decoration: none;
+}
+.lineBtn:hover {
+    box-shadow: none;
+    transform: translateY(3px);
+}
+.lineBtn a {
+    color: #fff;
+}
