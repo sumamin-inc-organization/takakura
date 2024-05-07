@@ -373,7 +373,7 @@ body:has(.single__page) {
         margin-top: 120px;
     }
     .single__content {
-        max-width: 310px;
+        max-width: 79.48vw;
         border: 2px solid var(--textBlack);
         padding: 20px;
     }
