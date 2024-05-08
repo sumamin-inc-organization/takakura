@@ -735,6 +735,12 @@ instagram
   }
 }
 
+@media screen and (min-width:1201px) {
+  .message__container {
+    padding: 0 5.12vw;
+  }
+}
+
 @media screen and (max-width:1441px) and (min-width: 1200px) {
 /* -------------------------
 mainvisual
@@ -834,7 +840,7 @@ message
   .message__container {
     gap: 0 6%;
     grid-template-columns: 40% auto;
-    max-width: 800px;
+    max-width: 920px;
   }
   .message__leftInner--img {
     width: 300px;

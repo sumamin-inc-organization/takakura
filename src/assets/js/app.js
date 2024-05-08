@@ -94,6 +94,59 @@ $(document).ready(function () {
         console.log('open');
     });
 
+    //serviceページダンボール紹介のスライド
+    $('.size__tags .tag, .size__pagenation .pagenation').on('click', function(){
+        if(!$(this).hasClass('active')) {
+            $('.size__tags .tag, .size__pagenation .pagenation').each(function(index) {
+                $(this).toggleClass('active');
+            });
+            if (window.matchMedia('(min-width:768px)').matches) {
+                if($(this).hasClass('small')) {
+                    $('.small__cardboard:not(:animated)').animate({
+                        right: "3.968vw"
+                    }, 400);
+                    $('.large__cardboard:not(:animated)').animate({
+                        right: "-41.26vw"
+                    }, 400);
+                } else {
+                    $('.small__cardboard:not(:animated)').animate({
+                        right: "50.26vw"
+                    }, 400);
+                    $('.large__cardboard:not(:animated)').animate({
+                        right: "3.968vw"
+                    }, 400);
+                }
+            } else {
+                if($(this).hasClass('small')) {
+                    $('.small__cardboard:not(:animated)').animate({
+                        right: "3.968vw"
+                    }, 400);
+                    $('.large__cardboard:not(:animated)').animate({
+                        right: "-81.26vw"
+                    }, 400);
+                } else {
+                    $('.small__cardboard:not(:animated)').animate({
+                        right: "90.26vw"
+                    }, 400);
+                    $('.large__cardboard:not(:animated)').animate({
+                        right: "3.968vw"
+                    }, 400);
+                }
+            }
+        }
+    });
+
+    //newsページカテゴリー切り替え
+    $('.news__tag li').on('click', function(){
+        if(!$(this).hasClass('active')) {
+            $('.news__tag li').each(function(index) {
+                $(this).removeClass('active');
+            });
+        }
+        $(this).addClass('active');
+        $('.news__table th button').text($(this).text());
+    });
+
     //従業員紹介ページのspのみslick
     charaSliderSetting();
     $(window).resize(function(){
