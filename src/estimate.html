@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/variable.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/page.top.css" />
+    <link rel="stylesheet" href="assets/css/page.estimate.css" />
 </head>
 
 <body>
@@ -147,8 +147,8 @@
             </div>
         </div> 
     </nav>
-    <main class="main">
-        <section class="estimate">
+    <main class="estimate__page">
+        <section class="estimate__about">
             <div class="page__title--inner">
                 <p class="page__subTitle">ESTIMATE</p>
                 <h2 class="page__title">お見積もり</h2>
@@ -162,23 +162,23 @@
                 </p>
             </div>
             <div class="estimate__btns">
-                <div class="estimate__item">
-                    <img class="estimate__item--logo" src="./assets/images/estimate/estimate_logo1.svg" alt="">
-                    <p class="">公式LINEで<br>お見積もり依頼</p>
+                <div class="estimate__item estimate__item--line">
+                    <div class="estimate__item--logo"><img src="./assets/images/estimate/estimate_logo1.svg" alt=""></div>
+                    <p class="estimate__item--text">公式LINEで<br>お見積もり依頼</p>
                     <div class="estimate__item--btn">
-                        公式LINE登録で<br><span class="green">LINEスタンプをプレゼント！</span>
+                        <p>公式LINE登録で<br><span class="green">LINEスタンプをプレゼント！</span></p>
                     </div>
                 </div>
-                <div class="estimate__item">
-                    <img class="estimate__item--logo" src="./assets/images/estimate/estimate_logo2.svg" alt="">
-                    <p class="">お見積もり<br>フォームで依頼</p>
+                <div class="estimate__item estimate__item--form">
+                    <div class="estimate__item--logo"><img src="./assets/images/estimate/estimate_logo2.png" alt=""></div>
+                    <p class="estimate__item--text">お見積もり<br>フォームで依頼</p>
                     <div class="estimate__item--btn">
-                        必要事項をご入力の上、<br>送信ください！
+                        <p>必要事項をご入力の上、<br>送信ください！</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="form">
+        <section class="estimate__form">
             <div class="page__title--inner">
                 <p class="page__subTitle">FORM</p>
                 <h2 class="page__title">お見積もりフォーム</h2>
@@ -193,8 +193,8 @@
                         <label for="name">お名前<span class="asterisk">※</span></label>
                     </div>
                     <div class="form__area form__area--row">
-                        <div class="form__content"><span>姓</span><input type="text" class="form__input"></div></div>
-                        <div class="form__content"><span>名</span><input type="text" class="form__input"></div></div> 
+                        <div class="form__content form__flex"><span class="before__text">姓</span><input type="text" class="form__input"></div>
+                        <div class="form__content form__flex"><span class="before__text">名</span><input type="text" class="form__input"></div>
                     </div>
                 </div>
                 <div class="form__item">
@@ -202,8 +202,8 @@
                         <label for="name">ふりがな<span class="asterisk">※</span></label>
                     </div>
                     <div class="form__area form__area--row">
-                        <div class="form__content"><span>姓</span><input type="text" class="form__input"></div></div>
-                        <div class="form__content"><span>名</span><input type="text" class="form__input"></div></div> 
+                        <div class="form__content form__flex"><span class="before__text">姓</span><input type="text" class="form__input"></div>
+                        <div class="form__content form__flex"><span class="before__text">名</span><input type="text" class="form__input"></div>
                     </div>
                 </div>
                 <div class="form__item">
@@ -212,8 +212,61 @@
                     </div>
                     <div class="form__area form__area--column">
                         <div class="form__content">
-                            <select class="form__select"></select><span>月</span>
-                            <select class="form__select"></select><span>日</span>
+                            <span class="select__wrap">
+                                <select name="month" class="form__date">
+                                    <option value="">01</option>
+                                    <option value="1">01</option>
+                                    <option value="2">02</option>
+                                    <option value="3">03</option>
+                                    <option value="4">04</option>
+                                    <option value="5">05</option>
+                                    <option value="6">06</option>
+                                    <option value="7">07</option>
+                                    <option value="8">08</option>
+                                    <option value="9">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </span>
+                            <span class="after__text">月</span>
+                            <span class="select__wrap">
+                                <select name="day" class="form__date">
+                                    <option value="">01</option>
+                                    <option value="1">01</option>
+                                    <option value="2">02</option>
+                                    <option value="3">03</option>
+                                    <option value="4">04</option>
+                                    <option value="5">05</option>
+                                    <option value="6">06</option>
+                                    <option value="7">07</option>
+                                    <option value="8">08</option>
+                                    <option value="9">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>
+                            </span>
+                            <span class="after__text">日</span>
                         </div>
                     </div>
                 </div>
@@ -223,8 +276,61 @@
                     </div>
                     <div class="form__area form__area--column">
                         <div class="form__content">
-                            <select class="form__select"></select><span>月</span>
-                            <select class="form__select"></select><span>日</span>
+                            <span class="select__wrap">
+                                <select name="month" class="form__date">
+                                    <option value="">01</option>
+                                    <option value="1">01</option>
+                                    <option value="2">02</option>
+                                    <option value="3">03</option>
+                                    <option value="4">04</option>
+                                    <option value="5">05</option>
+                                    <option value="6">06</option>
+                                    <option value="7">07</option>
+                                    <option value="8">08</option>
+                                    <option value="9">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </span>
+                            <span class="after__text">月</span>
+                            <span class="select__wrap">
+                                <select name="day" class="form__date">
+                                    <option value="">01</option>
+                                    <option value="1">01</option>
+                                    <option value="2">02</option>
+                                    <option value="3">03</option>
+                                    <option value="4">04</option>
+                                    <option value="5">05</option>
+                                    <option value="6">06</option>
+                                    <option value="7">07</option>
+                                    <option value="8">08</option>
+                                    <option value="9">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>
+                            </span>
+                            <span class="after__text">日</span>
                         </div>
                     </div>
                 </div>
@@ -233,8 +339,8 @@
                         <label for="name">メールアドレス<span class="asterisk">※</span></label>
                     </div>
                     <div class="form__area form__area--column">
-                        <div class="form__content"><input type="email" class="form__input"></div></div>
-                        <div class="form__content"><input type="email" class="form__input"></div><span>(確認用)</span></div> 
+                        <div class="form__content"><input type="email" class="form__input" placeholder="info@takakura.com"></div>
+                        <div class="form__content"><input type="email" class="form__input" placeholder="info@takakura.com"><span class="after__text">(確認用)</span></div> 
                     </div>
                 </div>
                 <div class="form__item">
@@ -242,7 +348,7 @@
                         <label for="name">電話番号<span class="asterisk">※</span></label>
                     </div>
                     <div class="form__area form__area--column">
-                        <div class="form__content"><input type="tel" class="form__input"></div></div>
+                        <div class="form__content"><input type="tel" class="form__input"></div>
                     </div>
                 </div>
                 <div class="form__item">
@@ -250,7 +356,7 @@
                         <label for="name">携帯番号<span class="asterisk">※</span></label>
                     </div>
                     <div class="form__area form__area--column">
-                        <div class="form__content"><input type="tel" class="form__input"></div></div>
+                        <div class="form__content"><input type="tel" class="form__input"></div>
                     </div>
                 </div>
                 <div class="form__item">
@@ -258,10 +364,80 @@
                         <label for="name">現住所<span class="asterisk">※</span></label>
                     </div>
                     <div class="form__area form__area--column">
-                        <div class="form__content"><span>〒</span><input type="adress" class="form__input"></div>
-                        <div class="form__content"><span>都道府県</span><select class="form__input"></select></div>
-                        <div class="form__content"><span>市区町村</span><input type="text" class="form__input"></div>
-                        <div class="form__content"><span>番地・建物名</span><input type="text" class="form__input"></div>
+                        <div class="form__content form__flex"><span class="before__text">〒</span><input type="adress" class="form__input"></div>
+                        <div class="form__content form__flex">
+                            <span class="before__text">都道府県</span>
+                            <div class="select__wrap">
+                                <select name="都道府県" class="form__input">  
+                                    <option value=""></option>  
+                                    <optgroup label="北海道・東北">  
+                                        <option value="北海道">北海道</option>  
+                                        <option value="青森県">青森県</option>  
+                                        <option value="秋田県">秋田県</option>  
+                                        <option value="岩手県">岩手県</option>  
+                                        <option value="山形県">山形県</option>  
+                                        <option value="宮城県">宮城県</option>  
+                                        <option value="福島県">福島県</option>  
+                                    </optgroup>  
+                                    <optgroup label="甲信越・北陸">  
+                                        <option value="山梨県">山梨県</option>  
+                                        <option value="長野県">長野県</option>  
+                                        <option value="新潟県">新潟県</option>  
+                                        <option value="富山県">富山県</option>  
+                                        <option value="石川県">石川県</option>  
+                                        <option value="福井県">福井県</option>  
+                                    </optgroup>  
+                                    <optgroup label="関東">  
+                                        <option value="茨城県">茨城県</option>  
+                                        <option value="栃木県">栃木県</option>  
+                                        <option value="群馬県">群馬県</option>  
+                                        <option value="埼玉県">埼玉県</option>  
+                                        <option value="千葉県">千葉県</option>  
+                                        <option value="東京都">東京都</option>  
+                                        <option value="神奈川県">神奈川県</option>  
+                                    </optgroup>  
+                                    <optgroup label="東海">  
+                                        <option value="愛知県">愛知県</option>  
+                                        <option value="静岡県">静岡県</option>  
+                                        <option value="岐阜県">岐阜県</option>  
+                                        <option value="三重県">三重県</option>  
+                                    </optgroup>  
+                                    <optgroup label="関西">  
+                                        <option value="大阪府">大阪府</option>  
+                                        <option value="兵庫県">兵庫県</option>  
+                                        <option value="京都府">京都府</option>  
+                                        <option value="滋賀県">滋賀県</option>  
+                                        <option value="奈良県">奈良県</option>  
+                                        <option value="和歌山県">和歌山県</option>  
+                                    </optgroup>  
+                                    <optgroup label="中国">  
+                                        <option value="岡山県">岡山県</option>  
+                                        <option value="広島県">広島県</option>  
+                                        <option value="鳥取県">鳥取県</option>  
+                                        <option value="島根県">島根県</option>  
+                                        <option value="山口県">山口県</option>  
+                                    </optgroup>  
+                                    <optgroup label="四国">  
+                                        <option value="徳島県">徳島県</option>  
+                                        <option value="香川県">香川県</option>  
+                                        <option value="愛媛県">愛媛県</option>  
+                                        <option value="高知県">高知県</option>  
+                                    </optgroup>  
+                                    <optgroup label="九州・沖縄">  
+                                        <option value="福岡県">福岡県</option>  
+                                        <option value="佐賀県">佐賀県</option>  
+                                        <option value="長崎県">長崎県</option>  
+                                        <option value="熊本県">熊本県</option>  
+                                        <option value="大分県">大分県</option>  
+                                        <option value="宮崎県">宮崎県</option>  
+                                        <option value="鹿児島県">鹿児島県</option>  
+                                        <option value="沖縄県">沖縄県</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form__content form__flex"><span class="before__text">市区町村</span><input type="text" class="form__input"></div>
+                        <div class="form__content form__flex"><span class="before__text">番地・建物名</span><input type="text" class="form__input"></div>
                     </div>
                 </div>
                 <div class="form__item">
@@ -269,21 +445,32 @@
                         <label for="name">写真アップロード（間取り写真）</label>
                     </div>
                     <div class="form__area form__area--column">
-                        <div class="form__content"><input type="file"></div>
+                        <div class="form__content"><input
+                            type="file"
+                            id="fileElem"
+                            multiple
+                            accept="image/*"
+                            style="display:none" />
+                        <button id="fileSelect" type="button" class="form__file">ファイルを選択する</button></div>
                     </div>
                 </div>
                 <div class="form__item">
                     <div class="form__label">
                         <label for="name">現住所について</label>
                     </div>
-                    <div class="form__area form__area--row">
-                        <div class="form__content"><input type="checkbox" id="elevator"><label for="elevator">エレベーター有り</label></div>
-                        <div class="form__content"><input type="checkbox" id="apartment"><label for="apartment">マンション・アパート</label></div>
-                        <div class="form__content"><input type="checkbox" id="singleFamily"><label for="singleFamily">一戸建て</label></div>
-                        <div class="form__content"><input type="checkbox" id="narrow"><label for="narrow">道幅が狭い</label></div>
-                        <div class="form__content"><input type="checkbox" id="newBuilding"><label for="newBuilding">新築</label></div>
-                        <div class="form__content"><input type="checkbox" id="detachedKitchen"><label for="etachedKitchen">一戸建てキッチンが２階以上</label></div>
-                        <div class="form__content">複数選択可</div>
+                    <div class="form__area form__area--checkbox">
+                        <div class="form__checkbox">
+                            <input type="checkbox" id="elevator"><label for="elevator">エレベーター有り</label>
+                            <input type="checkbox" id="apartment"><label for="apartment">マンション・アパート</label>
+                            <input type="checkbox" id="singleFamily"><label for="singleFamily">一戸建て</label>
+                            <input type="checkbox" id="narrow"><label for="narrow">道幅が狭い</label>
+                        </div>
+                        <div class="form__checkbox">
+                            <input type="checkbox" id="tower"><label for="tower">タワーマンション</label>
+                            <input type="checkbox" id="newBuilding"><label for="newBuilding">新築</label>
+                            <input type="checkbox" id="detachedKitchen"><label for="etachedKitchen">一戸建てキッチンが２階以上</label>
+                            <span class="red">複数選択可</span>
+                        </div>
                     </div>
                 </div>
                 <div class="form__item">
@@ -291,7 +478,7 @@
                         <label for="name">現住所の間取り</label>
                     </div>
                     <div class="form__area form__area--column">
-                        <div class="form__content"><select class="form__input"></select></div>
+                        <div class="form__content"><div class="select__wrap"><select class="form__input"></select></div></div>
                     </div>
                 </div>
                 <div class="form__item">
@@ -299,7 +486,7 @@
                         <label for="name">お引越しされる人数</label>
                     </div>
                     <div class="form__area form__area--column">
-                        <div class="form__content"><select class="form__input"></select></div>
+                        <div class="form__content"><div class="select__wrap"><select class="form__input"></select></div></div>
                     </div>
                 </div>
                 <div class="form__item">
@@ -307,434 +494,207 @@
                         <label for="name">引越し先住所 <span class="asterisk">※</span></label>
                     </div>
                     <div class="form__area form__area--column">
-                        <div class="form__content"><span>〒</span><input type="adress" class="form__input"></div>
-                        <div class="form__content"><span>都道府県</span><select class="form__input"></select></div>
-                        <div class="form__content"><span>市区町村</span><input type="text" class="form__input"></div>
-                        <div class="form__content"><span>番地・建物名</span><input type="text" class="form__input"></div>
+                        <div class="form__content form__flex"><span class="before__text">〒</span><input type="adress" class="form__input"></div>
+                        <div class="form__content form__flex">
+                            <span class="before__text">都道府県</span>                            
+                            <div class="select__wrap">
+                                <select name="都道府県" class="form__input">  
+                                    <option value=""></option>  
+                                    <optgroup label="北海道・東北">  
+                                        <option value="北海道">北海道</option>  
+                                        <option value="青森県">青森県</option>  
+                                        <option value="秋田県">秋田県</option>  
+                                        <option value="岩手県">岩手県</option>  
+                                        <option value="山形県">山形県</option>  
+                                        <option value="宮城県">宮城県</option>  
+                                        <option value="福島県">福島県</option>  
+                                    </optgroup>  
+                                    <optgroup label="甲信越・北陸">  
+                                        <option value="山梨県">山梨県</option>  
+                                        <option value="長野県">長野県</option>  
+                                        <option value="新潟県">新潟県</option>  
+                                        <option value="富山県">富山県</option>  
+                                        <option value="石川県">石川県</option>  
+                                        <option value="福井県">福井県</option>  
+                                    </optgroup>  
+                                    <optgroup label="関東">  
+                                        <option value="茨城県">茨城県</option>  
+                                        <option value="栃木県">栃木県</option>  
+                                        <option value="群馬県">群馬県</option>  
+                                        <option value="埼玉県">埼玉県</option>  
+                                        <option value="千葉県">千葉県</option>  
+                                        <option value="東京都">東京都</option>  
+                                        <option value="神奈川県">神奈川県</option>  
+                                    </optgroup>  
+                                    <optgroup label="東海">  
+                                        <option value="愛知県">愛知県</option>  
+                                        <option value="静岡県">静岡県</option>  
+                                        <option value="岐阜県">岐阜県</option>  
+                                        <option value="三重県">三重県</option>  
+                                    </optgroup>  
+                                    <optgroup label="関西">  
+                                        <option value="大阪府">大阪府</option>  
+                                        <option value="兵庫県">兵庫県</option>  
+                                        <option value="京都府">京都府</option>  
+                                        <option value="滋賀県">滋賀県</option>  
+                                        <option value="奈良県">奈良県</option>  
+                                        <option value="和歌山県">和歌山県</option>  
+                                    </optgroup>  
+                                    <optgroup label="中国">  
+                                        <option value="岡山県">岡山県</option>  
+                                        <option value="広島県">広島県</option>  
+                                        <option value="鳥取県">鳥取県</option>  
+                                        <option value="島根県">島根県</option>  
+                                        <option value="山口県">山口県</option>  
+                                    </optgroup>  
+                                    <optgroup label="四国">  
+                                        <option value="徳島県">徳島県</option>  
+                                        <option value="香川県">香川県</option>  
+                                        <option value="愛媛県">愛媛県</option>  
+                                        <option value="高知県">高知県</option>  
+                                    </optgroup>  
+                                    <optgroup label="九州・沖縄">  
+                                        <option value="福岡県">福岡県</option>  
+                                        <option value="佐賀県">佐賀県</option>  
+                                        <option value="長崎県">長崎県</option>  
+                                        <option value="熊本県">熊本県</option>  
+                                        <option value="大分県">大分県</option>  
+                                        <option value="宮崎県">宮崎県</option>  
+                                        <option value="鹿児島県">鹿児島県</option>  
+                                        <option value="沖縄県">沖縄県</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form__content form__flex"><span class="before__text">市区町村</span><input type="text" class="form__input"></div>
+                        <div class="form__content form__flex"><span class="before__text">番地・建物名</span><input type="text" class="form__input"></div>
                     </div>
                 </div>
                 <div class="form__item">
                     <div class="form__label">
                         <label for="name">引越し先住所について</label>
                     </div>
+                    <div class="form__area form__area--checkbox">
+                        <div class="form__checkbox">
+                            <input type="checkbox" id="elevator2"><label for="elevator2">エレベーター有り</label>
+                            <input type="checkbox" id="apartment2"><label for="apartment2">マンション・アパート</label>
+                            <input type="checkbox" id="singleFamily2"><label for="singleFamily2">一戸建て</label>
+                            <input type="checkbox" id="narrow2"><label for="narrow2">道幅が狭い</label>
+                        </div>
+                        <div class="form__checkbox">
+                            <input type="checkbox" id="tower2"><label for="tower2">タワーマンション</label>
+                            <input type="checkbox" id="newBuilding2"><label for="newBuilding2">新築</label>
+                            <input type="checkbox" id="detachedKitchen2"><label for="etachedKitchen2">一戸建てキッチンが２階以上</label>
+                            <span class="red">複数選択可</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <div class="form__label">
+                        <label for="name">引越し先の間取り</label>
+                    </div>
+                    <div class="form__area form__area--column">
+                        <div class="form__content">
+                            <div class="select__wrap">
+                                <select class="form__input">
+                                    <option value="type1">aaa</option>
+                                    <option value="type2">bbb</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <div class="form__label">
+                        <label for="name">お荷物リスト</label>
+                    </div>
+                    <div class="form__area form__area--checkbox">
+                        <div class="form__checkbox">
+                            <input type="checkbox" id="refrigeratorSmall"><label for="refrigeratorSmall">冷蔵庫（小）</label>
+                            <input type="checkbox" id="refrigeratorLarge"><label for="refrigeratorLarge">冷蔵庫（大）</label>
+                            <input type="checkbox" id="washingMachine"><label for="washingMachine">洗濯機</label>
+                            <input type="checkbox" id="washingMachineDrum"><label for="washingMachineDrum">洗濯機(ドラム式)</label>
+                            <input type="checkbox" id="wsChest"><label for="wsChest">洋ダンス</label>
+                            <input type="checkbox" id="jaChest"><label for="jaChest">和ダンス</label>
+                            <input type="checkbox" id="cabinet"><label for="cabinet">整理ダンス</label>
+                        </div>
+                        <div class="form__checkbox">
+                            <input type="checkbox" id="woodCabinet"><label for="woodCabinet">桐ダンス</label>
+                            <input type="checkbox" id="chest"><label for="chest">チェスト</label>
+                            <input type="checkbox" id="dresser"><label for="dresser">鏡台</label>
+                            <input type="checkbox" id="diningTable"><label for="diningTable">ダイニングテーブル</label>
+                            <input type="checkbox" id="desk"><label for="desk">勉強机</label>
+                            <input type="checkbox" id="tv"><label for="tv">テレビ</label>
+                            <input type="checkbox" id="tvStand"><label for="tvStand">テレビ台</label>
+                            <input type="checkbox" id="bicycle"><label for="bicycle">自転車</label>
+                        </div>
+                        <div class="form__checkbox">
+                            <input type="checkbox" id="bedSmall"><label for="bedSmall">ベッド（小）</label>
+                            <input type="checkbox" id="bedLarge"><label for="bedLarge">ベッド（大）</label>
+                            <input type="checkbox" id="sofa"><label for="sofa">ソファー</label>
+                            <input type="checkbox" id="bookshelf"><label for="bookshelf">本棚</label>
+                            <input type="checkbox" id="cupboard"><label for="cupboard">食器棚</label>
+                            <input type="checkbox" id="airConditioning"><label for="airConditioning">エアコン</label>
+                            <input type="checkbox" id="lighting"><label for="lighting">照明</label>
+                            <input type="checkbox" id="microwaveOven"><label for="microwaveOven">電子レンジ</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <div class="form__label">
+                        <label for="name">その他お荷物があればご入力ください</label>
+                    </div>
+                    <div class="form__area form__area--column">
+                        <div class="form__content">例）楽器・水槽など</div>
+                        <div class="textarea__content"><textarea name="others" id="otherBaggage" rows="4"></textarea></div> 
+                    </div>
+                </div>
+                <div class="form__item">
+                    <div class="form__label">
+                        <label for="name">荷づくり</label>
+                    </div>
                     <div class="form__area form__area--row">
-                        <div class="form__content"><input type="checkbox" id="elevator2"><label for="elevator2">エレベーター有り</label></div>
-                        <div class="form__content"><input type="checkbox" id="apartment2"><label for="apartment2">マンション・アパート</label></div>
-                        <div class="form__content"><input type="checkbox" id="singleFamily2"><label for="singleFamily2">一戸建て</label></div>
-                        <div class="form__content"><input type="checkbox" id="narrow2"><label for="narrow2">道幅が狭い</label></div>
-                        <div class="form__content"><input type="checkbox" id="newBuilding2"><label for="newBuilding2">新築</label></div>
-                        <div class="form__content"><input type="checkbox" id="detachedKitchen2"><label for="etachedKitchen2">一戸建てキッチンが２階以上</label></div>
-                        <div class="form__content">複数選択可</div>
+                        <div class="form__radio"><input type="radio" name="q1" class="form__radio">希望する<span class="red">（※有料）</span></div>
+                        <div class="form__radio"><input type="radio" name="q1" class="form__radio">希望しない</div> 
+                    </div>
+                </div>
+                <div class="form__item">
+                    <div class="form__label">
+                        <label for="name">荷ほどき</label>
+                    </div>
+                    <div class="form__area form__area--row">
+                        <div class="form__radio"><input type="radio" name="q2" class="form__radio">希望する<span class="red">（※有料）</span></div>
+                        <div class="form__radio"><input type="radio" name="q2" class="form__radio">希望しない</div> 
+                    </div>
+                </div>
+                <div class="form__item">
+                    <div class="form__label">
+                        <label for="name">弊社からのご連絡方法</label>
+                    </div>
+                    <div class="form__area form__area--row">
+                        <div class="form__radio"><input type="radio" name="q3" class="form__radio">メール</div>
+                        <div class="form__radio"><input type="radio" name="q3" class="form__radio">電話</div> 
+                    </div>
+                </div>
+                <div class="form__item">
+                    <div class="form__label">
+                        <label for="name">ご質問・ご要望</label>
+                    </div>
+                    <div class="form__area form__area--column">
+                        <div class="textarea__content"><textarea name="question" id="" cols="30" rows="10"></textarea></div> 
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="mainvisual">
-            <!-- <div class="side_btnInner">
-                <a class="side_btn orange" href="https://takakurahudousan.com/" target="_blank">
-                    <img src="./assets/images/icon_realestate-white.svg" alt="" />
-                    <p class="side_btn--text">たかくら不動産屋さん</p>
-                </a>
-                <a class="side_btn green" href="#">
-                    <img src="./assets/images/icon_recycle-white.svg" alt="" />
-                    <p class="side_btn--text">たかくらリサイクルセンター</p>
-                </a>
-            </div> -->
-            <div class="mainvisual__wrap">
-                <div class="mainvisual__top">
-                    <div class="mainTitle__img">
-                        <img src="./assets/images/top/img-top_title.svg" alt="" />
-                    </div>
-                    <div class="mainvisualPlant__img">
-                        <img src="./assets/images/top/img-top_mainvisualPlant.svg" alt="" />
-                    </div>
-                    <div class="mainvisualCardboard__img">
-                        <img src="assets/images/top/img-top_mainvisalCardboard.svg" alt="" />
-                    </div>
-                </div>
-                <img class="mainvisual__concent" src="./assets/images/top/concent.svg" alt="">
-                <picture>
-                    <source srcset="./assets/images/mainvisual_line_sp.svg"
-                    media="(max-width: 767px)" />
-                <img class="mainvisual__line" src="./assets/images/mainvisual_line.svg" alt="">
-            </div>
-            <div class="mainvisual__bottom">
-                <div class="mainvisualChara__img">
-                    <picture>
-                        <source srcset="./assets/images/top/img-top_mainvisualChara-sp.svg"
-                            media="(max-width: 767px)" />
-                        <img src="./assets/images/top/img-top_mainvisualChara.svg" />
-                    </picture>
-                </div>
-                <div class="freeQuote__img">
-                    <a href="#"><img src="./assets/images/top/img-top_freeQuote.svg" alt="無料お見積もり" /></a>
-                </div>
-            </div>
-        </section>
-        <section class="news">
-            <div class="bgPinkText__inner">
-                <p class="bgPinkText first">TAKAKURA MOVING CENTER</p>
-                <p class="bgPinkText second">TAKAKURA MOVING CENTER</p>
-            </div>
-            <div class="news__inner">
-                <div class="news__inner--tv">
-                    <img src="./assets/images/top/news/img-news_tv.svg" alt="" />
-                    <div class="news__inner--textArea">
-                        <div class="page__title--inner">
-                            <p class="page__subTitle">NEWS</p>
-                            <h2 class="page__title">お知らせ</h2>
-                            <!-- <img class="page__title" src="./assets/images/top/news/img-news_title.png" alt="" /> -->
-                        </div>
-                        <div class="page__info--inner">
-                            <p class="news__inner--date">23.12.25</p>
-                            <p class="news__inner--infoText">Information</p>
-                        </div>
-                        <p class="page__text">タイトルが入ります。タイトルが入ります。 タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</p>
-                    </div>
-                </div>
-                <img class="news__inner--man" src="./assets/images/top/news/img-news_man.png" alt="" />
-                <img class="news__inner--chara" src="./assets/images/top/news/img-news_chara.svg" alt="" />
-            </div>
-            <div class="more__btn--container">
-                <a class="more__btn" href="./news.html">ニュース一覧</a>
-            </div>
-        </section>
-        <section class="about">
-            <div class="page__title--inner">
-                <p class="page__subTitle">ABOUT</p>
-                <h2 class="page__title">たかくら<br class="sp-br">引越センターって？</h2>
-                <!-- <div class="page__title">
-                    <picture>
-                        <source srcset="./assets/images/top/about/img-about_title-sp.png" media="(max-width: 767px)" />
-                        <img class="page__title" src="./assets/images/top/about/img-about_title.png" alt="" />
-                    </picture>
-                </div> -->
-            </div>
-            <div class="about__charaInner">
-                <img class="about__chara--img1" src="./assets/images/top/about/img-about_chara1.svg" alt="" />
-                <img class="about__chara--surround1" src="./assets/images/top/about/img-about_surround1.svg" alt="" />
-                <img class="about__chara--surround2" src="./assets/images/top/about/img-about_surround2.svg" alt="" />
-                <img class="about__pinkCircle first" src="./assets/images/top/about/img-about_pinkKirakira_small.svg" alt="" />
-                <img class="about__pinkCircle second" src="./assets/images/top/about/img-about_pinkKirakira.svg" alt="" />
-                <img class="about__pinkCircle third" src="./assets/images/top/about/img-about_pinkKirakira.svg" alt="" />
-                <img class="about__pinkCircle forth" src="./assets/images/top/about/img-about_pinkKirakira.svg" alt="" />
-                <img class="about__pinkCircle fifth" src="./assets/images/top/about/img-about_pinkKirakira_small.svg" alt="" />
-                <img class="about__pinkCircle sixth" src="./assets/images/top/about/img-about_pinkKirakira.svg" alt="" />
-                <img class="about__whiteCircle first" src="./assets/images/top/about/img-about_whiteKirakira_small.svg"
-                    alt="" />
-                <img class="about__whiteCircle second" src="./assets/images/top/about/img-about_whiteKirakira_small.svg"
-                    alt="" />
-                <img class="about__whiteCircle third" src="./assets/images/top/about/img-about_whiteKirakira.svg"
-                    alt="" />
-            </div>
-            <div class="about__textInner">
-                <h3 class="about__textInner--title"><span class="PinkText2">引</span>越は<span
-                        class="PinkText2">お</span>もしろい！</h3>
-                <p class="page__text">
-                    TMC(たかくら引越センター)は、<br />
-                    東京23区均衡を中心に、<br class="sp-br" />千葉・神奈川・埼玉エリアを<br />
-                    専門とした日本一小さな引っ越し屋です。<br />
-                    引越し作業が楽しい！だけではなく、<br />
-                    引越しをすることで<br class="sp-br" />皆様の人生に変化をもたらせ、<br class="pc-br" />
-                    環境の変化が<br class="sp-br" />新たな出逢いや発見に繋がる・・・<br />
-                    そんな願いを持って<br class="sp-br" />業務にあたっております。
+            
+            <div class="form__note">
+                <p>
+                ※荷づくりは専属スタッフが段ボールに小物・食器類を梱包致します。<br>
+                ※エアコン・ウォシュレット・食洗器は取り外し・取り付けは、別料金になります。<br>
+                ※クレーン作業の場合、別料金となります。
                 </p>
             </div>
-            <div class="more__btn--container">
-                <a class="more__btn" href="./about.html">TMCについて</a>
-            </div>
-            <div class="about__chara--img2">
-                <img src="./assets/images/top/about/img-about_chara2.svg" />
-            </div>
-            <div class="about__chara--img3">
-                <img src="./assets/images/top/about/img-about_chara3.svg" />
-            </div>
-            <div class="about__human--img1">
-                <img src="./assets/images/top/about/img-about_human1.png" />
-            </div>
-            <div class="about__human--img2">
-                <img src="./assets/images/top/about/img-about_human2.png" />
-            </div>
-        </section>
-        <section class="service">
-            <div class="page__title--inner">
-                <p class="page__subTitle">SERVICE</p>
-                <h2 class="page__title">サービス内容</h2>
-                <!-- <img class="page__title" src="./assets/images/top/service/img-service_title.png" alt="" /> -->
-            </div>
-            <div class="service__column">
-                <div class="service__column--item">
-                    <p class="service__column--title">単身のお引越し</p>
-                    <div class="service__column--img">
-                        <img class="service__column--chara" src="./assets/images/top/service/img-service_chara1.svg"
-                            alt="" />
-                        <img class="service__column--bg" src="./assets/images/top/service/img-service_charaBg.svg"
-                            alt="" />
-                    </div>
-                </div>
-                <div class="service__column--item bottom">
-                    <p class="service__column--title">ご家族のお引越し</p>
-                    <div class="service__column--img">
-                        <img class="service__column--chara" src="./assets/images/top/service/img-service_chara2.svg"
-                            alt="" />
-                        <img class="service__column--bg" src="./assets/images/top/service/img-service_charaBg.svg"
-                            alt="" />
-                    </div>
-                </div>
-                <div class="service__column--item">
-                    <p class="service__column--title">まるごとお任せ</p>
-                    <div class="service__column--img">
-                        <img class="service__column--chara" src="./assets/images/top/service/img-service_chara3.svg"
-                            alt="" />
-                        <img class="service__column--bg" src="./assets/images/top/service/img-service_charaBg.svg"
-                            alt="" />
-                    </div>
-                </div>
-                <div class="service__column--item bottom">
-                    <p class="service__column--title">荷物の保管<span class="asterisk">※</span></p>
-                    <div class="service__column--img">
-                        <img class="service__column--chara" src="./assets/images/top/service/img-service_chara4.svg"
-                            alt="" />
-                        <img class="service__column--bg" src="./assets/images/top/service/img-service_charaBg.svg"
-                            alt="" />
-                    </div>
-                </div>
-            </div>
-            <p class="service__minText">※３ヶ月以上ご連絡がつかない場合は<br class="sp-br" />処分させていただきます</p>
-            <div class="more__btn--container">
-                <a class="more__btn" href="./service.html">詳しくはこちら</a>
-            </div>
-        </section>
-        <div class="scrolTextInner bg-yellow">
-            <p class="scrolText">都内の引越しはお任せください！単身者からご家族まで都内の引越しはお任せください！単身者からご家族まで都内の引越しはお任せください！単身者か</p>
-        </div>
-        <section class="secret">
-            <div class="page__title--inner">
-                <p class="page__subTitle">たかくら引越センターはここが違う？！</p>
-                <h2 class="page__title">驚異のリピート率の<br class="sp-br">秘密</h2>
-                <!-- <div class="page__title">
-                    <picture>
-                        <source srcset="./assets/images/top/secret/img-secret_title-sp.png"
-                            media="(max-width: 767px)" />
-                        <img src="./assets/images/top/secret/img-secret_title.png" alt="" />
-                    </picture>
-                </div> -->
-            </div>
-            <ul class="secretList">
-                <li class="secretList__item">
-                    <div class="secretList__item--container">
-                        <div class="secretList__item--img">
-                            <img src="./assets/images/top/secret/img-secret_item1.jpg" alt="" />
-                        </div>
-                        <div class="secretList__item--textArea">
-                            <p class="secretList__speech">01</p>
-                            <div class="page__subtitle miniTitle">
-                                <h4>すべての従業員が非喫煙者</h4>
-                                <!-- <img src="./assets/images/top/secret/img-secret_subtitle1.png" alt="" /> -->
-                            </div>
-                            <p class="page__text">引越しの作業中または引越し終了後、荷物についたタバコの臭い気になりませんか？たかくら引越センターの作業員は、「完全禁煙」を徹底しております。
-                            </p>
-                            <div class="more__btn--container">
-                                <a class="more__btn pinkBtn" href="./service.html">サービスについて</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="secretList__item--chara1">
-                        <img src="./assets/images/top/secret/img-secret_chara1.svg" alt="" />
-                    </div>
-                </li>
-                <li class="secretList__item reverse">
-                    <div class="secretList__item--chara2">
-                        <img src="./assets/images/top/secret/img-secret_chara2.svg" alt="" />
-                    </div>
-                    <div class="secretList__item--container">
-                        <div class="secretList__item--textArea">
-                            <p class="secretList__speech">02</p>
-                            <div class="page__subtitle twoColumnTitle">
-                                <h4>整理収納の達人が<br class="sp-br tb-br">引越しをサポート</h4>
-                                <!-- <picture>
-                                    <source srcset="./assets/images/top/secret/img-secret_subtitle2-sp.png"
-                                        media="(max-width: 767px)" />
-                                    <img src="./assets/images/top/secret/img-secret_subtitle2.png" alt="" />
-                                </picture> -->
-                            </div>
-                            <p class="page__text">芸人活動の傍ら20年以上引越しの仕事を続けている代表をはじめ、引越歴10年以上のベテランスタッフが作業を行います。</p>
-                            <div class="more__btn--container">
-                                <a class="more__btn pinkBtn" href="./characters.html">従業員紹介はこちら</a>
-                            </div>
-                        </div>
-                        <div class="secretList__item--img">
-                            <img src="./assets/images/top/secret/img-secret_item2.jpg" alt="" />
-                        </div>
-                    </div>
-                </li>
-                <li class="secretList__item">
-                    <div class="secretList__item--container">
-                        <div class="secretList__item--img">
-                            <img src="./assets/images/top/secret/img-secret_item3.jpg" alt="" />
-                        </div>
-                        <div class="secretList__item--textArea">
-                            <p class="secretList__speech">03</p>
-                            <div class="page__subtitle twoColumnTitle">
-                                <h4>日本一かわいい？<br class="sp-br tb-br">こだわりの段ボール</h4>
-                                <!-- <picture>
-                                    <source srcset="./assets/images/top/secret/img-secret_subtitle3-sp.png"
-                                        media="(max-width: 767px)" />
-                                    <img src="./assets/images/top/secret/img-secret_subtitle3.png" alt="" />
-                                </picture> -->
-                            </div>
-                            <p class="page__text">「引越しを楽しんでほしい」そんな想いを込めて作った、積めば積むほどかわいいオリジナル段ボール。引越し後の活用法もご紹介しています！</p>
-                            <div class="more__btn--container">
-                                <a class="more__btn pinkBtn" href="./service.html#introduction">さらに詳しく見る</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="secretList__item--chara3">
-                        <img src="./assets/images/top/secret/img-secret_chara3.svg" alt="" />
-                    </div>
-                </li>
-                <li class="secretList__item reverse">
-                    <div class="secretList__item--chara4">
-                        <img src="./assets/images/top/secret/img-secret_chara4.svg" alt="" />
-                    </div>
-                    <div class="secretList__item--container">
-                        <div class="secretList__item--textArea">
-                            <p class="secretList__speech">04</p>
-                            <div class="page__subtitle miniTitle highTitle">
-                                <h4>驚異のリピート率<span class="large__text">97</span>％?!</h4>
-                                <!-- <img src="./assets/images/top/secret/img-secret_subtitle4.png" alt="" /> -->
-                            </div>
-                            <p class="page__text">
-                                たかくら引越センターの肌感ではリピート率97％！非常に安全なサポート体制を実現していることから、多くの著名人にも安心してご利用いただいております。
-                            </p>
-                            <div class="more__btn--container">
-                                <a class="more__btn pinkBtn" href="./service.html">サービスについて</a>
-                            </div>
-                        </div>
-                        <div class="secretList__item--img">
-                            <img src="./assets/images/top/secret/img-secret_item4.jpg" alt="" />
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <div class="bgPinkText__inner palePink">
-                <p class="bgPinkText">TMC TMC TMC TMC TMC</p>
-            </div>
-        </section>
-        <section class="message">
-            <div class="message__container">
-                <div class="message__leftInner">
-                    <div class="page__title--inner">
-                        <p class="page__subTitle">MESSAGE</p>
-                        <h2 class="page__title">お友達に引越しを<br>お願いするか<br>悩んでいる方へ</h2>
-                        <!-- <div class="page__title threeColumnTitle">
-                            <picture>
-                                <source srcset="./assets/images/top/message/img-message_title-sp.png"
-                                    media="(max-width: 767px)" />
-                                <img src="./assets/images/top/message/img-message_title.png" alt="" />
-                            </picture>
-                        </div> -->
-                    </div>
-                    <div class="message__leftInner--img">
-                        <img src="./assets/images/top/message/img-message.svg" alt="" />
-                    </div>
-                </div>
-                <div class="message__rightInner">
-                    <div class="message__textArea">
-                        <p class="page__text">
-                            引越しにあたり、予算の算出が難しい・・・<br />
-                            節約のため、引越し業者に依頼せずに<br />
-                            自分や友人と引越し作業を行う。<br />
-                            荷物を運ぶためのトラックの手配や<br class="sp-br" />人員手配をする際、<br class="pc-br" />
-                            友人に手伝ってもらう<br class="sp-br" />場合でも、食事や飲み物、<br />
-                            謝礼を考えておかなければいけません。<br />
-                            安く済まそうと思った結果、<br />
-                            逆に予想以上にかかってしまうことも。<br />
-                            <br />
-                            業者に頼むと高くつくのでは？<br class="sp-br" />と心配なアナタ。<br />
-                            ぜひ一度、ご相談ください。
-                        </p>
-                        <div class="more__btn--container">
-                            <a class="more__btn" href="./estimate.html">無料お見積もり</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="online">
-            <div class="page__title--inner">
-                <p class="page__subTitle">ONLINE STORE</p>
-                <h2 class="page__title">オンラインストア</h2>
-                <!-- <img class="page__title" src="./assets/images/top/online/img-onlin_title.png" alt="" /> -->
-            </div>
-            <div class="online__columnInner">
-                <div class="online__column">
-                    <div class="js-slide">
-                        <a class="online__column--item" href="#">
-                            <img src="./assets/images/top/online/img-online_item1.png" alt="" />
-                        </a>
-                        <a class="online__column--item" href="#">
-                            <img src="./assets/images/top/online/img-online_item2.png" alt="" />
-                        </a>
-                        <a class="online__column--item" href="#">
-                            <img src="./assets/images/top/online/img-online_item3.png" alt="" />
-                        </a>
-                        <a class="online__column--item" href="#">
-                            <img src="./assets/images/top/online/img-online_item1.png" alt="" />
-                        </a>
-                        <a class="online__column--item" href="#">
-                            <img src="./assets/images/top/online/img-online_item2.png" alt="" />
-                        </a>
-                        <a class="online__column--item" href="#">
-                            <img src="./assets/images/top/online/img-online_item3.png" alt="" />
-                        </a>
-                    </div>
-                </div>
-                <div class="online__chara--img">
-                    <img src="./assets/images/top/online/img-online_chara.svg" alt="" />
-                </div>
-            </div>
-            <div class="more__btn--container">
-                <a class="more__btn" href="#">すべて見る</a>
-            </div>
-            <div class="online__sale--img">
-                <img src="./assets/images/top/online/img-online_sale.svg" alt="" />
-            </div>
-        </section>
-        <section class="instagram">
-            <div class="page__title--inner">
-                <p class="page__subTitle">INSTAGRAM</p>
-                <h2 class="page__title">公式インスタグラム</h2>
-                <!-- <img class="page__title" src="./assets/images/top/instagram/img-instagram_title.png" alt="" /> -->
-            </div>
-            <div class="instagram__column">
-                <a class="instagram__column--item" href="#">
-                    <img src="./assets/images/top/instagram/img-instagram_item1.jpg" alt="" />
-                </a>
-                <a class="instagram__column--item" href="#">
-                    <img src="./assets/images/top/instagram/img-instagram_item2.jpg" alt="" />
-                </a>
-                <a class="instagram__column--item" href="#">
-                    <img src="./assets/images/top/instagram/img-instagram_item3.jpg" alt="" />
-                </a>
-                <a class="instagram__column--item" href="#">
-                    <img src="./assets/images/top/instagram/img-instagram_item4.jpg" alt="" />
-                </a>
-                <a class="instagram__column--item" href="#">
-                    <img src="./assets/images/top/instagram/img-instagram_item5.jpg" alt="" />
-                </a>
-                <a class="instagram__column--item" href="#">
-                    <img src="./assets/images/top/instagram/img-instagram_item6.jpg" alt="" />
-                </a>
-                <a class="instagram__column--item" href="#">
-                    <img src="./assets/images/top/instagram/img-instagram_item7.jpg" alt="" />
-                </a>
-                <a class="instagram__column--item" href="#">
-                    <img src="./assets/images/top/instagram/img-instagram_item8.jpg" alt="" />
-                </a>
-            </div>
-            <div class="more__btn--container">
-                <a class="more__btn" href="#">フォローしてね</a>
+            <div class="confirm__btn--container">
+                <a href="">確認画面へ</a>
             </div>
         </section>
     </main>

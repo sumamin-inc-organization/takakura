@@ -147,6 +147,19 @@ $(document).ready(function () {
         $('.news__table th button').text($(this).text());
     });
 
+    //フォームfileクリックイベント
+    $('#fileSelect').on('click', function(){
+        $('#fileElem').click();
+    });
+
+    //フォームレイアウト
+    // $('.before__text').each(function() {
+    //     var labelWidth = $(this).outerWidth(true);
+    //     console.log(labelWidth);
+    //     console.log($(this).next());
+    //     $(this).next().css('width', $(this).next().outerWidth() - labelWidth + 'px');
+    // });
+
     //従業員紹介ページのspのみslick
     charaSliderSetting();
     $(window).resize(function(){

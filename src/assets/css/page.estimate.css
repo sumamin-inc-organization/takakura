@@ -1,0 +1,318 @@
+/* -------------------------
+common
+----------------------------*/
+.estimate__page {
+    font-family: var(--fontZenMaruGothic);
+}
+::placeholder {
+    color: #B3B3B3;
+    letter-spacing: 0.1rem;
+}
+:focus-visible {
+    outline: none;
+}
+select {
+    padding-left: 10px;
+    -webkit-appearance: none;
+    appearance: none; 
+}
+textarea {
+    padding: 10px;
+}
+input[type="checkbox"] {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--textBlack);
+    background-color: #fff;
+    border-radius: 4px;
+    vertical-align: -5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-right: 4px;
+}
+input[type="checkbox"]:checked {
+    background-color: var(--palePink);
+}
+input[type="checkbox"]:checked:before {
+    position: absolute;
+    top: 0px;
+    left: 4px;
+    transform: rotate(36deg);
+    width: 5px;
+    height: 10px;
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    content: '';
+    border-radius: 1px;
+}
+input[type="radio"] {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--textBlack);
+    border-radius: 50%;
+    background-color: #fff;
+    vertical-align: -2px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-right: 4px;
+}
+input[type="radio"]:checked:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--palePink);
+    content: '';
+}
+.select__wrap {
+    position: relative;
+    width: 100%;
+}
+.select__wrap::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    color: #333;
+    line-height: 1;
+    width: 12px;
+    height: 12px;
+    border: 2px solid currentColor;
+    border-left: 0;
+    border-bottom: 0;
+    box-sizing: border-box;
+    transform: translateY(-25%) rotate(135deg);
+    position: absolute;
+    top: 8px;
+    right: 20px;
+}
+div.select__wrap::after {
+    top: 14px;
+    right: 20px;
+}
+/* -------------------------
+estimate about
+----------------------------*/
+.estimate__about {
+    padding-top: 160px;
+}
+.estimate__text {
+    margin: auto;
+}
+.estimate__text p {
+    font-size: var(--fontSize18);
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    line-height: 2.8;
+    text-align: center;
+}
+.estimate__btns {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.estimate__item {
+    border: 2px solid var(--textBlack);
+    border-radius: 20px;
+    color: #fff;
+    padding: 27px 0;
+    width: 365px;
+    box-sizing: border-box;
+    box-shadow: 0px 7px 0px 0px var(--textBlack);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.estimate__item:hover {
+    box-shadow: none;
+    transform: translateY(3px);
+}
+.estimate__item--line {
+    background-color: var(--lineGreen);
+}
+.estimate__item--form {
+    background-color: var(--palePink);
+}
+.estimate__item--text {
+    text-align: center;
+}
+.estimate__item--logo {
+    height: 68px;
+}
+.estimate__item--line .estimate__item--logo img {
+    width: 54px;
+}
+.estimate__item--form .estimate__item--logo img {
+    width: 84px;
+    margin-top: -10px;
+}
+.estimate__item--text {
+    font-size: var(--fontSize25);
+    font-weight: 700;
+    letter-spacing: 0.08rem;
+    line-height: 1.4;
+}
+.estimate__item--btn {
+    background-color: #fff;
+    border-radius: 80px;
+    color: var(--textBlack);
+    width: 305px;
+    padding: 20px 0;
+    margin-top: 22px;
+}
+.estimate__item--btn p {
+    font-size: var(--fontSize16);
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.12rem;
+    line-height: 1.4;
+}
+.estimate__item--btn p .green {
+    color: var(--lineGreen);
+}
+/* -------------------------
+estimate form
+----------------------------*/
+.estimate__form {
+    padding-top: 150px;
+}
+.form__comment {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 40px;
+    font-size: var(--fontSize18);
+    letter-spacing: 0.1rem;
+    line-height: 2;
+}
+.form__comment .asterisk {
+    color: #F03C3C;
+}
+.form__field {
+    margin: auto;
+    margin-top: 80px;
+    max-width: 1200px;
+    width: 100%;
+    border-top: 2px solid #fff;
+}
+.form__item {
+    display: grid;
+    grid-template-columns: 30% auto;
+    padding: 30px 0;
+    border-bottom: 2px solid #fff;
+}
+.form__label {
+    font-size: var(--fontSize16);
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+.form__area {
+    display: flex;
+}
+.form__area--row {
+    flex-direction: row;
+    gap: 30px;
+}
+.form__area--column {
+    flex-direction: column;
+    gap: 30px;
+}
+.form__area--checkbox {
+    flex-direction: column;
+    gap: 10px;
+}
+.form__content {
+    width: 50%;
+}
+.form__content .red, .form__checkbox .red, .form__radio .red {
+    color: #F03C3C;
+}
+.form__label .asterisk {
+    color: #F03C3C;
+    font-size: 10px;
+    position: absolute;
+}
+.form__content .before__text {
+    margin-right: 11px;
+    letter-spacing: 0.1rem;
+    text-wrap: nowrap;
+}
+.form__content .after__text {
+    margin-left: 11px;
+    letter-spacing: 0.1rem;
+}
+.form__input {
+    height: 40px;
+    box-sizing: border-box;
+    border: 2px solid var(--textBlack);
+    width: 100%;
+    padding-left: 10px;
+}
+.form__date {
+    height: 40px;
+    border: 2px solid var(--textBlack);
+    max-width: 90px;
+    width: 100%;
+    margin-left: 11px;
+}
+.form__file {
+    background-color: #fff;
+    color: #B3B3B3;
+    height: 40px;
+    width: 50%;
+}
+#fileSelect {
+    cursor: pointer;
+}
+.textarea__content textarea {
+    width: 100%;
+    border: 2px solid var(--textBlack);
+    box-sizing: border-box;
+}
+.form__flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form__note {
+    padding-top: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+.form__note p {
+    font-size: var(--fontSize16);
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    line-height: 1.8;
+}
+.confirm__btn--container {
+    margin-top: 60px;
+    margin-bottom: 80px;
+    text-align: center;
+    position: relative;
+}
+.confirm__btn--container a {
+    box-sizing: border-box;
+    height: 60px;
+    background-color: #fff;
+    border: 3px solid var(--textBlack);
+    border-radius: 60px;
+    font-size: var(--fontSize18);
+    font-weight: bold;
+    letter-spacing: 0.17rem;
+    padding: 14px 70px;
+}
+
+@media screen and (max-width:1240px) {
+    
+}
