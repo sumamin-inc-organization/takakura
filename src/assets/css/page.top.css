@@ -375,6 +375,10 @@ service
 }
 .service__column--item {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .service__column--item.bottom {
   margin-top: 30px;
@@ -390,11 +394,9 @@ service
   font-size: var(--fontSize25);
   font-weight: 700;
   justify-content: center;
-  left: 50%;
   margin-bottom: -30px;
   padding: 15px 0;
   position: relative;
-  transform: translateX(-50%);
   width: 260px;
   z-index: 10;
   letter-spacing: 0.06rem;
@@ -963,6 +965,11 @@ instagram
     width: 20vw;
   } */
 }
+@media screen and (max-width:800px) {
+  .secret .page__subtitle {
+    letter-spacing: 0.1rem;
+  }
+}
 @media screen and (max-width:767px) {
   /* -------------------------
 mainvisual
@@ -1218,6 +1225,9 @@ service
   .service__minText {
     font-size: var(--fontSize14);
     font-weight: bold;
+  }
+  .service__column--title .asterisk {
+    font-size: var(--fontSize12);
   }
   /* -------------------------
 scrol

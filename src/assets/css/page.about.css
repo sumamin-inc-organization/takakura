@@ -816,7 +816,7 @@ message
         border-bottom: 2px solid var(--textBlack);
     }
     .company__table th, .company__table td {
-        font-size: var(--fontSize16);
+        font-size: 16px;
         letter-spacing: 0.04rem;
     }
     .company__table td {

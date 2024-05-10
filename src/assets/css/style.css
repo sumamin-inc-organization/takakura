@@ -1,5 +1,14 @@
 @charset "utf-8";
 /* -------------------------
+Safari
+----------------------------*/
+_::-webkit-full-page-media, _:future, :root input[type="radio"]{
+  top: 4px;
+}
+_::-webkit-full-page-media, _:future, :root input[type="radio"]:checked{
+  top: 4px;
+}
+/* -------------------------
 common
 ----------------------------*/
 body {
@@ -404,6 +413,7 @@ nav menu
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
   -webkit-transform: translateY(-50%) translateX(-50%);
+  text-wrap: nowrap;
 }
 
 .tel__btn .tel__telNumber {
@@ -1069,6 +1079,12 @@ lower common
     grid-template-columns: 1fr 1fr;
   }
 }
+@media screen and (max-width:1024px) {
+  .menu__wrap {
+    max-width: none;
+    height: 100vh;
+  }
+}
 @media screen and (max-width:1000px) and (min-width:768px) {
   .lower__deco--chara1 {
     max-width: 14.76vw;
@@ -1160,7 +1176,7 @@ common
     text-shadow: rgb(35, 24, 21) 2px 0px 0px, rgb(35, 24, 21) 1.75517px 0.958851px 0px, rgb(35, 24, 21) 1.0806px 1.68294px 0px, rgb(35, 24, 21) 0.141474px 1.99499px 0px, rgb(35, 24, 21) -0.832294px 1.81859px 0px, rgb(35, 24, 21) -1.60229px 1.19694px 0px, rgb(35, 24, 21) -1.97998px 0.28224px 0px, rgb(35, 24, 21) -1.87291px -0.701566px 0px, rgb(35, 24, 21) -1.30729px -1.5136px 0px, rgb(35, 24, 21) -0.421592px -1.95506px 0px, rgb(35, 24, 21) 0.567324px -1.91785px 0px, rgb(35, 24, 21) 1.41734px -1.41108px 0px, rgb(35, 24, 21) 1.92034px -0.558831px 0px;
   }
   .page__subTitle {
-    font-size: var(--fontSize16);
+    font-size: 16px;
     line-height: 1.75;
   }
   .page__text {
