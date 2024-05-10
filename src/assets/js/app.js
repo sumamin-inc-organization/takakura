@@ -152,13 +152,16 @@ $(document).ready(function () {
         $('#fileElem').click();
     });
 
-    //フォームレイアウト
-    // $('.before__text').each(function() {
-    //     var labelWidth = $(this).outerWidth(true);
-    //     console.log(labelWidth);
-    //     console.log($(this).next());
-    //     $(this).next().css('width', $(this).next().outerWidth() - labelWidth + 'px');
-    // });
+    //スムーズスクロール
+    $('a[href^="#estimateForm"]').click(function(){
+        var adjust = 0;
+        var speed = 400;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top + adjust;
+        $('body,html').animate({scrollTop:position}, speed, 'swing');
+        return false;
+    });
 
     //従業員紹介ページのspのみslick
     charaSliderSetting();

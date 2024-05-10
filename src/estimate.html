@@ -155,30 +155,30 @@
             </div>
             <div class="estimate__text">
                 <p>
-                予算の算出が難しかったり節約のため、引越し業者に依頼せずに<br>
-                安く済まそうと思った結果、逆に予想以上にかかってしまうこともあります。<br>
-                業者に頼むと高くつくのでは？と心配なアナタへ。<br>
-                ぜひ一度、お見積もりフォームをご利用ください。
+                予算の算出が難しかったり節約のため、<br class="sp-br">引越し業者に依頼せずに<br>
+                安く済まそうと思った結果、逆に予想以上に<br class="sp-br">かかってしまうこともあります。<br>
+                業者に頼むと高くつくのでは？<br class="sp-br">と心配なアナタへ。<br>
+                ぜひ一度、お見積もりフォーム<br class="sp-br">をご利用ください。
                 </p>
             </div>
             <div class="estimate__btns">
-                <div class="estimate__item estimate__item--line">
+                <a class="estimate__item estimate__item--line">
                     <div class="estimate__item--logo"><img src="./assets/images/estimate/estimate_logo1.svg" alt=""></div>
-                    <p class="estimate__item--text">公式LINEで<br>お見積もり依頼</p>
+                    <p class="estimate__item--text">公式LINEで<br class="pc-br">お見積もり依頼</p>
                     <div class="estimate__item--btn">
                         <p>公式LINE登録で<br><span class="green">LINEスタンプをプレゼント！</span></p>
                     </div>
-                </div>
-                <div class="estimate__item estimate__item--form">
+                </a>
+                <a  href="#estimateForm" class="estimate__item estimate__item--form">
                     <div class="estimate__item--logo"><img src="./assets/images/estimate/estimate_logo2.png" alt=""></div>
-                    <p class="estimate__item--text">お見積もり<br>フォームで依頼</p>
+                    <p class="estimate__item--text">お見積もり<br class="pc-br">フォームで依頼</p>
                     <div class="estimate__item--btn">
                         <p>必要事項をご入力の上、<br>送信ください！</p>
                     </div>
-                </div>
+                </a>
             </div>
         </section>
-        <section class="estimate__form">
+        <section  id="estimateForm" class="estimate__form">
             <div class="page__title--inner">
                 <p class="page__subTitle">FORM</p>
                 <h2 class="page__title">お見積もりフォーム</h2>
@@ -214,7 +214,6 @@
                         <div class="form__content">
                             <span class="select__wrap">
                                 <select name="month" class="form__date">
-                                    <option value="">01</option>
                                     <option value="1">01</option>
                                     <option value="2">02</option>
                                     <option value="3">03</option>
@@ -232,7 +231,6 @@
                             <span class="after__text">月</span>
                             <span class="select__wrap">
                                 <select name="day" class="form__date">
-                                    <option value="">01</option>
                                     <option value="1">01</option>
                                     <option value="2">02</option>
                                     <option value="3">03</option>
@@ -278,7 +276,6 @@
                         <div class="form__content">
                             <span class="select__wrap">
                                 <select name="month" class="form__date">
-                                    <option value="">01</option>
                                     <option value="1">01</option>
                                     <option value="2">02</option>
                                     <option value="3">03</option>
@@ -296,7 +293,6 @@
                             <span class="after__text">月</span>
                             <span class="select__wrap">
                                 <select name="day" class="form__date">
-                                    <option value="">01</option>
                                     <option value="1">01</option>
                                     <option value="2">02</option>
                                     <option value="3">03</option>
@@ -334,7 +330,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="form__item">
+                <div class="form__item mail__item">
                     <div class="form__label">
                         <label for="name">メールアドレス<span class="asterisk">※</span></label>
                     </div>
@@ -348,7 +344,7 @@
                         <label for="name">電話番号<span class="asterisk">※</span></label>
                     </div>
                     <div class="form__area form__area--column">
-                        <div class="form__content"><input type="tel" class="form__input"></div>
+                        <div class="form__content"><input type="tel" class="form__input" placeholder="000-0000-0000"></div>
                     </div>
                 </div>
                 <div class="form__item">
@@ -356,15 +352,15 @@
                         <label for="name">携帯番号<span class="asterisk">※</span></label>
                     </div>
                     <div class="form__area form__area--column">
-                        <div class="form__content"><input type="tel" class="form__input"></div>
+                        <div class="form__content"><input type="tel" class="form__input" placeholder="000-0000-0000"></div>
                     </div>
                 </div>
-                <div class="form__item">
+                <div class="form__item adress__item">
                     <div class="form__label">
                         <label for="name">現住所<span class="asterisk">※</span></label>
                     </div>
                     <div class="form__area form__area--column">
-                        <div class="form__content form__flex"><span class="before__text">〒</span><input type="adress" class="form__input"></div>
+                        <div class="form__content form__flex"><span class="before__text">〒</span><input type="adress" class="form__input post__code" placeholder="000-0000"></div>
                         <div class="form__content form__flex">
                             <span class="before__text">都道府県</span>
                             <div class="select__wrap">
@@ -461,13 +457,11 @@
                     <div class="form__area form__area--checkbox">
                         <div class="form__checkbox">
                             <input type="checkbox" id="elevator"><label for="elevator">エレベーター有り</label>
-                            <input type="checkbox" id="apartment"><label for="apartment">マンション・アパート</label>
+                            <input type="checkbox" id="apartment"><label for="apartment">マンション・アパート</label><br class="tb-br sp-br">
                             <input type="checkbox" id="singleFamily"><label for="singleFamily">一戸建て</label>
-                            <input type="checkbox" id="narrow"><label for="narrow">道幅が狭い</label>
-                        </div>
-                        <div class="form__checkbox">
+                            <input type="checkbox" id="narrow"><label for="narrow">道幅が狭い</label><br>
                             <input type="checkbox" id="tower"><label for="tower">タワーマンション</label>
-                            <input type="checkbox" id="newBuilding"><label for="newBuilding">新築</label>
+                            <input type="checkbox" id="newBuilding"><label for="newBuilding">新築</label><br class="tb-br sp-br">
                             <input type="checkbox" id="detachedKitchen"><label for="etachedKitchen">一戸建てキッチンが２階以上</label>
                             <span class="red">複数選択可</span>
                         </div>
@@ -489,12 +483,12 @@
                         <div class="form__content"><div class="select__wrap"><select class="form__input"></select></div></div>
                     </div>
                 </div>
-                <div class="form__item">
+                <div class="form__item adress__item">
                     <div class="form__label">
                         <label for="name">引越し先住所 <span class="asterisk">※</span></label>
                     </div>
                     <div class="form__area form__area--column">
-                        <div class="form__content form__flex"><span class="before__text">〒</span><input type="adress" class="form__input"></div>
+                        <div class="form__content form__flex"><span class="before__text">〒</span><input type="adress" class="form__input post__code" placeholder="000-0000"></div>
                         <div class="form__content form__flex">
                             <span class="before__text">都道府県</span>                            
                             <div class="select__wrap">
@@ -577,13 +571,11 @@
                     <div class="form__area form__area--checkbox">
                         <div class="form__checkbox">
                             <input type="checkbox" id="elevator2"><label for="elevator2">エレベーター有り</label>
-                            <input type="checkbox" id="apartment2"><label for="apartment2">マンション・アパート</label>
+                            <input type="checkbox" id="apartment2"><label for="apartment2">マンション・アパート</label><br class="tb-br">
                             <input type="checkbox" id="singleFamily2"><label for="singleFamily2">一戸建て</label>
-                            <input type="checkbox" id="narrow2"><label for="narrow2">道幅が狭い</label>
-                        </div>
-                        <div class="form__checkbox">
+                            <input type="checkbox" id="narrow2"><label for="narrow2">道幅が狭い</label><br>
                             <input type="checkbox" id="tower2"><label for="tower2">タワーマンション</label>
-                            <input type="checkbox" id="newBuilding2"><label for="newBuilding2">新築</label>
+                            <input type="checkbox" id="newBuilding2"><label for="newBuilding2">新築</label><br class="tb-br">
                             <input type="checkbox" id="detachedKitchen2"><label for="etachedKitchen2">一戸建てキッチンが２階以上</label>
                             <span class="red">複数選択可</span>
                         </div>
@@ -597,8 +589,8 @@
                         <div class="form__content">
                             <div class="select__wrap">
                                 <select class="form__input">
-                                    <option value="type1">aaa</option>
-                                    <option value="type2">bbb</option>
+                                    <!-- <option value="type1">aaa</option>
+                                    <option value="type2">bbb</option> -->
                                 </select>
                             </div>
                         </div>
@@ -612,29 +604,25 @@
                         <div class="form__checkbox">
                             <input type="checkbox" id="refrigeratorSmall"><label for="refrigeratorSmall">冷蔵庫（小）</label>
                             <input type="checkbox" id="refrigeratorLarge"><label for="refrigeratorLarge">冷蔵庫（大）</label>
-                            <input type="checkbox" id="washingMachine"><label for="washingMachine">洗濯機</label>
+                            <input type="checkbox" id="washingMachine"><label for="washingMachine">洗濯機</label><br class="tb-br">
                             <input type="checkbox" id="washingMachineDrum"><label for="washingMachineDrum">洗濯機(ドラム式)</label>
                             <input type="checkbox" id="wsChest"><label for="wsChest">洋ダンス</label>
-                            <input type="checkbox" id="jaChest"><label for="jaChest">和ダンス</label>
-                            <input type="checkbox" id="cabinet"><label for="cabinet">整理ダンス</label>
-                        </div>
-                        <div class="form__checkbox">
+                            <input type="checkbox" id="jaChest"><label for="jaChest">和ダンス</label><br class="tb-br">
+                            <input type="checkbox" id="cabinet"><label for="cabinet">整理ダンス</label><br class="pc-br">
                             <input type="checkbox" id="woodCabinet"><label for="woodCabinet">桐ダンス</label>
-                            <input type="checkbox" id="chest"><label for="chest">チェスト</label>
+                            <input type="checkbox" id="chest"><label for="chest">チェスト</label><br class="tb-br">
                             <input type="checkbox" id="dresser"><label for="dresser">鏡台</label>
                             <input type="checkbox" id="diningTable"><label for="diningTable">ダイニングテーブル</label>
-                            <input type="checkbox" id="desk"><label for="desk">勉強机</label>
+                            <input type="checkbox" id="desk"><label for="desk">勉強机</label><br class="tb-br">
                             <input type="checkbox" id="tv"><label for="tv">テレビ</label>
                             <input type="checkbox" id="tvStand"><label for="tvStand">テレビ台</label>
-                            <input type="checkbox" id="bicycle"><label for="bicycle">自転車</label>
-                        </div>
-                        <div class="form__checkbox">
+                            <input type="checkbox" id="bicycle"><label for="bicycle">自転車</label><br>
                             <input type="checkbox" id="bedSmall"><label for="bedSmall">ベッド（小）</label>
                             <input type="checkbox" id="bedLarge"><label for="bedLarge">ベッド（大）</label>
-                            <input type="checkbox" id="sofa"><label for="sofa">ソファー</label>
+                            <input type="checkbox" id="sofa"><label for="sofa">ソファー</label><br class="tb-br">
                             <input type="checkbox" id="bookshelf"><label for="bookshelf">本棚</label>
                             <input type="checkbox" id="cupboard"><label for="cupboard">食器棚</label>
-                            <input type="checkbox" id="airConditioning"><label for="airConditioning">エアコン</label>
+                            <input type="checkbox" id="airConditioning"><label for="airConditioning">エアコン</label><br class="tb-br">
                             <input type="checkbox" id="lighting"><label for="lighting">照明</label>
                             <input type="checkbox" id="microwaveOven"><label for="microwaveOven">電子レンジ</label>
                         </div>
@@ -646,10 +634,10 @@
                     </div>
                     <div class="form__area form__area--column">
                         <div class="form__content">例）楽器・水槽など</div>
-                        <div class="textarea__content"><textarea name="others" id="otherBaggage" rows="4"></textarea></div> 
+                        <div class="textarea__content"><textarea name="others" id="otherBaggage" rows="4" placeholder="こちらにご入力ください。"></textarea></div> 
                     </div>
                 </div>
-                <div class="form__item">
+                <div class="form__item radio__item">
                     <div class="form__label">
                         <label for="name">荷づくり</label>
                     </div>
@@ -658,7 +646,7 @@
                         <div class="form__radio"><input type="radio" name="q1" class="form__radio">希望しない</div> 
                     </div>
                 </div>
-                <div class="form__item">
+                <div class="form__item radio__item">
                     <div class="form__label">
                         <label for="name">荷ほどき</label>
                     </div>
@@ -667,7 +655,7 @@
                         <div class="form__radio"><input type="radio" name="q2" class="form__radio">希望しない</div> 
                     </div>
                 </div>
-                <div class="form__item">
+                <div class="form__item radio__item">
                     <div class="form__label">
                         <label for="name">弊社からのご連絡方法</label>
                     </div>
@@ -681,16 +669,16 @@
                         <label for="name">ご質問・ご要望</label>
                     </div>
                     <div class="form__area form__area--column">
-                        <div class="textarea__content"><textarea name="question" id="" cols="30" rows="10"></textarea></div> 
+                        <div class="textarea__content"><textarea name="question" id="" cols="30" rows="10" placeholder="ご自由にご入力ください"></textarea></div> 
                     </div>
                 </div>
             </div>
             
             <div class="form__note">
                 <p>
-                ※荷づくりは専属スタッフが段ボールに小物・食器類を梱包致します。<br>
-                ※エアコン・ウォシュレット・食洗器は取り外し・取り付けは、別料金になります。<br>
-                ※クレーン作業の場合、別料金となります。
+                <span><span class="asterisk">※</span>荷づくりは専属スタッフが段ボールに<br class="sp-br">小物・食器類を梱包致します。</span><br class="pc-br">
+                <span><span class="asterisk">※</span>エアコン・ウォシュレット・食洗器は<br class="sp-br">取り外し・取り付けは、別料金になります。</span><br class="pc-br">
+                <span><span class="asterisk">※</span>クレーン作業の場合、別料金となります。</span>
                 </p>
             </div>
             <div class="confirm__btn--container">
