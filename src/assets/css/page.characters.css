@@ -341,9 +341,6 @@ characters message
     .slick-prev::after {
         width: 8px;
     }
-    .border__frame {
-        
-    }
     .slideItem__frame {
         position: absolute;
         bottom: -2px;

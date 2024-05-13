@@ -1,3 +1,4 @@
+// slicksliderの設定
 function initializeSlider() {
     $(".js-slide").slick({
         autoplay: true,
@@ -54,6 +55,26 @@ $(document).ready(function () {
     checkWindowWidth();
     $(window).resize(checkWindowWidth);
 
+    //---------------------------common---------------------------
+    //nav menu開閉
+    $('.close__btn').on('click', function(){
+        // $('.header__menu').animate({
+        //     'marginRight' : '400px'}, 300
+        // );
+        $('body').removeClass('stop');
+        $('.header__menu').hide();
+        console.log('close');
+    });
+    $('.headerNavMenu').on('click', function(){
+        // $('.header__menu').animate({
+        //     'marginRight' : '0'}, 300
+        // );
+        $('body').addClass('stop');
+        $('.header__menu').show();
+        console.log('open');
+    });
+
+    //---------------------------top---------------------------
     //無料お見積もりバナーをフッターで隠す
     $(window).scroll(function(){
         
@@ -76,25 +97,8 @@ $(document).ready(function () {
         }
     });
 
-    //nav menu開閉
-    $('.close__btn').on('click', function(){
-        // $('.header__menu').animate({
-        //     'marginRight' : '400px'}, 300
-        // );
-        $('body').removeClass('stop');
-        $('.header__menu').hide();
-        console.log('close');
-    });
-    $('.headerNavMenu').on('click', function(){
-        // $('.header__menu').animate({
-        //     'marginRight' : '0'}, 300
-        // );
-        $('body').addClass('stop');
-        $('.header__menu').show();
-        console.log('open');
-    });
-
-    //serviceページダンボール紹介のスライド
+    //---------------------------service---------------------------
+    //ダンボール紹介のスライド
     $('.size__tags .tag, .size__pagenation .pagenation').on('click', function(){
         if(!$(this).hasClass('active')) {
             $('.size__tags .tag, .size__pagenation .pagenation').each(function(index) {
@@ -136,7 +140,8 @@ $(document).ready(function () {
         }
     });
 
-    //newsページカテゴリー切り替え
+    //---------------------------news---------------------------
+    //カテゴリー切り替え
     $('.news__tag li').on('click', function(){
         if(!$(this).hasClass('active')) {
             $('.news__tag li').each(function(index) {
@@ -145,22 +150,6 @@ $(document).ready(function () {
         }
         $(this).addClass('active');
         $('.news__table th button').text($(this).text());
-    });
-
-    //フォームfileクリックイベント
-    $('#fileSelect').on('click', function(){
-        $('#fileElem').click();
-    });
-
-    //スムーズスクロール
-    $('a[href^="#estimateForm"]').click(function(){
-        var adjust = 0;
-        var speed = 400;
-        var href= $(this).attr("href");
-        var target = $(href == "#" || href == "" ? 'html' : href);
-        var position = target.offset().top + adjust;
-        $('body,html').animate({scrollTop:position}, speed, 'swing');
-        return false;
     });
 
     //news pagenation setting
@@ -187,6 +176,23 @@ $(document).ready(function () {
         } else {
             $(this).addClass('active');
         }
+    });
+
+    //---------------------------estimate---------------------------
+    //フォームfileクリックイベント
+    $('#fileSelect').on('click', function(){
+        $('#fileElem').click();
+    });
+
+    //スムーズスクロール
+    $('a[href^="#estimateForm"]').click(function(){
+        var adjust = 0;
+        var speed = 400;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top + adjust;
+        $('body,html').animate({scrollTop:position}, speed, 'swing');
+        return false;
     });
 
     //従業員紹介ページのspのみslick
