@@ -568,7 +568,6 @@ secret
   width: 0;
 }
 .secretList__item--textArea .page__text {
-  font-size: var(--fontSize16);
   line-height: 1.875;
   margin-top: 24px;
 }
@@ -1209,9 +1208,10 @@ service
   }
   .service__column--title {
     border: 2px solid var(--textBlack);
-    font-size: var(--fontSize16);
+    font-size: var(--fontSize18);
+    letter-spacing: 0.04rem;
     margin-bottom: -18px;
-    padding: 5px 0 8px;
+    padding: 6px 0 8px;
     width: 38.46vw;
     max-width: 240px;
     min-width: 150px;
@@ -1223,7 +1223,6 @@ service
     bottom: -7px;
   }
   .service__minText {
-    font-size: var(--fontSize14);
     font-weight: bold;
   }
   .service__column--title .asterisk {
@@ -1233,7 +1232,7 @@ service
 scrol
 ----------------------------*/
   .bg-yellow .scrolText {
-    font-size: var(--fontSize18);
+    font-size: var(--fontSize22);
     height: 50px;
   }
   /* -------------------------
@@ -1307,6 +1306,9 @@ secret
   .reverse .secretList__item--textArea {
     grid-row: 2;
     padding: 42px calc(24px + 5vw) 42px 24px;
+  }
+  .secretList__item--textArea .page__text {
+    letter-spacing: 0.02rem;
   }
   .secretList__speech {
     font-size: var(--fontSize30);

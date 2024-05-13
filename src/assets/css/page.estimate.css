@@ -7,6 +7,7 @@ common
 ::placeholder {
     color: #B3B3B3;
     letter-spacing: 0.1rem;
+    font-family: var(--fontZenMaruGothic);
 }
 :focus-visible {
     outline: none;
@@ -22,6 +23,7 @@ select {
     color: var(--textBlack);
     background-color: #fff;
     font-size: 16px;
+    border-radius: 0;
 }
 textarea {
     padding: 10px;
@@ -100,10 +102,17 @@ input[type="radio"]:checked:before {
     position: absolute;
     top: 8px;
     right: 20px;
+    pointer-events: none;
 }
 div.select__wrap::after {
     top: 14px;
     right: 20px;
+}
+.margin__top--10 {
+    margin-top: 10px;
+}
+.tb2-br {
+    display: none;
 }
 /* -------------------------
 estimate about
@@ -224,6 +233,8 @@ estimate form
     font-size: var(--fontSize16);
     font-weight: bold;
     letter-spacing: 0.1rem;
+    margin-top: 8px;
+    line-height: 1.8;
 }
 .form__area {
     display: flex;
@@ -366,7 +377,7 @@ estimate form
     }
     .form__note p {
         font-size: 16px;
-        letter-spacing: 0rem;
+        letter-spacing: 0.1rem;
     }
     .form__note p span:not(.asterisk) {
         display: flex;
@@ -374,6 +385,9 @@ estimate form
     }
 }
 @media screen and (max-width:1024px) {
+    .tb2-br {
+        display: block;
+    }
     .form__content {
         width: 100%;
     }
@@ -382,6 +396,9 @@ estimate form
     }
 }
 @media screen and (max-width:767px) {
+    .margin__top--10 {
+        margin-top: 0;
+    }
     /* -------------------------
     estimate about
     ----------------------------*/
@@ -429,6 +446,7 @@ estimate form
     }
     .form__label {
         font-size: 16px;
+        margin-top: 0;
     }
     .form__area {
         font-size: 16px;
@@ -471,6 +489,9 @@ estimate form
     .radio__item .form__area--row {
         flex-direction: row;
     }
+    .form__note p {
+        letter-spacing: 0.04rem;
+    }
     .confirm__btn--container {
         margin-bottom: 30px;
     }
@@ -482,5 +503,8 @@ estimate form
 @media screen and (max-width:385px) {
     .form__field {
         width: 92vw;
+    }
+    .form__note p {
+        letter-spacing: 0rem;
     }
 }

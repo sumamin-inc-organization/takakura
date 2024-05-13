@@ -754,7 +754,7 @@ introduction
     }
     .point__column--title {
         border: 2px solid var(--textBlack);
-        font-size: var(--fontSize20);
+        font-size: var(--fontSize22);
         margin-bottom: -30px;
         padding: 12px 28px;
         letter-spacing: 0.07rem;
@@ -1062,7 +1062,7 @@ introduction
         color: #fff;
         display: flex;
         font-family: var(--fontZenMaruGothic);
-        font-size: var(--fontSize20);
+        font-size: var(--fontSize22);
         font-weight: 700;
         justify-content: center;
         margin-bottom: -30px;

@@ -61,7 +61,7 @@ member
     height: 26px;
     text-align: center;
     width: 158px;
-    font-size: var(--fontSize18);
+    font-size: 18px;
     letter-spacing: 0.23rem;
     font-weight: bold;
 }
@@ -78,7 +78,7 @@ member
     letter-spacing: 0.1rem;
 }
 .member__name--romaji {
-    font-size: var(--fontSize16);
+    font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.1rem;
     padding-top: 12px;
@@ -250,7 +250,7 @@ characters message
         z-index: 30;
     }
     .member__img {
-        border: none;
+        border: 2px solid var(--textBlack);
         z-index: 30;
     }
     /* -------------------------

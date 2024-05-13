@@ -52,7 +52,7 @@ a:hover {
 .page__title {
   font-family: var(--fontZenMaruGothic);
   font-size: var(--fontSize44);
-  letter-spacing: 0.12rem;
+  letter-spacing: 0.17rem;
   line-height: 2;
   color: #fff;
   /* -webkit-text-stroke-width: 3px;
@@ -876,7 +876,7 @@ lower common
 }
 .PinkBg span {
   background-color: var(--palePink);
-  padding: 2px 4px;
+  padding: 2px 8px;
 }
 .lower__textInner--text {
   font-size: var(--fontSize18);
@@ -1169,24 +1169,20 @@ common
     height: 44px;
   }
   .page__title {
-    font-size: var(--fontSize30);
     font-weight: 900;
     line-height: 38px;
     padding-top: 8px;
     text-shadow: rgb(35, 24, 21) 2px 0px 0px, rgb(35, 24, 21) 1.75517px 0.958851px 0px, rgb(35, 24, 21) 1.0806px 1.68294px 0px, rgb(35, 24, 21) 0.141474px 1.99499px 0px, rgb(35, 24, 21) -0.832294px 1.81859px 0px, rgb(35, 24, 21) -1.60229px 1.19694px 0px, rgb(35, 24, 21) -1.97998px 0.28224px 0px, rgb(35, 24, 21) -1.87291px -0.701566px 0px, rgb(35, 24, 21) -1.30729px -1.5136px 0px, rgb(35, 24, 21) -0.421592px -1.95506px 0px, rgb(35, 24, 21) 0.567324px -1.91785px 0px, rgb(35, 24, 21) 1.41734px -1.41108px 0px, rgb(35, 24, 21) 1.92034px -0.558831px 0px;
   }
   .page__subTitle {
-    font-size: 16px;
     line-height: 1.75;
   }
   .page__text {
-    font-size: var(--fontSize16);
     font-weight: 500;
     line-height: 1.75;
   }
   .more__btn {
     border: 2px solid var(--textBlack);
-    font-size: var(--fontSize16);
     padding: 7px 32px 9px;
   }
   .twoColumnTitle,
@@ -1219,7 +1215,7 @@ header
     gap: 0 10px;
   }
   .snsNav__list--item {
-    border: 2px solid var(--textBlack);
+    border: 1px solid var(--textBlack);
     height: 26px;
     width: 26px;
   }
@@ -1425,8 +1421,8 @@ nav menu
     border: 2px solid var(--textBlack);
     background-color: var(--textBlack);
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     position: absolute;
     right: 20px;
     top: 20px;
@@ -1513,6 +1509,7 @@ footer
   }
   .footer__detail {
     text-align: center;
+    margin-bottom: 10px;
   }
   .footer__telNumberInner {
     padding-left: 7px;
@@ -1641,7 +1638,7 @@ footer
   .lower__textInner--text {
     font-size: 16px;
     letter-spacing: 0.04rem;
-    line-height: 2.6;
+    line-height: 2.4;
     margin-top: 10px;
   }
   /* kirakira */

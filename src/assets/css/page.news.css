@@ -63,6 +63,11 @@ news
     font-size: var(--fontSize16);
     letter-spacing: 0.04rem;
 }
+.news__table td {
+    font-size: var(--fontSize18);
+    font-weight: bold;
+    line-height: 1.6;
+}
 .news__table td:not(.news__table td:has(a)) {
     padding-bottom: 34px;
     padding-top: 32px;
@@ -130,6 +135,7 @@ news
 }
 .news__pagenation li {
     font-size: var(--fontSize20);
+    font-weight: bold;
     vertical-align: sub;
 }
 .news__pagenation li.active {
@@ -208,14 +214,16 @@ news
         border-bottom: 1px solid var(--textBlack);
     }
     .news__table th, .news__table td {
-        font-size: var(--fontSize16);
         letter-spacing: 0.04rem;
     }
     .news__table th {
         padding-top: 26px;
-        padding-bottom: 0;
+        padding-bottom: 20px;
         text-align: left;
         font-weight: 500;
+    }
+    .news__table td {
+        padding-bottom: 26px;
     }
     .news__table td:not(.news__table td:has(a)) {
         padding-top: 20px;
@@ -291,6 +299,7 @@ body:has(.single__page) {
 .single__title--main {
     margin-top: 40px;
     font-size: var(--fontSize22);
+    font-weight: bold;
     letter-spacing: 0.04rem;
     line-height: 1.8;
 }
@@ -412,7 +421,6 @@ body:has(.single__page) {
     }
     .single__title--main {
         margin-top: 20px;
-        font-size: var(--fontSize22);
         letter-spacing: 0.04rem;
         line-height: 1.8;
     }
@@ -421,6 +429,10 @@ body:has(.single__page) {
     }
     .single__text {
         margin-top: 30px;
+    }
+    .single__text p {
+        font-size: 16px;
+        font-weight: 500;
     }
     .single__dottedLine {
         background: url(../images/news/dotted_line_sp.svg) no-repeat center / 100% 100%;
@@ -441,7 +453,7 @@ body:has(.single__page) {
         width: 300px;
     }
     .single__footer--upper p {
-        font-size: var(--fontSize16);
+        font-size: 16px;
         letter-spacing: 0.04rem;
         line-height: 1.6;
         font-weight: bold;
@@ -450,14 +462,14 @@ body:has(.single__page) {
         margin-top: 25px;
     }
     .single__footer--bottom p {
-        font-size: var(--fontSize16);
+        font-size: 16px;
         letter-spacing: 0.04rem;
         line-height: 1.8;
         font-weight: bold;
     }
     .single__footer--bottom p.tel {
         margin-top: -2px;
-        font-size: var(--fontSize30);
+        font-size: 30px;
         font-family: var(--fontRoboto);
         letter-spacing: 0.02rem;
         color: var(--main-color);
@@ -465,7 +477,6 @@ body:has(.single__page) {
         -webkit-opacity: 1; 
     }
     .single__footer--bottom p.tel .small {
-        font-size: var(--fontSize16);
         margin-right: 8px;
     }
     .single__pagenation {
