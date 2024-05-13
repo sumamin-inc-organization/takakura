@@ -63,7 +63,7 @@ $(document).ready(function () {
         var dispHeight = $(window).height(); // 表示領域の高さ
         
         //footerまで来ると固定バナー表示を隠す
-        if(point >= docHeight-dispHeight-200) {
+        if(point > docHeight-dispHeight-footer+200) {
             $('.freeQuote__img:not(:animated)').animate({
                 marginRight: "-400px"
             }, 400);
