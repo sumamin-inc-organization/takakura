@@ -233,8 +233,10 @@ estimate form
     font-size: var(--fontSize16);
     font-weight: bold;
     letter-spacing: 0.1rem;
-    margin-top: 8px;
     line-height: 1.8;
+}
+.form__label--marginTop {
+    margin-top: 8px;
 }
 .form__area {
     display: flex;
@@ -446,6 +448,8 @@ estimate form
     }
     .form__label {
         font-size: 16px;
+    }
+    .form__label--marginTop {
         margin-top: 0;
     }
     .form__area {

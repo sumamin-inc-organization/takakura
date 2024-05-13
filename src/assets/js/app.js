@@ -163,6 +163,32 @@ $(document).ready(function () {
         return false;
     });
 
+    //news pagenation setting
+    $('.news__pagenation li').on('click', function() {
+        var activeList = '';
+        $('.news__pagenation li').each(function(index) {
+            if($(this).hasClass('active')) {
+                activeList = $(this);
+            }
+        });
+        $('.news__pagenation li').removeClass('active');
+        if($(this).hasClass('prev')) {
+            if(!activeList.prev().hasClass('prev')) {
+                activeList.prev().addClass('active');
+            } else {
+                activeList.addClass('active');
+            }
+        } else if ($(this).hasClass('next')) {
+            if (!activeList.next().hasClass('next')) {
+                activeList.next().addClass('active');
+            } else {
+                activeList.addClass('active');
+            }
+        } else {
+            $(this).addClass('active');
+        }
+    });
+
     //従業員紹介ページのspのみslick
     charaSliderSetting();
     $(window).resize(function(){
