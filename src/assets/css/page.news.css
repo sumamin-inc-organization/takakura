@@ -137,6 +137,7 @@ news
     font-size: var(--fontSize20);
     font-weight: bold;
     vertical-align: sub;
+    cursor: pointer;
 }
 .news__pagenation li.active {
     color: var(--main-color);
