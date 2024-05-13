@@ -1088,6 +1088,15 @@ lower common
     height: 100vh;
   }
 }
+@media screen and (max-width:1020px) and (min-width:768px) {
+  .footer__tel {
+    padding: 15px;
+  }
+  .footerBtn {
+    font-size: var(--fontSize12);
+    padding: 12px 16px;
+  }
+}
 @media screen and (max-width:1000px) and (min-width:768px) {
   .lower__deco--chara1 {
     max-width: 14.76vw;
@@ -1129,9 +1138,6 @@ lower common
   .footer__detail--name {
     font-size: var(--fontSize16);
     margin-bottom: 5px;
-  }
-  .footer__tel {
-    padding: 15px;
   }
   .footer__detail--address {
     font-size: var(--fontSize14);
