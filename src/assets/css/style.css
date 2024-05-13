@@ -82,10 +82,10 @@ a:hover {
 .page__subtitle img {
   height: 36px;
 }
-.page__subtitle.highTitle,
+/* .page__subtitle.highTitle,
 .page__subtitle.highTitle img {
   height: 58px;
-}
+} */
 .page__title--img.threeColumnTitle,
 .page__title--img.threeColumnTitle img {
   height: 208px;

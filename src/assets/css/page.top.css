@@ -537,6 +537,9 @@ secret
 .secret .page__subtitle .large__text {
   font-size: var(--fontSize30);
 }
+.secret .page__subtitle .narrow {
+  letter-spacing: 0;
+}
 .secretList__speech {
   align-items: center;
   background: #000;
