@@ -340,7 +340,7 @@ estimate form
     text-align: center;
     position: relative;
 }
-.confirm__btn--container a {
+.confirm__btn--container input {
     box-sizing: border-box;
     display: inline-block;
     height: 60px;
@@ -350,10 +350,11 @@ estimate form
     font-size: var(--fontSize18);
     font-weight: bold;
     letter-spacing: 0.17rem;
-    padding: 17px 70px;
+    padding: 14px 70px 17px;
     box-shadow: 0 3px 0 var(--textBlack);
+    cursor: pointer;
 }
-.confirm__btn--container a:hover {
+.confirm__btn--container input:hover {
     box-shadow: none;
     transform: translateY(3px);
 }
@@ -499,7 +500,7 @@ estimate form
     .confirm__btn--container {
         margin-bottom: 30px;
     }
-    .confirm__btn--container a {
+    .confirm__btn--container input {
         height: 50px;
         padding: 14px 35px;
     }

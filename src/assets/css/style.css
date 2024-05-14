@@ -19,6 +19,10 @@ body {
   padding-right: 17px;
 }
 
+input,textarea,select,button {
+  font-family: var(--fontZenMaruGothic);
+}
+
 img {
   height: auto;
   max-width: 100%;
@@ -165,8 +169,14 @@ header
   grid-template-columns: repeat(4, 1fr);
 }
 .snsNav__list--item {
+  position: relative;
   border: 3px solid var(--textBlack);
   border-radius: 50%;
+  transition: all 0.2s ease-out;
+  top: 0;
+}
+.snsNav__list--item:hover {
+  top: -6px;
 }
 .headerNavMenu {
   height: auto;
@@ -259,7 +269,7 @@ nav menu
   justify-content: center;
   align-items: flex-end;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   max-width: 1400px;
   margin-left: auto;
   margin-right: 0;

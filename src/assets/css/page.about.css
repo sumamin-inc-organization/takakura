@@ -365,7 +365,7 @@ company
 .company__table {
     margin: auto;
     padding-top: 18px;
-    width: 83%;
+    width: 100%;
 }
 .company__table tr {
     border-bottom: 2px solid var(--textBlack);
@@ -483,6 +483,9 @@ message
     .company__wrap {
         max-width: none;
         padding: 4.63vw 0 5.29vw 0;
+    }
+    .company__table {
+        width: 83%;
     }
     .company__table th, .company__table td {
         line-height: 1.6;
