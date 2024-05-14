@@ -46,6 +46,10 @@
     animation: rotation 4s linear infinite;
 }
 
+.about__chara--surround2 img {
+    animation: rotation 8s linear infinite;
+}
+
 @keyframes rotation {
     0% {
         transform: rotate(0deg);
