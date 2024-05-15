@@ -137,44 +137,54 @@ $(document).ready(function () {
 
 
     //ダンボール紹介のスライド
+    $('.large__cardboard').hide();
     $('.size__tags .tag, .size__pagenation .pagenation').on('click', function(){
         if(!$(this).hasClass('active')) {
             $('.size__tags .tag, .size__pagenation .pagenation').each(function(index) {
                 $(this).toggleClass('active');
             });
-            if (window.matchMedia('(min-width:768px)').matches) {
-                if($(this).hasClass('small')) {
-                    $('.small__cardboard:not(:animated)').animate({
-                        right: "3.968vw"
-                    }, 400);
-                    $('.large__cardboard:not(:animated)').animate({
-                        right: "-41.26vw"
-                    }, 400);
-                } else {
-                    $('.small__cardboard:not(:animated)').animate({
-                        right: "50.26vw"
-                    }, 400);
-                    $('.large__cardboard:not(:animated)').animate({
-                        right: "3.968vw"
-                    }, 400);
-                }
-            } else {
-                if($(this).hasClass('small')) {
-                    $('.small__cardboard:not(:animated)').animate({
-                        right: "3.968vw"
-                    }, 400);
-                    $('.large__cardboard:not(:animated)').animate({
-                        right: "-81.26vw"
-                    }, 400);
-                } else {
-                    $('.small__cardboard:not(:animated)').animate({
-                        right: "90.26vw"
-                    }, 400);
-                    $('.large__cardboard:not(:animated)').animate({
-                        right: "3.968vw"
-                    }, 400);
-                }
+            if($(this).hasClass('small')) {
+                $('.large__cardboard').fadeOut(400);
+                setTimeout(function(){$('.small__cardboard').fadeIn(400)}, 600);
             }
+            if($(this).hasClass('large'))  {
+                $('.small__cardboard').fadeOut(400);
+                setTimeout(function(){$('.large__cardboard').fadeIn(400)}, 600);
+            }
+
+            // if (window.matchMedia('(min-width:768px)').matches) {
+            //     if($(this).hasClass('small')) {
+            //         $('.small__cardboard:not(:animated)').animate({
+            //             right: "3.968vw"
+            //         }, 400);
+            //         $('.large__cardboard:not(:animated)').animate({
+            //             right: "-41.26vw"
+            //         }, 400);
+            //     } else {
+            //         $('.small__cardboard:not(:animated)').animate({
+            //             right: "50.26vw"
+            //         }, 400);
+            //         $('.large__cardboard:not(:animated)').animate({
+            //             right: "3.968vw"
+            //         }, 400);
+            //     }
+            // } else {
+            //     if($(this).hasClass('small')) {
+            //         $('.small__cardboard:not(:animated)').animate({
+            //             right: "3.968vw"
+            //         }, 400);
+            //         $('.large__cardboard:not(:animated)').animate({
+            //             right: "-81.26vw"
+            //         }, 400);
+            //     } else {
+            //         $('.small__cardboard:not(:animated)').animate({
+            //             right: "90.26vw"
+            //         }, 400);
+            //         $('.large__cardboard:not(:animated)').animate({
+            //             right: "3.968vw"
+            //         }, 400);
+            //     }
+            // }
         }
     });
 

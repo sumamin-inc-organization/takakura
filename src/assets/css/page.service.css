@@ -356,10 +356,14 @@ introduction
     border-radius: 50px;
     text-align: center;
     cursor: pointer;
+    box-sizing: border-box;
+    line-height: 15px;
+    height: 40px;
 }
 .size__tags .tag.active {
     border: 3px solid var(--textBlack);
     background-color: var(--main-color);
+    line-height: 9px;
 }
 .introduction__size {
     max-width: 750px;
@@ -370,9 +374,6 @@ introduction
     width: 75%;
     margin-left: 3.968vw;
     position: absolute;
-}
-.introduction__size img:nth-child(2) {
-    right: -41.26vw;
 }
 .size__img {
     border: 3px solid var(--textBlack);
@@ -1018,9 +1019,6 @@ introduction
     }
     .introduction__size img {
         width: 75%;
-    }
-    .introduction__size img:nth-child(2) {
-        right: -71.79vw;
     }
     .size__img {
         height: 61.53vw;
