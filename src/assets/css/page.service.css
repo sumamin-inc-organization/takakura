@@ -707,11 +707,11 @@ introduction
         font-size: var(--fontSize22);
     }
     .point__content--line {
-        width: 266px;
+        width: 297px;
     }
     .point__content--line line {
         stroke-width: 4px;
-        stroke-dasharray: 0.5, 10;
+        stroke-dasharray: 0.5, 12;
     }
     .point__content--text {
         font-size: var(--fontSize16);
@@ -735,11 +735,11 @@ introduction
     }
     .point__content--line {
         height: 12px;
-        width: 266px;
+        width: 28.4vw;
     }
     .point__content--line line {
         stroke-width: 4px;
-        stroke-dasharray: 0.5, 10;
+        stroke-dasharray: 0.5, 12;
     }
     .point__content--text {
         line-height: 1.8;
@@ -829,7 +829,7 @@ introduction
         grid-template-columns:1fr 1fr;
         gap: 10px;
         max-width: none;
-        width: 89.76vw;
+        width: calc(89.76vw - 10px);
         margin: auto;
         padding: 40px 0 0 0;
     }
@@ -1007,10 +1007,12 @@ introduction
         padding: 4px 0 5px 0;
         border-radius: 50px;
         font-size: 13px;
+        height: 26px;
     }
     .size__tags .tag.active {
         border: 2px solid var(--textBlack);
         width: 110px;
+        line-height: 12px;
     }
     .introduction__size {
         max-width: 750px;
@@ -1117,7 +1119,7 @@ introduction
     .point__content--line line{
         fill: none;
         stroke: var(--textBlack);
-        stroke-width: 3;
+        stroke-width: 4;
         stroke-linecap: round;
         stroke-dasharray: 0.5, 12;
     }
