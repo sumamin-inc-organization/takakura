@@ -86,6 +86,10 @@ mainvisual
   right: 2vw;
   width: 100%;
   z-index: 100;
+  transition: all 0.2s ease;
+}
+.freeQuote__img:hover {
+  bottom: 8px;
 }
 /* -------------------------
 news
