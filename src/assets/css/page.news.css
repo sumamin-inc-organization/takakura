@@ -36,6 +36,7 @@ news
 .news__tag li.active {
     background-color: var(--main-color);
     border: 3px solid var(--textBlack);
+    line-height: 10px;
 }
 .news__content {
     margin: auto;
@@ -159,11 +160,11 @@ news
     }
     .news__table th {
         padding-right: 10px;
-        min-width: 185px;
+        min-width: 195px;
     }
     .news__table th button {
         width: 9.92vw;
-        min-width: 100px;
+        min-width: 110px;
     }
 }
 
@@ -190,6 +191,7 @@ news
     }
     .news__tag li.active {
         border: 2px solid var(--textBlack);
+        line-height: 15px;
     }
     .news__content {
         margin-top: 49px;
