@@ -103,9 +103,9 @@ $(document).ready(function () {
     });
 
     //---------------------------service---------------------------
-    const $slider = $(".js-slide--service");
+    const $slider = $(".js-slide-common");
 
-    // 左右の透過の2周目ががたつく対応
+    // 2周目ががたつく対応
     $slider.on("beforeChange", (event, slick, currentSlide, nextSlide) => {
         $slider.find(".slick-slide").each((index, el) => {
         const $this = $(el),

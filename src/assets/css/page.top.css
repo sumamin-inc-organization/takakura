@@ -683,7 +683,10 @@ online
   transform: scale(.8);
   transition: transform .3s;
 }
-
+.slick-slide.slick-current img,
+.slick-slide.is-active-next img {
+  transform: scale(1);
+}
 .online__column--item.slick-center img {
   transform: scale(1);
 }
