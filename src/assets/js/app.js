@@ -63,6 +63,7 @@ $(document).ready(function () {
         //     'marginRight' : '400px'}, 300
         // );
         $('body').removeClass('stop');
+        $('.bg_fixed').removeClass('back');
         $('.header__menu').hide();
     });
     $('.headerNavMenu').on('click', function(){
@@ -70,11 +71,13 @@ $(document).ready(function () {
         //     'marginRight' : '0'}, 300
         // );
         $('body').addClass('stop');
+        $('.bg_fixed').addClass('back');
         $('.header__menu').show();
     });
     $('.menu__container').on('click',function(e) {
         if(!$(e.target).closest('.menu__wrap').length) {
             $('body').removeClass('stop');
+            $('.bg_fixed').removeClass('back');
             $('.header__menu').hide();
         }
     });

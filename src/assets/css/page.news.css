@@ -270,6 +270,7 @@ single
     background-image: url(../images/news/single_bg.svg);
     background-size: cover;
     background-repeat: repeat;
+    background-attachment: fixed;
 } */
 .bg_fixed {
     position: fixed;
@@ -279,6 +280,9 @@ single
     object-fit: cover;
     z-index: -1;
 
+}
+.bg_fixed.back {
+    width: calc(100% - 15px);
 }
 .single__post {
     margin-top: 160px;
