@@ -147,12 +147,12 @@ $(document).ready(function () {
                 $(this).toggleClass('active');
             });
             if($(this).hasClass('small')) {
-                $('.large__cardboard').fadeOut(400);
-                setTimeout(function(){$('.small__cardboard').fadeIn(400)}, 600);
+                $('.large__cardboard').fadeOut(200);
+                setTimeout(function(){$('.small__cardboard').fadeIn(200)}, 300);
             }
             if($(this).hasClass('large'))  {
-                $('.small__cardboard').fadeOut(400);
-                setTimeout(function(){$('.large__cardboard').fadeIn(400)}, 600);
+                $('.small__cardboard').fadeOut(200);
+                setTimeout(function(){$('.large__cardboard').fadeIn(200)}, 300);
             }
 
             // if (window.matchMedia('(min-width:768px)').matches) {
