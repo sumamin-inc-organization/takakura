@@ -398,8 +398,10 @@ message
     .point__grid {
         gap: 2.64vw;
         max-width: none;
-        width: calc(100% - 5.28vw);
-        margin: auto 2.64vw;
+        /* width: calc(100% - 5.28vw);
+        margin: auto 2.64vw; */
+        width: calc(100% - 80px);
+        margin: auto 40px;
     }
     .point__grid--item {
         padding: 1.98vw;
@@ -418,7 +420,8 @@ message
     message
     ----------------------------*/
     .message__column {
-        margin-left: 11.4vw;
+        /* margin-left: 11.4vw; */
+        margin-left: 13.4vw;
     }
     .message__content {
         padding: 80px 10vw 80px 29.23vw;
@@ -434,8 +437,10 @@ message
     }
     .history__column {
         max-width: none;
-        width: calc(100% - 5.28vw);
-        margin: 80px 2.64vw auto;
+        /* width: calc(100% - 5.28vw);
+        margin: 80px 2.64vw auto; */
+        width: calc(100% - 80px);
+        margin: 80px 40px auto;
     }
     .history__item.right::before {
         left: -13.9%;
@@ -477,7 +482,8 @@ message
     company
     ----------------------------*/
     .about__company {
-        margin: auto 3.9vw;
+        /* margin: auto 3.9vw; */
+        margin: auto 59px;
         padding-bottom: 7.93vw;
     }
     .company__wrap {
@@ -797,6 +803,7 @@ message
     .about__company {
         padding-top: 120px;
         padding-bottom: 26px;
+        margin: auto 29px;
     }
     .company__wrap {
         max-width: 1010px;

@@ -150,9 +150,12 @@ news
 
 @media screen and (max-width:1280px) {
     .news__content {
-        margin-right: 3.9vw;
+        /* margin-right: 3.9vw;
         margin-left: 3.9vw;
-        width: calc(100% - 7.8vw);
+        width: calc(100% - 7.8vw); */
+        margin-right: 59px;
+        margin-left: 59px;
+        width: calc(100% - 118px);
     }
     .news__table {
         max-width: none;

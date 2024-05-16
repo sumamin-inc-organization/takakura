@@ -353,6 +353,7 @@ estimate form
     padding: 14px 70px 17px;
     box-shadow: 0 3px 0 var(--textBlack);
     cursor: pointer;
+    color: var(--textBlack);
 }
 .confirm__btn--container input:hover {
     box-shadow: none;
@@ -366,10 +367,12 @@ estimate form
     .pc-br {
         display: none;
     }
+    .estimate__btns {
+        padding: 70px 40px 0 40px;
+    }
     .form__field {
-        margin: auto;
-        margin-top: 80px;
-        width: 89.76vw;
+        margin: 80px 40px 0 40px;
+        width: unset;
     }
     .form__item {
         grid-template-columns: 34% auto;
@@ -396,6 +399,9 @@ estimate form
     }
     .mail__item .form__content {
         width: 82%;
+    }
+    .estimate__item--btn {
+        width: max(29.51vw, 270px);
     }
 }
 @media screen and (max-width:767px) {
@@ -439,7 +445,7 @@ estimate form
         padding-top: 55px;
     }
     .form__field {
-        margin-top: 36px;
+        margin: 36px 20px 0 20px;
     }
     .form__item {
         grid-auto-flow: row;

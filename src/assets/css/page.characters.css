@@ -86,7 +86,8 @@ member
 .member__discription {
     margin-top: 20px;
     padding: 26px 0 28px 0;
-    width: 314px;
+    /* width: 314px; */
+    width: 86%;
     border-radius: 10px;
     background-color: #FFF9D1;
     text-align: center;
@@ -196,12 +197,17 @@ characters message
 
 @media screen and (max-width:1024px) {
     .member__wrap {
-        width: 93.56vw;
+        /* width: 93.56vw; */
+        width: calc(100% - 80px);
+        margin: auto 40px;
     }
     .member__grid {
         grid-template-columns: 1fr 1fr;
         place-content: center;
         place-items: center;
+    }
+    .member__item {
+        max-width: none;
     }
 }
 
@@ -225,8 +231,10 @@ characters message
         margin-bottom: 60px;
     }
     .member__wrap {
-        width: 89.86vw;
+        /* width: 89.86vw; */
         padding-top: 50px;
+        width: unset;
+        margin: auto 20px;
     }
     .member__grid {
         display: none;

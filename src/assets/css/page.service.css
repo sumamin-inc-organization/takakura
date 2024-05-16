@@ -575,6 +575,7 @@ point
         max-width: none;
         gap: 3.3vw;
         padding: 0 5.12vw;
+        padding: 0 40px;
     }
     .point__column--item:nth-child(odd) {
         padding-top: 60px;
@@ -596,7 +597,8 @@ point
     }
     .point__column--text {
         margin-top: 45px;
-        width: 24.07vw;
+        /* width: 24.07vw; */
+        width: 26.8vw;
     }
     .point__column--text p {
         font-size: 16px;
@@ -611,6 +613,7 @@ about
         gap: 18px;
         max-width: none;
         padding: 0 5.12vw;
+        padding: 0 40px;
     }
     .service__about--title .headline__line {
         border-top: 2px solid var(--textBlack);
@@ -633,9 +636,11 @@ about
         grid-template-columns:1fr 1fr 1fr;
         gap: 20px;
         max-width: none;
-        width: calc(89.76vw - 20px);
         margin: auto;
-        padding: 90px 5.12vw 0 5.12vw;
+        /* width: calc(89.76vw - 20px);
+        padding: 90px 5.12vw 0 5.12vw; */
+        width: unset;
+        padding: 90px 40px 0 40px;
     }
     .about__column--item {
         max-width: unset;
@@ -759,6 +764,7 @@ introduction
         flex-direction: column;
         max-width: none;
         gap: 40px;
+        padding: 0 20px;
     }
     .point__column--item:nth-child(odd) {
         padding-top: 0;
@@ -808,6 +814,7 @@ introduction
         gap: 10px;
         max-width: 1200px;
         margin: auto;
+        padding: 0 20px;
     }
     .service__about--title .headline__line {
         border-top: 2px solid var(--textBlack);
@@ -829,9 +836,11 @@ introduction
         grid-template-columns:1fr 1fr;
         gap: 10px;
         max-width: none;
-        width: calc(89.76vw - 10px);
         margin: auto;
-        padding: 40px 0 0 0;
+        /* width: calc(89.76vw - 10px);
+        padding: 40px 0 0 0; */
+        width: unset;
+        padding: 40px 20px 0 20px;
     }
     .about__column--item {
         max-width: unset;
