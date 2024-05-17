@@ -34,6 +34,7 @@ a {
 a:hover {
   cursor: pointer;
 }
+.pcHide,
 .sp-br {
   display: none;
 }
@@ -881,7 +882,7 @@ lower common
   letter-spacing: .07em;
 }
 .PinkBg {
-  display: inline;
+  /* display: inline; */
   color: #fff;
   font-family: var(--fontZenMaruGothic);
   font-size: var(--fontSize25);
@@ -1191,7 +1192,8 @@ lower common
   /* -------------------------
 common
 ----------------------------*/
-  .sp-br {
+.pcHide,  
+.sp-br {
     display: block;
   }
   .pc-br,
