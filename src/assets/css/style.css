@@ -3,10 +3,10 @@
 Safari
 ----------------------------*/
 _::-webkit-full-page-media, _:future, :root input[type="radio"]{
-  top: 4px;
+  /* top: 4px; */
 }
 _::-webkit-full-page-media, _:future, :root input[type="radio"]:checked{
-  top: 4px;
+  /* top: 4px; */
 }
 /* -------------------------
 common
