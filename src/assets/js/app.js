@@ -108,7 +108,6 @@ $(document).ready(function () {
         var condition;
         if(!$(this).hasClass('active')) {
             $('.size__tags .tag').each(function(index) {
-                console.log($(this));
                 $(this).toggleClass('active');
             });
             if($(this).hasClass('small')) {
@@ -117,6 +116,8 @@ $(document).ready(function () {
                 condition = 'large'
             }
             switchSizeImg(condition);
+            $('.cardboard__img.active').fadeOut(200);
+            setTimeout(function(){$('.cardboard__img.active').fadeIn(200)}, 300);
         }
     });
 
@@ -127,18 +128,21 @@ $(document).ready(function () {
                 $(this).toggleClass('active');
             });
         }
-        if($(this).hasClass('prev')) {
-            var prevElem = $('.cardboard__img .active').prev();
-            prevElem.addClass('active');
-
-            $('.cardboard__img .active').fadeOut(200);
+        var currentElem = $('.cardboard__img.active');
+        var prevElem = $('.cardboard__img.active').prev();
+        var nextElem = $('.cardboard__img.active').next();
+        if($(this).hasClass('prev') && prevElem.length > 0) {
+            $('.cardboard__img.active').fadeOut(200);
             setTimeout(function(){prevElem.fadeIn(200)}, 300);
-        } else if($(this).hasClass('next')) {
-            var nextElem = $('.cardboard__img .active').next();
-            nextElem.addClass('active');
 
-            $('.cardboard__img .active').fadeOut(200);
+            currentElem.removeClass('active');
+            prevElem.addClass('active');
+        } else if($(this).hasClass('next') && nextElem.length > 0) {
+            $('.cardboard__img.active').fadeOut(200);
             setTimeout(function(){nextElem.fadeIn(200)}, 300);
+
+            currentElem.removeClass('active');
+            nextElem.addClass('active');
         }
     });
 
