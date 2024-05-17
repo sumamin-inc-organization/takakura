@@ -14,9 +14,8 @@ common
 body {
   background-color: #fddee8;
 }
-.stop{
+.stop {
   overflow:hidden;
-  padding-right: 15px;
 }
 
 input,textarea,select,button {
@@ -258,7 +257,7 @@ nav menu
   width: 100%;
   height: 100%;
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   z-index: 1000;
   font-family: var(--fontZenMaruGothic);
@@ -468,6 +467,8 @@ nav menu
 .link__list .link__item img {
   width: 20px;
   padding-right: 12px;
+  position: relative;
+  top: -2px;
 }
 .menu__sns {
   margin-top: 50px;
@@ -1238,19 +1239,19 @@ header
     padding: 15px 20px 0 20px;
   }
   .headerLogo {
-    max-width: 98px;
+    max-width: 92px;
     width: 100%;
   }
   .snsNav {
     padding-right: 15px;
   }
   .snsNav__list {
-    gap: 0 10px;
+    gap: 0 8px;
   }
   .snsNav__list--item {
-    border: 1px solid var(--textBlack);
-    height: 26px;
-    width: 26px;
+    border: 2px solid var(--textBlack);
+    height: 30px;
+    width: 30px;
   }
   .headerNavMenu {
     margin-top: -36px;
@@ -1313,11 +1314,7 @@ nav menu
     flex-wrap: wrap;
     min-width: unset;
   }
-  .menu__inner .menu__list .menu__item {
-    /* min-width: 257px; */
-    width: 100%;
-  }
-  .menu__item2 {
+  /* .menu__item2 {
     order: 4;
   }
   .menu__item4 {
@@ -1325,7 +1322,7 @@ nav menu
   }
   .menu__item6 {
     order: 6;
-  }
+  } */
   .menu__inner .menu__list li:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -1346,7 +1343,7 @@ nav menu
     color: var(--palePink);
   }
   .menu__btns {
-    margin-top: 45px;
+    margin-top: 15px;
   }
   .menu__btns .estimate__btn {
     background-color: #64dc96;
@@ -1360,7 +1357,7 @@ nav menu
     justify-content: center;
     align-items: center;
     gap: 10px;
-    padding: 17px 0;
+    padding: 12px 0;
     margin-bottom: 30px;
     position: relative;
     width: 100%;
@@ -1436,7 +1433,7 @@ nav menu
     padding-right: 12px;
   }
   .menu__sns {
-    margin-top: 34px;
+    margin-top: 14px;
   }
   .menu__sns .sns__list {
     justify-content: flex-start;
@@ -1548,7 +1545,7 @@ footer
     padding-left: 7px;
   }
   .footer__telNumber {
-    text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(0, 0, 0) 0.540302px 0.841471px 0px, rgb(0, 0, 0) -0.416147px 0.909297px 0px, rgb(0, 0, 0) -0.989992px 0.14112px 0px, rgb(0, 0, 0) -0.653644px -0.756802px 0px, rgb(0, 0, 0) 0.283662px -0.958924px 0px, rgb(0, 0, 0) 0.96017px -0.279415px 0px;
+    text-shadow: rgb(35, 24, 21) 2px 0px 0px, rgb(35, 24, 21) 1.75517px 0.958851px 0px, rgb(35, 24, 21) 1.0806px 1.68294px 0px, rgb(35, 24, 21) 0.141474px 1.99499px 0px, rgb(35, 24, 21) -0.832294px 1.81859px 0px, rgb(35, 24, 21) -1.60229px 1.19694px 0px, rgb(35, 24, 21) -1.97998px 0.28224px 0px, rgb(35, 24, 21) -1.87291px -0.701566px 0px, rgb(35, 24, 21) -1.30729px -1.5136px 0px, rgb(35, 24, 21) -0.421592px -1.95506px 0px, rgb(35, 24, 21) 0.567324px -1.91785px 0px, rgb(35, 24, 21) 1.41734px -1.41108px 0px, rgb(35, 24, 21) 1.92034px -0.558831px 0px;
   }
   .footer__tel {
     border-radius: 10px;

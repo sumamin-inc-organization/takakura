@@ -1,81 +1,27 @@
-// slicksliderの設定
-function initializeSlider() {
-    $(".js-slide").slick({
-        autoplay: true,
-        dots: false,
-        arrows: false,
-        variableWidth: true,
-        centerMode: true,
-        pauseOnFocus: false,
-        pauseOnHover: false,
-        slidesToShow: 1,
-    });
-
-    $(".js-slide--service").slick({
-        autoplay: true,
-        dots: true,
-        arrows: true,
-        variableWidth: true,
-        centerMode: true,
-        centerPadding: "15%",
-        responsive: [
-            {
-                breakpoint: 767, // 399px以下のサイズに適用
-                settings: {
-                    centerPadding: "0%",
-                    slidesToShow: 1,
-                },
-            },
-        ],
-    });
-}
-
-function checkWindowWidth() {
-    // if ($(window).width() <= 767) {
-    initializeSlider();
-    // }
-}
-
-function charaSliderSetting(){
-    var width = $(window).width();
-    if(width <= 767){
-        $('.member__spSlider').not('.slick-initialized').slick({
-            autoplay: true,
-            arrows: true,
-            infinite: true,
-            dots: true,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-        });
-    } else {
-        $('.slide.slick-initialized').slick('unslick');
-    }
-}
-
 $(document).ready(function () {
     checkWindowWidth();
     $(window).resize(checkWindowWidth);
 
     //---------------------------common---------------------------
+    var scroll_bar = window.innerWidth - $(window).width();
+    console.log(scroll_bar);
     //nav menu開閉
     $('.close__btn').on('click', function(){
-        // $('.header__menu').animate({
-        //     'marginRight' : '400px'}, 300
-        // );
+        $('body').css('padding-right', 0);
         $('body').removeClass('stop');
         $('.bg_fixed').removeClass('back');
         $('.header__menu').hide();
     });
     $('.headerNavMenu').on('click', function(){
-        // $('.header__menu').animate({
-        //     'marginRight' : '0'}, 300
-        // );
+        $('body').css('padding-right', scroll_bar + 'px');
         $('body').addClass('stop');
         $('.bg_fixed').addClass('back');
         $('.header__menu').show();
+        
     });
     $('.menu__container').on('click',function(e) {
         if(!$(e.target).closest('.menu__wrap').length) {
+            $('body').css('padding-right', 0);
             $('body').removeClass('stop');
             $('.bg_fixed').removeClass('back');
             $('.header__menu').hide();
@@ -140,54 +86,59 @@ $(document).ready(function () {
 
 
     //ダンボール紹介のスライド
-    $('.large__cardboard').hide();
-    $('.size__tags .tag, .size__pagenation .pagenation').on('click', function(){
+    // $('.large__cardboard').hide();
+    // $('.size__tags .tag, .size__pagenation .pagenation').on('click', function(){
+    //     if(!$(this).hasClass('active')) {
+    //         $('.size__tags .tag, .size__pagenation .pagenation').each(function(index) {
+    //             $(this).toggleClass('active');
+    //         });
+    //         if($(this).hasClass('small')) {
+    //             $('.large__cardboard').fadeOut(200);
+    //             setTimeout(function(){$('.small__cardboard').fadeIn(200)}, 300);
+    //         }
+    //         if($(this).hasClass('large'))  {
+    //             $('.small__cardboard').fadeOut(200);
+    //             setTimeout(function(){$('.large__cardboard').fadeIn(200)}, 300);
+    //         }
+    //     }
+    // });
+
+    //ダンボール紹介のスライド大小の切り替え
+    $('.size__tags .tag').on('click', function(){
+        var condition;
         if(!$(this).hasClass('active')) {
-            $('.size__tags .tag, .size__pagenation .pagenation').each(function(index) {
+            $('.size__tags .tag').each(function(index) {
+                console.log($(this));
                 $(this).toggleClass('active');
             });
             if($(this).hasClass('small')) {
-                $('.large__cardboard').fadeOut(200);
-                setTimeout(function(){$('.small__cardboard').fadeIn(200)}, 300);
+                condition = 'small';
+            } else {
+                condition = 'large'
             }
-            if($(this).hasClass('large'))  {
-                $('.small__cardboard').fadeOut(200);
-                setTimeout(function(){$('.large__cardboard').fadeIn(200)}, 300);
-            }
+            switchSizeImg(condition);
+        }
+    });
 
-            // if (window.matchMedia('(min-width:768px)').matches) {
-            //     if($(this).hasClass('small')) {
-            //         $('.small__cardboard:not(:animated)').animate({
-            //             right: "3.968vw"
-            //         }, 400);
-            //         $('.large__cardboard:not(:animated)').animate({
-            //             right: "-41.26vw"
-            //         }, 400);
-            //     } else {
-            //         $('.small__cardboard:not(:animated)').animate({
-            //             right: "50.26vw"
-            //         }, 400);
-            //         $('.large__cardboard:not(:animated)').animate({
-            //             right: "3.968vw"
-            //         }, 400);
-            //     }
-            // } else {
-            //     if($(this).hasClass('small')) {
-            //         $('.small__cardboard:not(:animated)').animate({
-            //             right: "3.968vw"
-            //         }, 400);
-            //         $('.large__cardboard:not(:animated)').animate({
-            //             right: "-81.26vw"
-            //         }, 400);
-            //     } else {
-            //         $('.small__cardboard:not(:animated)').animate({
-            //             right: "90.26vw"
-            //         }, 400);
-            //         $('.large__cardboard:not(:animated)').animate({
-            //             right: "3.968vw"
-            //         }, 400);
-            //     }
-            // }
+    //スライドの切り替え
+    $('.size__pagenation .pagenation').on('click', function(){
+        if(!$(this).hasClass('active')) {
+            $('.size__pagenation .pagenation').each(function(index) {
+                $(this).toggleClass('active');
+            });
+        }
+        if($(this).hasClass('prev')) {
+            var prevElem = $('.cardboard__img .active').prev();
+            prevElem.addClass('active');
+
+            $('.cardboard__img .active').fadeOut(200);
+            setTimeout(function(){prevElem.fadeIn(200)}, 300);
+        } else if($(this).hasClass('next')) {
+            var nextElem = $('.cardboard__img .active').next();
+            nextElem.addClass('active');
+
+            $('.cardboard__img .active').fadeOut(200);
+            setTimeout(function(){nextElem.fadeIn(200)}, 300);
         }
     });
 
@@ -253,3 +204,74 @@ $(document).ready(function () {
     });
     
 });
+
+// slicksliderの設定
+function initializeSlider() {
+    $(".js-slide").slick({
+        autoplay: true,
+        dots: false,
+        arrows: false,
+        variableWidth: true,
+        centerMode: true,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        slidesToShow: 1,
+        autoplaySpeed: 2000
+    });
+
+    $(".js-slide--service").slick({
+        autoplay: false,
+        dots: true,
+        arrows: true,
+        variableWidth: true,
+        centerMode: true,
+        centerPadding: "15%",
+        responsive: [
+            {
+                breakpoint: 767, // 399px以下のサイズに適用
+                settings: {
+                    centerPadding: "0%",
+                    slidesToShow: 1,
+                },
+            },
+        ],
+    });
+}
+
+function checkWindowWidth() {
+    // if ($(window).width() <= 767) {
+    initializeSlider();
+    // }
+}
+
+function charaSliderSetting(){
+    var width = $(window).width();
+    if(width <= 767){
+        $('.member__spSlider').not('.slick-initialized').slick({
+            autoplay: true,
+            arrows: true,
+            infinite: true,
+            dots: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        });
+    } else {
+        $('.slide.slick-initialized').slick('unslick');
+    }
+}
+
+//ダンボール紹介の大小を切り替える
+function switchSizeImg(condition) {
+    var smallList = ['introduction_small', 'introduction_small', 'introduction_small', 'introduction_small'];
+    var largeList = ['introduction_large', 'introduction_large', 'introduction_large', 'introduction_large'];
+    
+    if(condition == 'small') {
+        $('.cardboard__img').each(function(index) {
+            $(this).attr('src', 'assets/images/service/' + smallList[index] + '.png');
+        });
+    } else if (condition == 'large') {
+        $('.cardboard__img').each(function(index) {
+            $(this).attr('src', 'assets/images/service/' + largeList[index] + '.png');
+        });
+    }
+}

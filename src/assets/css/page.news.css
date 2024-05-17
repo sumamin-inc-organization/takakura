@@ -13,9 +13,6 @@ news
     margin: auto;
     margin-top: 76px;
 }
-/* .news__tag li.tag__information {
-    line-height: 12px;
-} */
 .news__tag ul {
     display: flex;
     flex-direction: row;
@@ -24,19 +21,20 @@ news
 }
 .news__tag li {
     background-color: #fff;
-    padding: 13px 0 11px 0;
     border-radius: 50px;
     width: 170px;
     text-align: center;
     font-size: var(--fontSize16);
-    line-height: 16px;
     cursor: pointer;
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
 }
 .news__tag li.active {
     background-color: var(--main-color);
     border: 3px solid var(--textBlack);
-    line-height: 10px;
 }
 .news__content {
     margin: auto;
@@ -109,7 +107,7 @@ news
     box-sizing: border-box;
 } */
 .news__table td a:hover {
-    color: var(--main-color);
+    color: var(--palePink);
     cursor: pointer;
 }
 .news__table th button {
@@ -141,7 +139,7 @@ news
     cursor: pointer;
 }
 .news__pagenation li.active {
-    color: var(--main-color);
+    color: var(--palePink);
 }
 .news__deco {
     position: absolute;
@@ -183,18 +181,13 @@ news
     .news__tag ul {
         gap: 6px;
     }
-    /* .news__tag li.tag__information {
-        line-height: 12px;
-    } */
     .news__tag li {
-        padding: 4px 0 2px 0;
         width: 110px;
         font-size: 13px;
-        line-height: 20px;
+        height: 26px;
     }
     .news__tag li.active {
         border: 2px solid var(--textBlack);
-        line-height: 15px;
     }
     .news__content {
         margin-top: 49px;
@@ -205,8 +198,8 @@ news
         width: calc(100% - 17.42vw);
         box-shadow : 
             0 0 0 2px var(--textBlack),
-            0 0 0 12px var(--paleGreen),
-            0 0 0 14px var(--textBlack);
+            0 0 0 7px var(--paleGreen),
+            0 0 0 9px var(--textBlack);
     }
     table,tbody,tr,td,th {
         width: 100%;
@@ -373,7 +366,7 @@ single
     font-size: var(--fontSize30);
     font-family: var(--fontRoboto);
     letter-spacing: 0.02rem;
-    color: var(--main-color);
+    color: var(--palePink);
 }
 .single__footer--bottom p.tel .small {
     font-size: var(--fontSize18);

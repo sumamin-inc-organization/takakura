@@ -370,6 +370,9 @@ company
 .company__table tr {
     border-bottom: 2px solid var(--textBlack);
 }
+.company__table tr:last-child {
+    border-bottom: none;
+}
 .company__table th, .company__table td {
     padding-bottom: 34px;
     padding-top: 32px;
@@ -803,7 +806,7 @@ message
     .about__company {
         padding-top: 120px;
         padding-bottom: 26px;
-        margin: auto 29px;
+        margin: auto 20px;
     }
     .company__wrap {
         max-width: 1010px;

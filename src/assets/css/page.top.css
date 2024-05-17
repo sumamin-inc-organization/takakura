@@ -1021,7 +1021,7 @@ mainvisual
     width: 100%;
   }
   .freeQuote__img {
-    bottom: 20px;
+    bottom: 2px;
     max-width: 29vw;
     right: 4vw;
   }
@@ -1406,6 +1406,7 @@ instagram
     grid-template-columns: repeat(2, 1fr);
     margin: 40px auto;
     max-width: 90%;
+    gap: 10px;
   }
 }
 @media screen and (max-width:450px) {
