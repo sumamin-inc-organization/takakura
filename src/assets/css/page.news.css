@@ -249,9 +249,6 @@ news
     .news__pagenation li.prev, .news__pagenation li.next {
         top: -2px;
     }
-    .news__pagenation li.active {
-        color: var(--main-color);
-    }
     .news__deco {
         position: absolute;
         bottom: -70px;
