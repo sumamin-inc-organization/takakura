@@ -785,7 +785,7 @@ message
         font-family: var(--fontMacho);
         font-weight: 700;
         letter-spacing: 0.4rem;
-        font-size: 139px;
+        font-size: 134px;
         margin-left:20px;
     }
     .history__bgText p:nth-child(1) {
@@ -811,7 +811,7 @@ message
     .company__wrap {
         max-width: 1010px;
         width: calc(100% - 18px);
-        padding: 57px 0 60px 0;
+        padding: 57px 0 37px 0;
         margin: auto;
         background-color: #fff;
         box-shadow : 

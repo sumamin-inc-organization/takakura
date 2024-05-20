@@ -166,7 +166,7 @@ header
 .snsNav__list {
   display: grid;
   gap: 0 20px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 .snsNav__list--item {
   position: relative;
@@ -1241,19 +1241,21 @@ header
     padding: 15px 20px 0 20px;
   }
   .headerLogo {
-    max-width: 92px;
+    max-width: 96px;
     width: 100%;
   }
   .snsNav {
     padding-right: 15px;
   }
   .snsNav__list {
-    gap: 0 8px;
+    gap: 0 10px;
   }
   .snsNav__list--item {
     border: 2px solid var(--textBlack);
-    height: 30px;
-    width: 30px;
+    /* height: 30px;
+    width: 30px; */
+    height: 36px;
+    width: 36px;
   }
   .headerNavMenu {
     margin-top: -36px;

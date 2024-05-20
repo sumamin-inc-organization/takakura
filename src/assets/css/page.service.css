@@ -311,7 +311,10 @@ flow
     color: var(--textBlack);
     content: "";
 }
-.slick-next::before {
+.flow__item .slick-arrow::before {
+    transition: all 0.2s;
+}
+.flow__item .slick-arrow:hover::before {
     background-color: #64DC96;
 }
 .slick-next::after  {
@@ -486,8 +489,9 @@ introduction
 .point__content--text {
     font-size: var(--fontSize18);
     font-weight: bold;
-    line-height: 2;
+    line-height: 2.2;
     text-align: center;
+    margin-top: 0.66vw;
 }
 .size__pagenation {
     position: relative;
@@ -506,9 +510,15 @@ introduction
     border: 3px solid var(--textBlack);
     cursor: pointer;
 }
-.size__pagenation .pagenation.active {
+.size__pagenation .pagenation {
+    transition: all 0.2s;
+}
+.size__pagenation .pagenation:hover {
     background-color: var(--main-color);
 }
+/* .size__pagenation .pagenation.active {
+    background-color: var(--main-color);
+} */
 .size__pagenation .pagenation.prev::before {
     content: url(../images/service/slide_arrow.svg);
     width: 11px;
@@ -720,6 +730,8 @@ introduction
     }
     .point__content--text {
         font-size: var(--fontSize16);
+        margin-top: 0;
+        line-height: 2;
     }
 }
 
