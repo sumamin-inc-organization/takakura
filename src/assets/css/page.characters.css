@@ -282,6 +282,12 @@ characters message
         opacity: 1;
         color: var(--textBlack);
     }
+    .slick-arrow::before {
+        transition: all 0.2s;
+    }
+    .slick-arrow:hover::before {
+        background-color: #FFB4C8;
+    }
     .slick-prev {
         left: calc(50% - 50px);
         margin-right: 40px;
@@ -306,9 +312,6 @@ characters message
         background-color: #fff;
         color: var(--textBlack);
         content: "";
-    }
-    .slick-next::before {
-        background-color: #FFB4C8;
     }
     .slick-next::after  {
         content: url(../images/service/slide_arrow.svg);
