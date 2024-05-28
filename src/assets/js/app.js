@@ -30,26 +30,54 @@ $(document).ready(function () {
 
     //---------------------------top---------------------------
     //無料お見積もりバナーをフッターで隠す
-    $(window).scroll(function(){
+    // $(window).scroll(function(){
         
+    //     var footer = $('footer').innerHeight(); // footerの高さを取得
+    //     var point = window.pageYOffset; // 現在のスクロール地点 
+    //     var docHeight = $(document).height(); // ドキュメントの高さ
+    //     var dispHeight = $(window).height(); // 表示領域の高さ
+        
+    //     //footerまで来ると固定バナー表示を隠す
+    //     if(point > docHeight-dispHeight-footer+200) {
+    //         $('.freeQuote__img:not(:animated)').animate({
+    //             marginRight: "-400px"
+    //         }, 400);
+    //         // $('.freeQuote__img').hide('slow');
+    //     } else {
+    //         $('.freeQuote__img:not(:animated)').animate({
+    //             marginRight: "0px"
+    //         }, 400);
+    //         // $('.freeQuote__img').show('slow');
+    //     }
+    // });
+
+    //スクロールした際の動きを関数でまとめる
+    function PageTopAnime() {
         var footer = $('footer').innerHeight(); // footerの高さを取得
         var point = window.pageYOffset; // 現在のスクロール地点 
         var docHeight = $(document).height(); // ドキュメントの高さ
         var dispHeight = $(window).height(); // 表示領域の高さ
-        
-        //footerまで来ると固定バナー表示を隠す
-        if(point > docHeight-dispHeight-footer+200) {
-            $('.freeQuote__img:not(:animated)').animate({
-                marginRight: "-400px"
-            }, 400);
-            // $('.freeQuote__img').hide('slow');
-        } else {
-            $('.freeQuote__img:not(:animated)').animate({
-                marginRight: "0px"
-            }, 400);
-            // $('.freeQuote__img').show('slow');
+        if (point > docHeight-dispHeight-footer+200 ){//上から200pxスクロールしたら
+            if ($('.freeQuote__img').hasClass('LeftMove')) {//すでに#page-topにLeftMoveというクラス名がついていたら
+                $('.freeQuote__img').removeClass('LeftMove');//LeftMoveというクラス名を除き
+                $('.freeQuote__img').addClass('RightMove');//RightMoveというクラス名を#page-topに付与
+            }
+        }else {
+            $('.freeQuote__img').removeClass('RightMove');//#page-topについているRightMoveというクラス名を除く
+            $('.freeQuote__img').addClass('LeftMove');//#page-topについているLeftMoveというクラス名を付与
         }
+    }
+
+    // 画面をスクロールをしたら動かしたい場合の記述
+    $(window).scroll(function () {
+        PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
     });
+
+    // ページが読み込まれたらすぐに動かしたい場合の記述
+    $(window).on('load', function () {
+        PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
+    });
+
 
     //---------------------------service---------------------------
     const $slider = $(".js-slide-common");

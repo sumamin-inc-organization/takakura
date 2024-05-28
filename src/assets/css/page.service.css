@@ -753,13 +753,15 @@ introduction
     .point__content--line {
         height: 12px;
         width: 28.4vw;
+        padding-top: 10px;
+        padding-bottom: 6px;
     }
     .point__content--line line {
         stroke-width: 4px;
         stroke-dasharray: 0.5, 12;
     }
     .point__content--text {
-        line-height: 1.8;
+        line-height: 1.7;
     }
 }
 
@@ -976,6 +978,7 @@ introduction
         border: 2px solid var(--textBlack);
         height: auto;
         width: 89.48vw;
+        width: calc(89.48vw - 15px);
         box-sizing: border-box;
     }
     .slick-dots {

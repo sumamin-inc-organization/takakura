@@ -700,9 +700,14 @@ message
         height: 102%;
         margin-top: 14px;
     }
+    .history__column--wrap {
+        margin: auto;
+        width: fit-content;
+    }
     .history__column {
         max-width: none;
-        width: calc(100% - 50px);
+        /* width: calc(100% - 50px); */
+        width: fit-content;
         margin: auto 20px auto 30px;
         margin-top: 54px;
     }
@@ -785,7 +790,7 @@ message
         font-family: var(--fontMacho);
         font-weight: 700;
         letter-spacing: 0.4rem;
-        font-size: 134px;
+        font-size: min(134px, 34.35vw);
         margin-left:20px;
     }
     .history__bgText p:nth-child(1) {
@@ -844,5 +849,27 @@ message
         width: 270px;
         padding-top: 20px;
         padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width:389px) {
+    .history__chara1 {
+        left: unset;
+        right: 10px;
+    }
+    .history__chara2 {
+        left: unset;
+        right: 10px;
+    }
+    .history__chara3 {
+        left: unset;
+        right: 10px;
+    }
+    .history__chara4 {
+        left: unset;
+        right: 10px;
+    }
+    .history__bgText p {
+        font-size: min(134px, 33.35vw);
     }
 }

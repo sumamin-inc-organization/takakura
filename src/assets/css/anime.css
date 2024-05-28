@@ -1,0 +1,30 @@
+/*　左の動き　*/
+.freeQuote__img.LeftMove {
+    animation: LeftAnime 0.5s forwards;
+}
+
+@keyframes LeftAnime {
+    from {
+        opacity: 0;
+        transform: translateX(120%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/*　右の動き　*/
+.freeQuote__img.RightMove {
+    animation: RightAnime 0.5s forwards;
+}
+@keyframes RightAnime {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(120%);
+    }
+}
