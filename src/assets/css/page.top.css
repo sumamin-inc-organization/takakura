@@ -212,9 +212,7 @@ about
   margin: -80px auto -150px;
   position: relative;
 }
-.about__chara--img1,
-.about__chara--surround1,
-.about__chara--surround2 {
+.about__chara--img1 {
   left: 50%;
   position: absolute;
   top: 50%;
@@ -230,11 +228,23 @@ about
   max-width: 432px;
   width: 100%;
   z-index: -2;
+  animation: animName 10s linear infinite;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  margin-left: -216px;
+  margin-top: -211px;
 }
 .about__chara--surround2 {
   max-width: 540px;
   width: 100%;
   z-index: -3;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  margin-left: -270px;
+  margin-top: -265px;
+  animation: animName 10s linear infinite;
 }
 /* アニメーションの部分 ↑*/
 .about__textInner {
@@ -322,10 +332,12 @@ about
 .about__whiteCircle.third {
   height: auto;
   width: 2.5vw;
+  animation: crescendo 1.5s alternate infinite ease-in;
 } 
 .about__pinkCircle.first {
   left: 18vw;
   top: 185px;
+  animation: crescendo 1.5s alternate infinite ease-in;
 }
 .about__pinkCircle.second {
   bottom: 144px;
@@ -342,6 +354,7 @@ about
 .about__pinkCircle.fifth {
   right: 23vw;
   top: 234px;
+  animation: crescendo2 1.5s alternate infinite ease-in;
 }
 .about__pinkCircle.sixth {
   bottom: 128px;
@@ -350,10 +363,12 @@ about
 .about__whiteCircle.first {
   left: 24vw;
   top: 274px;
+  animation: crescendo 1.5s alternate infinite ease-in;
 }
 .about__whiteCircle.second {
   bottom: 206px;
   right: 27vw;
+  animation: crescendo2 1.5s alternate infinite ease-in;
 }
 .about__whiteCircle.third {
   right: 18vw;
@@ -441,6 +456,7 @@ service
   position: absolute;
   width: 288px;
   z-index: 0;
+  animation: animName 20s linear infinite;
 }
 .service__minText {
   color: #fff;
@@ -614,6 +630,7 @@ secret
 .bgPinkText__inner.palePink {
   margin-left: -280px;
   position: sticky;
+  animation: infiniteScroll 20s linear infinite;
 }
 .bgPinkText__inner.palePink .bgPinkText {
   color: var(--main-color);

@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/page.top.css" />
     <link rel="stylesheet" href="assets/css/anime.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
 </head>
 
 <body>
@@ -221,7 +222,7 @@
         </section>
         <section class="about">
             <div class="page__title--inner">
-                <p class="page__subTitle">ABOUT</p>
+                <p class="page__subTitle" data-wow-delay="0.2s">ABOUT</p>
                 <h2 class="page__title">たかくら<br class="sp-br">引越センターって？</h2>
                 <!-- <div class="page__title">
                     <picture>
@@ -231,10 +232,10 @@
                 </div> -->
             </div>
             <div class="about__charaInner">
-                <img class="about__chara--img1" src="./assets/images/top/about/img-about_chara1.svg" alt="" />
+                <img class="about__chara--img1 wow zoomIn" src="./assets/images/top/about/img-about_chara1.svg" alt="" />
                 <img class="about__chara--surround1" src="./assets/images/top/about/img-about_surround1.svg" alt="" />
                 <img class="about__chara--surround2" src="./assets/images/top/about/img-about_surround2.svg" alt="" />
-                <img class="about__pinkCircle first" src="./assets/images/top/about/img-about_pinkKirakira_small.svg" alt="" />
+                <img class="about__pinkCircle first " src="./assets/images/top/about/img-about_pinkKirakira_small.svg" alt="" />
                 <img class="about__pinkCircle second" src="./assets/images/top/about/img-about_pinkKirakira.svg" alt="" />
                 <img class="about__pinkCircle third" src="./assets/images/top/about/img-about_pinkKirakira.svg" alt="" />
                 <img class="about__pinkCircle forth" src="./assets/images/top/about/img-about_pinkKirakira.svg" alt="" />
@@ -286,7 +287,7 @@
                 <div class="service__column--item">
                     <p class="service__column--title">単身のお引越し</p>
                     <div class="service__column--img">
-                        <img class="service__column--chara" src="./assets/images/top/service/img-service_chara1.svg"
+                        <img class="service__column--chara wow zoomIn" src="./assets/images/top/service/img-service_chara1.svg"
                             alt="" />
                         <img class="service__column--bg" src="./assets/images/top/service/img-service_charaBg.svg"
                             alt="" />
@@ -295,7 +296,7 @@
                 <div class="service__column--item bottom">
                     <p class="service__column--title">ご家族のお引越し</p>
                     <div class="service__column--img">
-                        <img class="service__column--chara" src="./assets/images/top/service/img-service_chara2.svg"
+                        <img class="service__column--chara wow zoomIn" src="./assets/images/top/service/img-service_chara2.svg"
                             alt="" />
                         <img class="service__column--bg" src="./assets/images/top/service/img-service_charaBg.svg"
                             alt="" />
@@ -304,7 +305,7 @@
                 <div class="service__column--item">
                     <p class="service__column--title">まるごとお任せ</p>
                     <div class="service__column--img">
-                        <img class="service__column--chara" src="./assets/images/top/service/img-service_chara3.svg"
+                        <img class="service__column--chara wow zoomIn" src="./assets/images/top/service/img-service_chara3.svg"
                             alt="" />
                         <img class="service__column--bg" src="./assets/images/top/service/img-service_charaBg.svg"
                             alt="" />
@@ -313,7 +314,7 @@
                 <div class="service__column--item bottom">
                     <p class="service__column--title">荷物の保管<span class="asterisk">※</span></p>
                     <div class="service__column--img">
-                        <img class="service__column--chara" src="./assets/images/top/service/img-service_chara4.svg"
+                        <img class="service__column--chara wow zoomIn" src="./assets/images/top/service/img-service_chara4.svg"
                             alt="" />
                         <img class="service__column--bg" src="./assets/images/top/service/img-service_charaBg.svg"
                             alt="" />
@@ -359,12 +360,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="secretList__item--chara1">
+                    <div class="secretList__item--chara1 wow fadeInLeft">
                         <img src="./assets/images/top/secret/img-secret_chara1.svg" alt="" />
                     </div>
                 </li>
                 <li class="secretList__item reverse">
-                    <div class="secretList__item--chara2">
+                    <div class="secretList__item--chara2 wow fadeInRight">
                         <img src="./assets/images/top/secret/img-secret_chara2.svg" alt="" />
                     </div>
                     <div class="secretList__item--container">
@@ -409,12 +410,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="secretList__item--chara3">
+                    <div class="secretList__item--chara3 wow fadeInLeft">
                         <img src="./assets/images/top/secret/img-secret_chara3.svg" alt="" />
                     </div>
                 </li>
                 <li class="secretList__item reverse">
-                    <div class="secretList__item--chara4">
+                    <div class="secretList__item--chara4 wow fadeInRight">
                         <img src="./assets/images/top/secret/img-secret_chara4.svg" alt="" />
                     </div>
                     <div class="secretList__item--container">
@@ -645,7 +646,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/js/wow.js"></script>
     <script src="assets/js/app.js"></script>
+    <script>
+        wow = new WOW(
+          {
+            animateClass: 'animated',
+            offset:       100,
+          }
+        );
+        wow.init();
+        
+      </script>
 </body>
 
 </html>
