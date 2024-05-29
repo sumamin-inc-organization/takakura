@@ -28,3 +28,64 @@
         transform: translateX(120%);
     }
 }
+
+/* fadeUp */
+.fadeUp {
+    animation-name:fadeUpAnime;
+    animation-duration:0.5s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+
+@keyframes fadeUpAnime{
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+.fadeUpTrigger{
+    opacity: 0;
+}
+
+/* slide-in */
+.slide-inLeft {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s ease-out;
+}
+
+.slide-inRight {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 1s ease-out;
+}
+
+.slide-inLeft.visible, .slide-inRight.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* rotate */
+.about__chara--surround1 img {
+    animation: rotation 4s linear infinite;
+}
+
+.about__chara--surround2 img {
+    animation: rotation 8s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
