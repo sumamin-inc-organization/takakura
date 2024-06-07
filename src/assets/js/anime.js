@@ -15,6 +15,14 @@ $(document).ready(function() {
                 $(this).addClass('visible');
             }
         });
+
+        $('.popup__trigger').each(function() {
+            if (isInViewport(this)) {
+                $(this).addClass('popup');
+            } else {
+                $(this).removeClass('popup');
+            }
+        });
     });
 });
 

@@ -1,3 +1,23 @@
+/*ポップアップする動き*/
+.popup {
+    animation: popup 0.8s cubic-bezier(0.5, 0.05, 0.1, 0.3) forwards;
+    opacity: 0;
+}
+@keyframes popup {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
 /*　左の動き　*/
 .freeQuote__img.LeftMove {
     animation: LeftAnime 0.5s forwards;
@@ -87,5 +107,43 @@
     }
     100% {
         transform: rotate(360deg);
+    }
+}
+
+/*文字が無限に流れるアニメーション*/
+.infinite__scroll {
+    overflow: hidden;
+    display: flex;
+}
+
+.infinite__scroll p {
+    flex-shrink: 0;
+    white-space: nowrap;
+    font-size: 120px;
+}
+
+.infinite__scroll p:nth-child(odd) {
+    animation: MoveLeft 30s -15s infinite linear;
+}
+
+.infinite__scroll p:nth-child(even) {
+    animation: MoveLeft2 30s infinite linear;
+}
+
+@keyframes MoveLeft {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes MoveLeft2 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-200%);
     }
 }
