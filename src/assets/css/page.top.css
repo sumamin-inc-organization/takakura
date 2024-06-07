@@ -212,6 +212,10 @@ about
   margin: -80px auto -150px;
   position: relative;
 }
+.about__chara--wrap {
+  height: 100%;
+}
+
 .about__chara--img1,
 .about__chara--surround1,
 .about__chara--surround2 {
