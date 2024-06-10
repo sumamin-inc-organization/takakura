@@ -134,7 +134,7 @@ message
     background-color: var(--main-color);
     margin-top: 60px;
     
-    padding: 80px 0 80px 29.23vw;
+    padding: 80px 0 80px 27.23vw;
     border-top: 3px solid var(--textBlack);
     border-left: 3px solid var(--textBlack);
     border-bottom: 3px solid var(--textBlack);
@@ -154,13 +154,15 @@ message
     font-size: 16px;
     letter-spacing: 0.04rem;
     line-height: 2.2;
-    max-width: 600px;
+    /* max-width: 600px; */
     text-align: justify;
+    width: 90%;
 }
 .message__content--name {
     margin-top: 75px;
     text-align: right;
-    max-width: 600px;
+    /* max-width: 600px; */
+    width: 90%;
     font-size: var(--fontSize18);
     letter-spacing: 0.01rem;
     font-weight: bold;
@@ -391,6 +393,7 @@ message
     .message__content {
         border: 3px solid var(--textBlack);
         margin-right: 5vw;
+        padding: 80px 0px 80px 24.23vw;
     }
 }
 
@@ -427,7 +430,7 @@ message
         margin-left: 13.4vw;
     }
     .message__content {
-        padding: 80px 10vw 80px 29.23vw;
+        padding: 80px 0 80px 29.23vw;
     }
     /* -------------------------
     history
