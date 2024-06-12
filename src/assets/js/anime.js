@@ -6,47 +6,57 @@ $(document).ready(function() {
         var elementBottom = elementTop + $(element).outerHeight();
         var viewportTop = $(window).scrollTop();
         var viewportBottom = viewportTop + $(window).height();
-        return elementBottom > viewportTop + 400 && elementTop + 400 < viewportBottom;
+        
+        elementTop += 100;
+        viewportTop += 100;
+        return elementBottom > viewportTop && elementTop < viewportBottom;
     }
 
+    /**
+    * アニメーションの設定をするデータ
+    * animeType: アニメーションをつけたい要素につけるdata-anime属性名
+    * animeStage: つけたいアニメーションのクラス
+    * initial: 初期の状態
+    */
+    const animeData = [
+        {animeType: "slide-inRight", initialCss: "opacity", initialValue: "0"},
+        {animeType: "slide-inLeft", initialCss: "opacity", initialValue: "0"},
+        {animeType: "popup", initialCss: "opacity", initialValue: "0"},
+        {animeType: "movingRightChara", initialCss: "opacity", initialValue: "0"},
+        {animeType: "movingLeftChara", initialCss: "opacity", initialValue: "0"},
+        {animeType: "driving", initialCss: "opacity", initialValue: "0"},
+        {animeType: "shaking"}
+    ]
+
     //スクロールアニメーションのトリガー設定
-    function triggerAnime() {
-        const animeData = [
-            {animeType: "slide-in", animeState: "visible", initial: ""},
-            {animeType: "popup__trigger",animeState: "popup", initial: "opacity: 0"},
-        ]
-    
+    function triggerAnime(data) {
         // 作成した連想配列をループで回す
-        $.each(animeData, function(index, value) {
-            // チーム名を変数に入れる
+        $.each(data, function(index, value) {
             var animeType = value.animeType;
-            var animeState = value.animeState;
-            var initial = value.initial;
             $('[data-anime="'+ animeType + '"]').each(function() {
                 if (isInViewport(this)) {
-                    $(this).addClass(animeState);
+                    $(this).addClass(animeType);
+                    $(this).removeAttr('style');
+                    $(this).removeClass('initial-anime');
                 }
             });
         });
     }
 
+    $.each(animeData, function(index, value) {
+        var animeType = value.animeType;
+        var initialCss = value.initialCss;
+        var initialValue = value.initialValue;
+        $('[data-anime="'+ animeType + '"]').each(function() {
+            if(initialCss !== undefined) {
+                $(this).css(initialCss, initialValue);
+            }
+        });
+    });
+
     // Check elements on page load
     $(window).on('load scroll', function() {
-        triggerAnime();
-        // $('.slide-in').each(function() {
-        //     if (isInViewport(this)) {
-        //         $(this).addClass('visible');
-        //     }
-        // });
-
-        // $('.popup__trigger').each(function() {
-        //     if (isInViewport(this)) {
-        //         $(this).addClass('popup');
-        //     } else {
-        //         $(this).removeClass('popup');
-        //     }
-        // });
-
+        triggerAnime(animeData);
     });
 });
 

@@ -106,7 +106,7 @@ news
 }
 /* 背景のピンクのテキスト ↓*/
 .bgPinkText__inner {
-  overflow: visible;
+  /* overflow: visible; */
   position: absolute;
   top: 60px;
   z-index: -1;
@@ -118,14 +118,16 @@ news
   font-weight: 900;
   letter-spacing: .06em;
   line-height: 1.2;
-  overflow: visible;
+  /* overflow: visible; */
   width: 3000px;
 }
 .bgPinkText.first {
   margin-left: -37%;
+  margin-left: -32%;
 }
 .bgPinkText.second {
   margin-left: -21%;
+  margin-left: -16%;
 }
 /* 背景の白白のテキスト ↑*/
 .news__inner--tv {
@@ -618,6 +620,7 @@ secret
 .bgPinkText__inner.palePink {
   margin-left: -280px;
   position: sticky;
+  margin-top: 20px;
 }
 .bgPinkText__inner.palePink .bgPinkText {
   color: var(--main-color);
@@ -653,6 +656,26 @@ message
   margin-top: 86px;
   max-width: 334px;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.message__leftInner--img img:nth-child(1) {
+  width: 23%;
+}
+.message__leftInner--img img:nth-child(2) {
+  width: 64%;
+}
+.buruburu {
+  display: inline-block;
+  animation: hurueru .18s  infinite;
+}
+
+@keyframes hurueru {
+  0% {transform: translate(0px, 0px) rotateZ(0deg)}
+  25% {transform: translate(1px, 1px) rotateZ(1deg)}
+  50% {transform: translate(0px, 1px) rotateZ(0deg)}
+  75% {transform: translate(2px, 0px) rotateZ(-1deg)}
+  100% {transform: translate(0px, 0px) rotateZ(0deg)}
 }
 .message .more__btn--container {
   text-align: left;
@@ -673,6 +696,26 @@ online
   right: 18vw;
   top: 92px;
   width: 100%;
+}
+.line__stamp--bg {
+  width: 100%;
+  position: absolute;
+}
+.line__stamp--text {
+  width: 72%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(50%) translateX(-50%);
+  -webkit-transform: translateY(50%) translateX(-50%);
+}
+.line__stamp--chara {
+  width: 59%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(70%) translateX(-50%);
+  -webkit-transform: translateY(160%) translateX(-50%);
 }
 
 .online__column .js-slide {
@@ -1048,9 +1091,11 @@ news
   }
   .bgPinkText.first {
     margin-left: -2%;
+    margin-left: -20%;
   }
   .bgPinkText.second {
     margin-left: -7%;
+    margin-left: -15%;
   }
   .news__inner--textArea {
     top: 175px;
@@ -1390,7 +1435,7 @@ online
     padding: 60px 0 0;
   }
   .online__sale--img {
-    margin: 60px auto 0;
+    margin: 60px auto 270px;
     max-width: 186px;
     position: sticky;
   }
