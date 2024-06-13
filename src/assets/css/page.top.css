@@ -154,6 +154,7 @@ news
   position: absolute;
   text-align: center;
   top: 180px;
+  display: block;
 }
 .news__inner--date {
   color: var(--textBlack);
@@ -1473,5 +1474,8 @@ instagram
   .service__column {
     gap: 18px;
     width: calc(100% - 32px);
+  }
+  .news__inner--tv img {
+    min-width: 112%;
   }
 }
