@@ -6,9 +6,16 @@ $(document).ready(function() {
         var elementBottom = elementTop + $(element).outerHeight();
         var viewportTop = $(window).scrollTop();
         var viewportBottom = viewportTop + $(window).height();
-        
-        elementTop += 100;
-        viewportTop += 100;
+
+
+        var windowSize = $(window).width();
+        if (windowSize < 768) {
+            elementTop += 100;
+            viewportTop += 100;
+        } else {
+            elementTop += 300;
+            viewportTop += 300;
+        }
         return elementBottom > viewportTop && elementTop < viewportBottom;
     }
 
@@ -25,7 +32,8 @@ $(document).ready(function() {
         {animeType: "movingRightChara", initialCss: "opacity", initialValue: "0"},
         {animeType: "movingLeftChara", initialCss: "opacity", initialValue: "0"},
         {animeType: "driving", initialCss: "opacity", initialValue: "0"},
-        {animeType: "shaking"}
+        {animeType: "shaking"},
+        {animeType: "cycling", initialCss: "opacity", initialValue: "0"}
     ]
 
     //スクロールアニメーションのトリガー設定

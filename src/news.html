@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="assets/css/variable.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/page.news.css" />
+    <link rel="stylesheet" href="assets/css/anime.css" />
 </head>
 
 <body>
@@ -198,18 +199,20 @@
                     </ul>
                 </div>
                 <div class="news__deco">
-                    <img src="./assets/images/news/news_chara.svg" alt="">
+                    <img data-anime="cycling" src="./assets/images/news/news_chara.svg" alt="">
                 </div>
             </div>
         </section>
     </main>
     <footer class="footer">
         <div class="movingChara__inner">
-            <div class="movingChara">
-                <img src="./assets/images/img-moving.svg" alt="" />
+            <div data-anime="driving" class="movingChara">
+                <img data-anime="shaking" src="./assets/images/img-moving.svg" alt="" />
             </div>
-            <div class="movingChara__load">
-                <img src="./assets/images/img-load.svg" alt="" />
+            <div class="movingChara__load infinite__scroll">
+                <img class="scrolText" src="./assets/images/img-load.svg" alt="" />
+                <img class="scrolText" src="./assets/images/img-load.svg" alt="" />
+                <div class="load__bg"></div>
             </div>
         </div>
         <div class="footer__inner">
@@ -291,6 +294,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/anime.js"></script>
 </body>
 
 </html>
