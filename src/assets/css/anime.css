@@ -182,7 +182,7 @@
 }
 
 .infinite__scroll p:nth-child(even) {
-    animation: MoveLeft 30s infinite linear;
+    animation: MoveLeft2 30s infinite linear;
 }
 
 .infinite__scroll img:nth-child(odd) {
@@ -232,11 +232,11 @@
 }
 
 .infinite__scroll--reverse img:nth-child(odd) {
-    animation: MoveRight 20s infinite linear;
+    animation: MoveRight 20s -10s infinite linear;
 }
 
 .infinite__scroll--reverse img:nth-child(even) {
-    animation: MoveRight 20s -10s infinite linear;
+    animation: MoveRight2 20s infinite linear;
 }
 
 @keyframes MoveRight {
