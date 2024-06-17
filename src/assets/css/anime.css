@@ -182,7 +182,7 @@
 }
 
 .infinite__scroll p:nth-child(even) {
-    animation: MoveLeft2 30s infinite linear;
+    animation: MoveLeft 30s infinite linear;
 }
 
 .infinite__scroll img:nth-child(odd) {
@@ -210,6 +210,53 @@
         transform: translateX(-200%);
     }
 }
+
+/*文字が無限に流れるアニメーション reverse*/
+.infinite__scroll--reverse {
+    overflow: hidden;
+    display: flex;
+}
+
+.infinite__scroll--reverse p {
+    flex-shrink: 0;
+    white-space: nowrap;
+    font-size: 120px;
+}
+
+.infinite__scroll--reverse p:nth-child(odd) {
+    animation: MoveRight 30s -15s infinite linear;
+}
+
+.infinite__scroll--reverse p:nth-child(even) {
+    animation: MoveRight2 30s infinite linear;
+}
+
+.infinite__scroll--reverse img:nth-child(odd) {
+    animation: MoveRight 20s infinite linear;
+}
+
+.infinite__scroll--reverse img:nth-child(even) {
+    animation: MoveRight 20s -10s infinite linear;
+}
+
+@keyframes MoveRight {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes MoveRight2 {
+    from {
+        transform: translateX(-200%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
 
 /*リピート率の秘密アニメーション*/
 .movingRightChara {
@@ -345,6 +392,20 @@
     100% {
         transform: translateX(0);
         opacity: 1;
+    }
+}
+
+/*sleepエフェクト*/
+.sleep__effect {
+    animation: sleep_zz 1.6s ease-in-out 0s infinite alternate;
+}
+
+@keyframes sleep_zz {
+    from {
+        transform: translate(30%, 30%) scale(0.5,0.5);
+    }
+    to {
+        transform: translate(0, 0) scale(1.1,1.1);
     }
 }
 

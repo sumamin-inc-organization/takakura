@@ -119,7 +119,7 @@ news
   letter-spacing: .06em;
   line-height: 1.2;
   /* overflow: visible; */
-  width: 3000px;
+  /* width: 3000px; */
 }
 .bgPinkText.first {
   margin-left: -37%;
@@ -755,6 +755,14 @@ online
   position: absolute;
   width: 100%;
 }
+.sleep__effect {
+  width: 30px;
+  width: min(30px, 2.6vw);
+  margin-left: -10px;
+}
+.sleep__chara {
+  padding-top: 8px;
+}
 /* -------------------------
 instagram
 ----------------------------*/
@@ -1086,7 +1094,7 @@ news
   .bgPinkText__inner {
     top: -100px;
   }
-  .bgPinkText {
+  .bgPinkText__inner p.bgPinkText {
     font-size: var(--fontSize70);
     line-height: 1;
   }
