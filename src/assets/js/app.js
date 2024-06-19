@@ -112,25 +112,6 @@ $(document).ready(function () {
         });
     });
 
-
-    //ダンボール紹介のスライド
-    // $('.large__cardboard').hide();
-    // $('.size__tags .tag, .size__pagenation .pagenation').on('click', function(){
-    //     if(!$(this).hasClass('active')) {
-    //         $('.size__tags .tag, .size__pagenation .pagenation').each(function(index) {
-    //             $(this).toggleClass('active');
-    //         });
-    //         if($(this).hasClass('small')) {
-    //             $('.large__cardboard').fadeOut(200);
-    //             setTimeout(function(){$('.small__cardboard').fadeIn(200)}, 300);
-    //         }
-    //         if($(this).hasClass('large'))  {
-    //             $('.small__cardboard').fadeOut(200);
-    //             setTimeout(function(){$('.large__cardboard').fadeIn(200)}, 300);
-    //         }
-    //     }
-    // });
-
     //ダンボール紹介のスライド大小の切り替え
     $('.size__tags .tag').on('click', function(){
         var condition;
@@ -144,8 +125,8 @@ $(document).ready(function () {
                 condition = 'large'
             }
             switchSizeImg(condition);
-            $('.cardboard__img.active').fadeOut(200);
-            setTimeout(function(){$('.cardboard__img.active').fadeIn(200)}, 300);
+            $('.cardboard__img.active').fadeOut(300);
+            setTimeout(function(){$('.cardboard__img.active').fadeIn(300)}, 300);
         }
     });
 
@@ -294,16 +275,30 @@ function charaSliderSetting(){
 
 //ダンボール紹介の大小を切り替える
 function switchSizeImg(condition) {
-    var smallList = ['introduction_small', 'introduction_small', 'introduction_small', 'introduction_small'];
-    var largeList = ['introduction_large', 'introduction_large', 'introduction_large', 'introduction_large'];
+    var smallList = ['introduction_small01', 'introduction_small02', 'introduction_small03', 'introduction_small04'];
+    var largeList = ['introduction_large01', 'introduction_large02', 'introduction_large03', 'introduction_large04', 'introduction_large05'];
+
+    $('.size__img').empty();
     
     if(condition == 'small') {
-        $('.cardboard__img').each(function(index) {
-            $(this).attr('src', 'assets/images/service/' + smallList[index] + '.png');
+        $(smallList).each(function(index) {
+            var num = index + 1;
+            if (index <= 0) {
+                var item = $('<img class="cardboard__img small__cardboard01 active" src="./assets/images/service/'+ smallList[index] +'.png" alt="ダンボール画像" style="display: none;">')
+            } else {
+                var item = $('<img class="cardboard__img small__cardboard0'+ num +'" src="./assets/images/service/'+ smallList[index] +'.png" alt="ダンボール画像" style="display: none;">')
+            }
+            $('.size__img').append(item);
         });
     } else if (condition == 'large') {
-        $('.cardboard__img').each(function(index) {
-            $(this).attr('src', 'assets/images/service/' + largeList[index] + '.png');
+        $(largeList).each(function(index) {
+            var num = index + 1;
+            if (index <= 0) {
+                var item = $('<img class="cardboard__img large__cardboard01 active" src="./assets/images/service/'+ largeList[index] +'.png" alt="ダンボール画像" style="display: none;">')
+            } else {
+                var item = $('<img class="cardboard__img large__cardboard0'+ num +'" src="./assets/images/service/'+ largeList[index] +'.png" alt="ダンボール画像" style="display: none;">')
+            }
+            $('.size__img').append(item);
         });
     }
 }

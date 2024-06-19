@@ -373,11 +373,6 @@ introduction
     width: 49.6vw;
     margin: auto;
 }
-.introduction__size img {
-    width: 75%;
-    margin-left: 3.968vw;
-    position: absolute;
-}
 .size__img {
     border: 3px solid var(--textBlack);
     background-image: url(../images/service/introduction_bg.svg);
@@ -389,6 +384,44 @@ introduction
     height: 31.74vw;
     overflow: hidden;
     position: relative;
+}
+.introduction__size .small__cardboard01 {
+    width: 60%;
+    margin-left: 8.2vw;
+    position: absolute;
+}
+.introduction__size .small__cardboard02 {
+    width: 40%;
+    position: absolute;
+}
+.introduction__size .small__cardboard03 {
+    width: 40%;
+    position: absolute;
+}
+.introduction__size .small__cardboard04 {
+    width: 42%;
+    position: absolute;
+}
+.introduction__size .large__cardboard01 {
+    width: 75%;
+    margin-left: 3.968vw;
+    position: absolute;
+}
+.introduction__size .large__cardboard02 {
+    width: 41%;
+    position: absolute;
+}
+.introduction__size .large__cardboard03 {
+    width: 63%;
+    position: absolute;
+}
+.introduction__size .large__cardboard04 {
+    width: 40%;
+    position: absolute;
+}
+.introduction__size .large__cardboard05 {
+    width: 62%;
+    position: absolute;
 }
 .introduction__point {
     max-width: 1200px;
