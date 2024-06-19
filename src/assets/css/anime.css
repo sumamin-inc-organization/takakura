@@ -260,11 +260,11 @@
 
 /*リピート率の秘密アニメーション*/
 .movingRightChara {
-    animation: moveCharaRight 0.8s cubic-bezier(.77,-0.48,.21,1.46);
+    animation: moveCharaRight 0.8s cubic-bezier(.77,-0.48,.21,1.46) forwards;
 }
 
 .movingLeftChara {
-    animation: moveCharaLeft 0.8s cubic-bezier(.77,-0.48,.21,1.46);
+    animation: moveCharaLeft 0.8s cubic-bezier(.77,-0.48,.21,1.46) forwards;
 }
 
 @keyframes moveCharaRight {
@@ -290,7 +290,7 @@
 
 /*ドライブアニメーション*/
 .driving {
-    animation: driving 2s ease-in-out;
+    animation: driving 2s ease-in-out forwards;
     opacity: 1;
 }
 .shaking {
@@ -407,6 +407,27 @@
     to {
         transform: translate(0, 0) scale(1.1,1.1);
     }
+}
+/*セクションタイトルアニメーション*/
+.page__title .letter {
+    display: inline-block;
+    transform: translateY(100%);
+    opacity: 0;
+}
+.page__title .letter.is-visible {
+    transition: transform .3s cubic-bezier(0.65, 1.8, 0.5, 0.8) 0s,opacity .3s cubic-bezier(0.55, 0.05, 0.22, 0.99) 0s;
+    transform: translateY(0);
+    opacity: 1;
+}
+.page__subTitle {
+    transform: translateY(100%);
+    opacity: 0;
+}
+.page__subTitle.is-visible {
+    transition: transform .3s cubic-bezier(0.65, 1.8, 0.5, 0.8) .3s,opacity .3s cubic-bezier(0.55, 0.05, 0.22, 0.99) .3s;
+    transform: scale(1);
+    transform-origin: center bottom;
+    opacity: 1;
 }
 
 /*animetion delay*/

@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    //一文字ずつ出現させる
+    delayLetter();
     // Function to check if an element is in viewport
     //スクロール表示タイミング
     function isInViewport(element) {
@@ -29,6 +31,7 @@ $(document).ready(function() {
         {animeType: "slide-inRight", initialCss: "opacity", initialValue: "0"},
         {animeType: "slide-inLeft", initialCss: "opacity", initialValue: "0"},
         {animeType: "popup", initialCss: "opacity", initialValue: "0"},
+        {animeType: "is-visible"},
         {animeType: "movingRightChara", initialCss: "opacity", initialValue: "0"},
         {animeType: "movingLeftChara", initialCss: "opacity", initialValue: "0"},
         {animeType: "driving", initialCss: "opacity", initialValue: "0"},
@@ -44,8 +47,8 @@ $(document).ready(function() {
             $('[data-anime="'+ animeType + '"]').each(function() {
                 if (isInViewport(this)) {
                     $(this).addClass(animeType);
-                    $(this).removeAttr('style');
-                    $(this).removeClass('initial-anime');
+                    // $(this).removeAttr('style');
+                    // $(this).removeClass('initial-anime');
                 }
             });
         });
@@ -80,4 +83,17 @@ function fadeUpAnime() {
             $(this).removeClass('fadeUp');// 画面外に出たらfadeUpというクラス名を外す
         }
     });
+}
+/*文字出現アニメーションで一文字ずつ出現させる */
+function delayLetter() {
+    var titleList = $('.page__title');
+    $(titleList).each(function () {
+        var letter =  $(this).children('.letter');
+        var subTitle = $(this).prev();
+        $(subTitle).css('transition-delay', letter.length / 16 + 's');
+        $(letter).each(function (index) {
+            $(this).css('transition-delay', index / 16 + 's');
+        });
+    });
+
 }
