@@ -4,27 +4,30 @@ $(document).ready(function () {
 
     //---------------------------common---------------------------
     var scroll_bar = window.innerWidth - $(window).width();
-    console.log(scroll_bar);
     //nav menu開閉
     $('.close__btn').on('click', function(){
         $('body').css('padding-right', 0);
+        $('.header__menu').removeClass('open');
+        $('.menu__wrap').removeClass('open');
         $('body').removeClass('stop');
         $('.bg_fixed').removeClass('back');
-        $('.header__menu').hide();
     });
     $('.headerNavMenu').on('click', function(){
         $('body').css('padding-right', scroll_bar + 'px');
+        $('.header__menu').addClass('open');
+        $('.menu__wrap').addClass('open');
         $('body').addClass('stop');
         $('.bg_fixed').addClass('back');
-        $('.header__menu').show();
         
     });
     $('.menu__container').on('click',function(e) {
         if(!$(e.target).closest('.menu__wrap').length) {
             $('body').css('padding-right', 0);
+            $('.header__menu').removeClass('open');
+            $('.menu__wrap').removeClass('open');
             $('body').removeClass('stop');
             $('.bg_fixed').removeClass('back');
-            $('.header__menu').hide();
+            
         }
     });
 
