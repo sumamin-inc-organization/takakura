@@ -5,7 +5,7 @@
 point
 ----------------------------*/
 .service__point {
-    padding-top: 140px;
+    padding-top: 180px;
 }
 .point__column {
     margin: auto;
@@ -18,6 +18,7 @@ point
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 .point__column--item:nth-child(odd) {
     padding-top: 60px;
@@ -30,24 +31,56 @@ point
     width: 290.509px;
     height: 288.298px;
 }
-.point__column--title {
-    background-color: #64dc96;
-    border: 3px solid var(--textBlack);
-    border-radius: 50px;
+.point__column--speech {
+    align-items: center;
+    background: #000;
+    border-radius: 50%;
     color: #fff;
     display: flex;
     font-family: var(--fontZenMaruGothic);
-    font-size: var(--fontSize25);
-    font-weight: 700;
+    font-size: var(--fontSize40);
+    font-weight: 900;
+    height: 73px;
     justify-content: center;
-    margin-bottom: -30px;
-    padding: 15px 32px;
-    width: fit-content;
-    position: relative;
-    z-index: 10;
-    letter-spacing: 0.06rem;
+    left: 50%;
+    line-height: 2.55;
+    position: absolute;
+    top: -20px;
+    transform: translateX(-50%);
+    width: 73px;
+    letter-spacing: 0.12rem;
 }
-.point__column--title:before,
+.point__column--item.bottom .point__column--speech {
+    top: -80px;
+}
+.point__column--speech::after {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #000;
+    bottom: -5px;
+    content: "";
+    height: 0;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 0;
+}
+.point__column--speech p {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -55%);
+}
+.point__column--title {
+    font-family: var(--fontZenMaruGothic);
+    font-size: var(--fontSize25);
+    letter-spacing: 0.17rem;
+    line-height: 2;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: rgb(35, 24, 21) 2px 0px 0px, rgb(35, 24, 21) 1.75517px 0.958851px 0px, rgb(35, 24, 21) 1.0806px 1.68294px 0px, rgb(35, 24, 21) 0.141474px 1.99499px 0px, rgb(35, 24, 21) -0.832294px 1.81859px 0px, rgb(35, 24, 21) -1.60229px 1.19694px 0px, rgb(35, 24, 21) -1.97998px 0.28224px 0px, rgb(35, 24, 21) -1.87291px -0.701566px 0px, rgb(35, 24, 21) -1.30729px -1.5136px 0px, rgb(35, 24, 21) -0.421592px -1.95506px 0px, rgb(35, 24, 21) 0.567324px -1.91785px 0px, rgb(35, 24, 21) 1.41734px -1.41108px 0px, rgb(35, 24, 21) 1.92034px -0.558831px 0px;
+}
+/* .point__column--title:before,
 .point__column--title:after {
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
@@ -61,7 +94,7 @@ point
 .point__column--title:after {
     border-top: 10px solid #64dc96;
     bottom: -6px;
-}
+} */
 .point__column--text {
     margin-top: 45px;
     width: 364px;
@@ -70,7 +103,7 @@ point
     font-size: var(--fontSize16);
     font-weight: 700;
     letter-spacing: 0.034rem;
-    line-height: 1.8;
+    line-height: 2.1;
     text-align: justify;
 }
 /* -------------------------
@@ -803,14 +836,14 @@ introduction
     point
     ----------------------------*/
     .service__point {
-        padding-top: 160px;
+        padding-top: 200px;
     }
     .point__column {
         margin: auto;
         display: flex;
         flex-direction: column;
         max-width: none;
-        gap: 40px;
+        gap: 100px;
         padding: 0 20px;
     }
     .point__column--item:nth-child(odd) {
@@ -820,14 +853,24 @@ introduction
         width: 270px;
         height: 270px;
     }
-    .point__column--title {
-        border: 2px solid var(--textBlack);
-        font-size: var(--fontSize22);
-        margin-bottom: -30px;
-        padding: 12px 28px;
-        letter-spacing: 0.07rem;
+    .point__column--speech {
+        font-size: var(--fontSize30);
+        font-weight: 900;
+        height: 55px;
+        top: -60px;
+        width: 55px;
     }
-    .point__column--title:before,
+    .point__column--item.bottom .point__column--speech {
+        top: -60px;
+    }
+    .point__column--title {
+        font-weight: 900;
+        font-size: 20px;
+        text-align: center;
+        line-height: 1.8;
+        letter-spacing: 0.17rem;
+    }
+    /* .point__column--title:before,
     .point__column--title:after {
         border-left: 8px solid transparent;
         border-right: 8px solid transparent;
@@ -837,9 +880,9 @@ introduction
     .point__column--title:after {
         border-top: 8px solid #64dc96;
         bottom: -7px;
-    }
+    } */
     .point__column--text {
-        margin-top: 30px;
+        margin-top: 48px;
         width: 100%;
     }
     .point__column--text p {

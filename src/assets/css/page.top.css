@@ -568,6 +568,7 @@ secret
   top: -10px;
   transform: translateX(-50%);
   width: 73px;
+  letter-spacing: 0.12rem;
 }
 .secretList__speech::after {
   border-left: 10px solid transparent;

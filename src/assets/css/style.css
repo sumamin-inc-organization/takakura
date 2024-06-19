@@ -166,7 +166,7 @@ header
 .snsNav__list {
   display: grid;
   gap: 0 20px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 .snsNav__list--item {
   position: relative;
@@ -280,8 +280,8 @@ nav menu
   position: relative;
   width: 100%;
   height: 100%;
-  max-width: 726px;
-  padding: 110px 100px 32px 100px;
+  max-width: 33rem;
+  padding: 80px 10px 0px 100px;
   background: #fff;
   box-sizing: border-box;
   -webkit-backface-visibility: hidden;
@@ -293,16 +293,15 @@ nav menu
 }
 .menu__inner .menu__list {
   display: flex;
-  flex-wrap: wrap;
-  min-width: 512px;
+  flex-direction: column;
 }
 .menu__inner .menu__list .menu__item {
   /* min-width: 257px; */
-  width: 50%;
+  /* width: 50%; */
 }
-.menu__inner .menu__list li:not(:last-child) {
+.menu__inner .menu__list li {
   margin-bottom: 60px;
-  margin-bottom: 6vh;
+  margin-bottom: 2.8vh;
 }
 .menu__item--subTitle {
   font-size: var(--fontSize16);
@@ -311,11 +310,11 @@ nav menu
   color: var(--palePink);
 }
 .menu__item--title {
-  font-size: var(--fontSize30);
+  font-size: var(--fontSize26);
   font-weight: bold;
   letter-spacing: 0.12rem;
   color: var(--textBlack);
-  padding-top: 16px;
+  padding-top: 12px;
   transition: all 0.3s;
 }
 .menu__item--title:hover {
@@ -337,6 +336,7 @@ nav menu
   display: flex;
   font-family: var(--fontZenMaruGothic);
   font-size: var(--fontSize28);
+  font-size: var(--fontSize22);
   font-weight: 700;
   justify-content: center;
   align-items: center;
@@ -344,7 +344,7 @@ nav menu
   padding: 17px 0;
   margin-bottom: 30px;
   position: relative;
-  width: 100%;
+  width: 80%;
   z-index: 10;
   letter-spacing: 0.06rem;
   transition: all 0.2s ease-out;
@@ -357,16 +357,17 @@ nav menu
 }
 .menu__btns .estimate__btn img {
   width: 66px;
+  width: 50px;
 }
 .tel__btn {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 80%;
   background-color: #FFF;
   border: 2px solid var(--textBlack);
   border-radius: 120px;
   color: var(--palePink);
-  padding: 22px 0 38px 0;
+  padding: 18px 0 30px 0;
   cursor: pointer;
   position: relative;
   transition: all 0.2s ease-out;
@@ -378,8 +379,8 @@ nav menu
 .tel__btn--icon img {
   border: 2px solid var(--textBlack);
   border-radius: 50%;
-  height: 38px;
-  width: 38px;
+  height: 30px;
+  width: 30px;
 }
 .tel__btn .telNumberInner {
   padding-left: 10px;
@@ -392,19 +393,19 @@ nav menu
   color: #fff;
   display: flex;
   font-family: var(--fontZenMaruGothic);
-  font-size: var(--fontSize16);
+  font-size: var(--fontSize12);
   font-weight: 700;
   justify-content: center;
-  padding: 8px 5px;
+  padding: 6px 4px;
   position: absolute;
 }
 .tel__btn .tel__telSpeech.first {
-  left: 150px;
-  top: -40px;
+  left: 100px;
+  top: -33px;
 }
 .tel__btn .tel__telSpeech.second {
-  right: 0;
-  top: -40px;
+  right: -10px;
+  top: -33px;
 }
 .tel__btn .tel__telSpeech::after {
   border-left: 10px solid transparent;
@@ -422,7 +423,7 @@ nav menu
   color: var(--textBlack);
   position: absolute;
   width: 182px;
-  top: 132%;
+  top: 120%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
   -webkit-transform: translateY(-50%) translateX(-50%);
@@ -434,25 +435,25 @@ nav menu
   -webkit-text-fill-color: var(--palePink); 
   -webkit-opacity: 1; 
   font-family: var(--fontRoboto);
-  font-size: var(--fontSize47);
+  font-size: var(--fontSize30);
   font-weight: 700;
   letter-spacing: .06em;
   /* -webkit-text-stroke: 2px black; */
   text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97998px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, rgb(0, 0, 0) -1.30729px -1.5136px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px;
 }
 .menu__link {
-  margin-top: 38px;
+  margin-top: 34px;
 }
 .menu__link .link__list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
   /* gap: 16px; */
 }
 
 .link__list .link__item {
   /* min-width: 250px; */
-  width: 50%;
+  /* width: 50%; */
   margin-bottom: 16px;
 }
 .link__list .link__item a {
@@ -470,6 +471,10 @@ nav menu
   padding-right: 12px;
   position: relative;
   top: -2px;
+}
+.link__list .sns__item {
+  width: 24px;
+  padding-top: 10px;
 }
 .menu__sns {
   margin-top: 50px;
@@ -502,6 +507,11 @@ nav menu
   right: 40px;
   top: 40px;
   cursor: pointer;
+  transition: all 0.2s ease;
+  /* transform: scale(1, 1); */
+}
+.close__btn:hover {
+  transform: scale(1.1, 1.1);
 }
 .dli-close {
   display: inline-block;
@@ -818,7 +828,7 @@ footer
 .footer__snsInner {
   display: grid;
   gap: 33px;
-  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: repeat(3, 1fr); */
 }
 .footer__snsIcon {
   transition: all 0.3s;
