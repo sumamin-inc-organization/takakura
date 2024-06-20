@@ -565,7 +565,7 @@ secret
   left: 50%;
   line-height: 2.55;
   position: absolute;
-  top: -10px;
+  top: -15px;
   transform: translateX(-50%);
   width: 73px;
   letter-spacing: 0.12rem;
@@ -581,6 +581,12 @@ secret
   position: absolute;
   transform: translateX(-50%);
   width: 0;
+}
+.secretList__speech p {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -55%);
 }
 .secretList__item--textArea .page__text {
   line-height: 1.875;
