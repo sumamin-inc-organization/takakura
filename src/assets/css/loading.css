@@ -3,12 +3,106 @@
     position: fixed;
     width: 100%;
     height: 100%;
+    /* height: calc(100vh + 100px);
+    top: -200px; */
     background: #FDDEE8;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 9999;
     flex-direction: column;
-    transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 0.6s ease-in-out;
-    display: none;
+    transition: transform 0.8s cubic-bezier(.93,-0.05,.21,1.46), opacity 0.6s ease-in-out;
+    /* display: none; */
+}
+
+.slide-up {
+    transform: translateY(-100%);
+    opacity: 1;
+}
+
+.loading__inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.loading__img {
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.86vw;
+}
+
+.loadingChara {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%); */
+    width: 11.9vw;
+    width: max(140px, 11.9vw);
+    z-index: 9000;
+}
+.loadingChara img {
+    width: 100%;
+}
+.loading__surround1, .loading__surround2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+}
+.loading__surround1 {
+    z-index: 8000;
+    width: 21.54vw;
+    width: max(250px, 21.54vw);
+}
+.loading__surround2 {
+    z-index: 7000;
+    width: 26.9vw;
+    width: max(313px, 26.9vw);
+}
+.loading__text {
+    /* position: absolute;
+    top: 60%; 
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%); */
+    z-index: 8500;
+    animation: loadAnime 1s ease alternate infinite;
+}
+.loading__text p {
+    font-family: var(--fontZenMaruGothic);
+    font-size: var(--fontSize24);
+    font-weight: 900;
+    letter-spacing: 0.06rem;
+    color: #fff;
+    text-shadow: rgb(35, 24, 21) 2px 0px 0px, rgb(35, 24, 21) 1.75517px 0.958851px 0px, rgb(35, 24, 21) 1.0806px 1.68294px 0px, rgb(35, 24, 21) 0.141474px 1.99499px 0px, rgb(35, 24, 21) -0.832294px 1.81859px 0px, rgb(35, 24, 21) -1.60229px 1.19694px 0px, rgb(35, 24, 21) -1.97998px 0.28224px 0px, rgb(35, 24, 21) -1.87291px -0.701566px 0px, rgb(35, 24, 21) -1.30729px -1.5136px 0px, rgb(35, 24, 21) -0.421592px -1.95506px 0px, rgb(35, 24, 21) 0.567324px -1.91785px 0px, rgb(35, 24, 21) 1.41734px -1.41108px 0px, rgb(35, 24, 21) 1.92034px -0.558831px 0px;
+}
+
+@keyframes loadAnime {
+    0% {
+        transform: translateY(5%);
+        -webkit-transform: translateY(5%);
+        opacity: 0;
+    }
+    20% {
+        transform: translateY(5%);
+        -webkit-transform: translateY(5%);
+        opacity: 0;
+    }
+    60% {
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+        opacity: 0.6;
+    }
+    100% {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        opacity: 1;
+    }
 }
