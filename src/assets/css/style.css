@@ -875,6 +875,9 @@ lower common
   margin: -80px auto -150px;
   position: relative;
 }
+.lower__chara--wrap {
+  height: 100%;
+}
 .lower__chara--img1,
 .lower__chara--surround1,
 .lower__chara--surround2 {
@@ -898,6 +901,9 @@ lower common
   width: 100%;
   z-index: -3;
 }
+/* .lower__deco--wrap {
+  max-width: 200px;
+} */
 /* アニメーションの部分 ↑*/
 .lower__textInner {
   display: flex;
@@ -924,7 +930,7 @@ lower common
   font-family: var(--fontZenMaruGothic);
   font-size: var(--fontSize25);
   letter-spacing: .07em;
-  line-height: 2.4;
+  padding: 20px;
 }
 .PinkBg span {
   background-color: var(--palePink);
@@ -1709,6 +1715,7 @@ footer
     font-size: 20px;
     letter-spacing: .07em;
     line-height: 2.4;
+    padding: 15px;
   }
   .PinkBg span {
     background-color: var(--palePink);

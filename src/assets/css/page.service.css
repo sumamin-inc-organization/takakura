@@ -214,7 +214,7 @@ flow
     position: relative;
 }
 .flow__chara {
-    position: absolute;
+    position: absolute !important;
     top: -140px;
     right: 120px;
     width: 278px;
@@ -607,7 +607,9 @@ introduction
 .bgPinkText__inner {
     overflow: visible;
     position: absolute;
-    top: 480px;
+    top: 36%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
     z-index: -1;
 }
 .bgPinkText {
@@ -627,7 +629,7 @@ introduction
     margin-left: -21%;
 }
 .bgPinkText__inner.palePink {
-    margin-left: -420px;
+    margin-left: -600px;
 }
 .bgPinkText__inner.palePink .bgPinkText {
     color: var(--main-color);
@@ -1270,5 +1272,6 @@ introduction
     /* 背景のピンクのテキスト ↓*/
     .bgPinkText__inner {
         display: none;
+        top: 30%;
     }
 }

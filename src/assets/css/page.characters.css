@@ -171,6 +171,7 @@ member
     padding: 5px 72px 7px;
     text-decoration: none;
     position: relative;
+    transition: all 0.3s;
 }
 .lineBtn:hover {
     box-shadow: none;

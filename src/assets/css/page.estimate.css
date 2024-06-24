@@ -362,6 +362,7 @@ estimate form
     box-shadow: 0 3px 0 var(--textBlack);
     cursor: pointer;
     color: var(--textBlack);
+    transition: all 0.3s;
 }
 .confirm__btn--container input:hover {
     box-shadow: none;

@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="assets/css/variable.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/page.characters.css" />
+    <link rel="stylesheet" href="assets/css/anime.css">
 </head>
 
 <body>
@@ -154,30 +155,32 @@
         <section class="lowermain">
             <div class="lowermain_inner">
                 <div class="page__title--inner">
-                    <p class="page__subTitle">CHARACTERS</p>
-                    <h2 class="page__title">従業員紹介</h2>
+                    <p data-anime="initial-visible" class="page__subTitle">CHARACTERS</p>
+                    <h2 class="page__title">
+                        <span data-anime="initial-visible" class="letter">従</span><span data-anime="initial-visible" class="letter">業</span><span data-anime="initial-visible" class="letter">員</span><span data-anime="initial-visible" class="letter">紹</span><span data-anime="initial-visible" class="letter">介</span>
+                    </h2>
                 </div>
                 <div class="lower__charaInner">
                     <!-- <img class="lower__chara--img1" src="./assets/images/characters/characters_main.png" alt="" /> -->
-                    <div class="lower__chara--img">
-                        <img class="lower__chara--img01" src="./assets/images/characters/characters_main01.png" alt="キャラクター画像" />
-                        <img class="lower__chara--img02" src="./assets/images/characters/characters_main02.png" alt="キャラクター画像" />
-                        <img class="lower__chara--img03" src="./assets/images/characters/characters_main03.png" alt="キャラクター画像" />
-                        <img class="lower__chara--img04" src="./assets/images/characters/characters_main04.png" alt="キャラクター画像" />
+                    <div data-anime="delay-visible" class="lower__chara--img">
+                        <img class="lower__chara--img01 popup__text" src="./assets/images/characters/characters_main01.png" alt="キャラクター画像" />
+                        <img class="lower__chara--img02 popup__text" src="./assets/images/characters/characters_main02.png" alt="キャラクター画像" />
+                        <img class="lower__chara--img03 popup__text" src="./assets/images/characters/characters_main03.png" alt="キャラクター画像" />
+                        <img class="lower__chara--img04 popup__text" src="./assets/images/characters/characters_main04.png" alt="キャラクター画像" />
                     </div>
-                    <img class="lower__chara--surround1" src="./assets/images/top/about/img-about_surround1.svg" alt="" />
-                    <img class="lower__chara--surround2" src="./assets/images/top/about/img-about_surround2.svg" alt="" />
-                    <img class="lower__pinkCircle first" src="./assets/images/top/about/img-about_pinkKirakira_small.svg" alt="" />
-                    <img class="lower__pinkCircle second" src="./assets/images/top/about/img-about_pinkKirakira.svg" alt="" />
-                    <img class="lower__pinkCircle third" src="./assets/images/top/about/img-about_pinkKirakira.svg" alt="" />
-                    <img class="lower__pinkCircle forth" src="./assets/images/top/about/img-about_pinkKirakira.svg" alt="" />
-                    <img class="lower__pinkCircle fifth" src="./assets/images/top/about/img-about_pinkKirakira_small.svg" alt="" />
-                    <img class="lower__pinkCircle sixth" src="./assets/images/top/about/img-about_pinkKirakira.svg" alt="" />
-                    <img class="lower__whiteCircle first" src="./assets/images/top/about/img-about_whiteKirakira_small.svg"
+                    <div class="lower__chara--surround1"><img src="./assets/images/top/about/img-about_surround1.svg" alt="" /></div>
+                    <div class="lower__chara--surround2"><img src="./assets/images/top/about/img-about_surround2.svg" alt="" /></div>
+                    <img class="lower__pinkCircle first star03" src="./assets/images/top/about/img-about_pinkKirakira_small.svg" alt="" />
+                    <img class="lower__pinkCircle second star01" src="./assets/images/top/about/img-about_pinkKirakira.svg" alt="" />
+                    <img class="lower__pinkCircle third star02" src="./assets/images/top/about/img-about_pinkKirakira.svg" alt="" />
+                    <img class="lower__pinkCircle forth star03" src="./assets/images/top/about/img-about_pinkKirakira.svg" alt="" />
+                    <img class="lower__pinkCircle fifth star01" src="./assets/images/top/about/img-about_pinkKirakira_small.svg" alt="" />
+                    <img class="lower__pinkCircle sixth star02" src="./assets/images/top/about/img-about_pinkKirakira.svg" alt="" />
+                    <img class="lower__whiteCircle first star03" src="./assets/images/top/about/img-about_whiteKirakira_small.svg"
                         alt="" />
-                    <img class="lower__whiteCircle second" src="./assets/images/top/about/img-about_whiteKirakira_small.svg"
+                    <img class="lower__whiteCircle second star01" src="./assets/images/top/about/img-about_whiteKirakira_small.svg"
                         alt="" />
-                    <img class="lower__whiteCircle third" src="./assets/images/top/about/img-about_whiteKirakira.svg"
+                    <img class="lower__whiteCircle third star02" src="./assets/images/top/about/img-about_whiteKirakira.svg"
                         alt="" />
                 </div>
                 <div class="lower__textInner">
@@ -192,8 +195,8 @@
         </section>
         <section class="characters__member">
             <div class="member__wrap">
-                <div class="member__grid">
-                    <div class="member__item">
+                <div data-anime="delay-visible" class="member__grid">
+                    <div class="member__item popup__text">
                         <div class="member__img">
                             <img src="./assets/images/characters/member_img1.png" alt="メンバー紹介画像">
                         </div>
@@ -209,7 +212,7 @@
                             <p class="member__discription--text">テキストテキストテキスト</p>
                         </div>
                     </div>
-                    <div class="member__item">
+                    <div class="member__item popup__text">
                         <div class="member__img">
                             <img src="./assets/images/characters/member_sample.svg" alt="メンバー紹介画像">
                         </div>
@@ -225,7 +228,7 @@
                             <p class="member__discription--text">衣装ケース（3段以内）</p>
                         </div>
                     </div>
-                    <div class="member__item">
+                    <div class="member__item popup__text">
                         <div class="member__img">
                             <img src="./assets/images/characters/member_sample.svg" alt="メンバー紹介画像">
                         </div>
@@ -241,7 +244,7 @@
                             <p class="member__discription--text">テレビ</p>
                         </div>
                     </div>
-                    <div class="member__item">
+                    <div class="member__item popup__text">
                         <div class="member__img">
                             <img src="./assets/images/characters/member_sample.svg" alt="メンバー紹介画像">
                         </div>
@@ -257,7 +260,7 @@
                             <p class="member__discription--text">オットマン</p>
                         </div>
                     </div>
-                    <div class="member__item">
+                    <div class="member__item popup__text">
                         <div class="member__img">
                             <img src="./assets/images/characters/member_sample.svg" alt="メンバー紹介画像">
                         </div>
@@ -273,7 +276,7 @@
                             <p class="member__discription--text">カラーボックス</p>
                         </div>
                     </div>
-                    <div class="member__item">
+                    <div class="member__item popup__text">
                         <div class="member__img">
                             <img src="./assets/images/characters/member_sample.svg" alt="メンバー紹介画像">
                         </div>
@@ -289,7 +292,7 @@
                             <p class="member__discription--text">デスク</p>
                         </div>
                     </div>
-                    <div class="member__item">
+                    <div class="member__item popup__text">
                         <div class="member__img">
                             <img src="./assets/images/characters/member_sample.svg" alt="メンバー紹介画像">
                         </div>
@@ -305,7 +308,7 @@
                             <p class="member__discription--text">二層式洗濯機</p>
                         </div>
                     </div>
-                    <div class="member__item">
+                    <div class="member__item popup__text">
                         <div class="member__img">
                             <img src="./assets/images/characters/member_sample.svg" alt="メンバー紹介画像">
                         </div>
@@ -321,7 +324,7 @@
                             <p class="member__discription--text">冷蔵庫</p>
                         </div>
                     </div>
-                    <div class="member__item">
+                    <div class="member__item popup__text">
                         <div class="member__img">
                             <img src="./assets/images/characters/member_chara.svg" alt="メンバー紹介画像">
                         </div>
@@ -337,7 +340,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="slider__wrap">
+                <div data-anime="is-visible" class="slider__wrap popup__text">
                     <div class="border__frame">
                         <!-- <div class="imgItem__frame"></div>
                         <div class="imgItem__bg"></div> -->
@@ -490,13 +493,13 @@
                     </div>
                 </div>
             </div>
-            <div class="lineBtn__wrap">
-                <div class="lineBtn"><a href="https://store.line.me/stickershop/author/45105/ja" target="_blank">公式LINEスタンプ販売中！</a><img src="./assets/images/characters/lineBtn_chara.svg" d alt=""></div>
+            <div data-anime="is-visible" class="lineBtn__wrap popup__text">
+                <div class="lineBtn"><a href="https://store.line.me/stickershop/author/45105/ja" target="_blank">公式LINEスタンプ販売中！</a><img src="./assets/images/characters/lineBtn_chara.svg" alt=""></div>
             </div>
         </section>
         <section class="service__message lower__message">
-            <img class="message__bg--title" src="./assets/images/message_title.svg" alt="">
-            <img class="message__chara--img" src="./assets/images/message__chara.svg" alt="">
+            <img data-anime="is-visible" class="message__bg--title popup__text" src="./assets/images/message_title.svg" alt="">
+            <img data-anime="is-visible" class="message__chara--img popup__text" src="./assets/images/message__chara.svg" alt="">
             <div class="message__inner">
                 <p class="message__text">たかくら引越センターの段ボールは、<br>
                     「引越しを楽しんでもらいたい」<br class="sp-br">そんな思いで作りました。<br>
@@ -598,6 +601,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/anime.js"></script>
 </body>
 
 </html>

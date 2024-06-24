@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="assets/css/variable.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/page.estimate.css" />
+    <link rel="stylesheet" href="assets/css/anime.css">
 </head>
 
 <body>
@@ -153,8 +154,10 @@
     <main class="estimate__page">
         <section class="estimate__about">
             <div class="page__title--inner">
-                <p class="page__subTitle">ESTIMATE</p>
-                <h2 class="page__title">お見積もり</h2>
+                <p data-anime="initial-visible" class="page__subTitle">ESTIMATE</p>
+                <h2 class="page__title">
+                    <span data-anime="initial-visible" class="letter">お</span><span data-anime="initial-visible" class="letter">見</span><span data-anime="initial-visible" class="letter">積</span><span data-anime="initial-visible" class="letter">も</span><span data-anime="initial-visible" class="letter">り</span>
+                </h2>
             </div>
             <div class="estimate__text">
                 <p>
@@ -183,8 +186,10 @@
         </section>
         <section  id="estimateForm" class="estimate__form">
             <div class="page__title--inner">
-                <p class="page__subTitle">FORM</p>
-                <h2 class="page__title">お見積もりフォーム</h2>
+                <p data-anime="is-visible" class="page__subTitle">FORM</p>
+                <h2 class="page__title">
+                    <span data-anime="is-visible" class="letter">お</span><span data-anime="is-visible" class="letter">見</span><span data-anime="is-visible" class="letter">積</span><span data-anime="is-visible" class="letter">も</span><span data-anime="is-visible" class="letter">り</span><span data-anime="is-visible" class="letter">フ</span><span data-anime="is-visible" class="letter">ォ</span><span data-anime="is-visible" class="letter">ー</span><span data-anime="is-visible" class="letter">ム</span>
+                </h2>
             </div>
             <p class="form__comment">
                 フォームに必要事項を入力して下さい。
@@ -820,6 +825,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/anime.js"></script>
 </body>
 
 </html>
