@@ -566,7 +566,7 @@ secret
   line-height: 2.55;
   position: absolute;
   top: -15px;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(50%);
   width: 73px;
   letter-spacing: 0.12rem;
 }
