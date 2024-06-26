@@ -705,14 +705,20 @@ online
   top: 92px;
   width: 100%;
 }
+.online__sale--img::before {
+  content: "";
+  display: block;
+  padding-top: 100%; /* 1:1 */
+}
 .line__stamp--bg {
   width: 100%;
   position: absolute;
+  top: 0;
 }
 .line__stamp--text {
   width: 72%;
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 50%;
   transform: translateY(50%) translateX(-50%);
   -webkit-transform: translateY(50%) translateX(-50%);
@@ -720,7 +726,7 @@ online
 .line__stamp--chara {
   width: 59%;
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 50%;
   transform: translateY(70%) translateX(-50%);
   -webkit-transform: translateY(160%) translateX(-50%);
@@ -1451,9 +1457,10 @@ online
     padding: 60px 0 0;
   }
   .online__sale--img {
-    margin: 60px auto 270px;
+    margin: 60px auto 65px;
     max-width: 186px;
     position: sticky;
+    display: block;
   }
   .online__chara--img {
     display: none;
