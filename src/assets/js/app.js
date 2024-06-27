@@ -31,6 +31,20 @@ $(document).ready(function () {
         }
     });
 
+    //topに戻るボタン
+    var pagetop = $('.top__back');
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            pagetop.fadeIn();
+        } else {
+            pagetop.fadeOut();
+            }
+        });
+        pagetop.click(function () {
+            $('body, html').animate({ scrollTop: 0 }, 500);
+                return false;
+    });
+
     //---------------------------top---------------------------
     //無料お見積もりバナーをフッターで隠す
     // $(window).scroll(function(){
@@ -135,6 +149,7 @@ $(document).ready(function () {
 
     //スライドの切り替え
     $('.size__pagenation .pagenation').on('click', function(){
+        //押した方をactiveにする
         if(!$(this).hasClass('active')) {
             $('.size__pagenation .pagenation').each(function(index) {
                 $(this).toggleClass('active');
@@ -143,18 +158,33 @@ $(document).ready(function () {
         var currentElem = $('.cardboard__img.active');
         var prevElem = $('.cardboard__img.active').prev();
         var nextElem = $('.cardboard__img.active').next();
-        if($(this).hasClass('prev') && prevElem.length > 0) {
+        var firstElem = $('.cardboard__img').first();
+        var lastElem = $('.cardboard__img').last();
+        //prevボタンを押した時
+        if($(this).hasClass('prev')) {
             $('.cardboard__img.active').fadeOut(200);
-            setTimeout(function(){prevElem.fadeIn(200)}, 300);
-
-            currentElem.removeClass('active');
-            prevElem.addClass('active');
-        } else if($(this).hasClass('next') && nextElem.length > 0) {
+            //ループするようにする
+            if(prevElem.length <= 0) {
+                setTimeout(function(){lastElem.fadeIn(200)}, 300);
+                currentElem.removeClass('active');
+                lastElem.addClass('active');
+            } else {
+                setTimeout(function(){prevElem.fadeIn(200)}, 300);
+                currentElem.removeClass('active');
+                prevElem.addClass('active');
+            }
+        //nextボタンを押した時
+        } else if($(this).hasClass('next')) {
             $('.cardboard__img.active').fadeOut(200);
-            setTimeout(function(){nextElem.fadeIn(200)}, 300);
-
-            currentElem.removeClass('active');
-            nextElem.addClass('active');
+            if(nextElem.length <= 0) {
+                setTimeout(function(){firstElem.fadeIn(200)}, 300);
+                currentElem.removeClass('active');
+                firstElem.addClass('active');
+            } else {
+                setTimeout(function(){nextElem.fadeIn(200)}, 300);
+                currentElem.removeClass('active');
+                nextElem.addClass('active');
+            }
         }
     });
 
@@ -264,7 +294,7 @@ function charaSliderSetting(){
     var width = $(window).width();
     if(width <= 767){
         $('.member__spSlider').not('.slick-initialized').slick({
-            autoplay: true,
+            autoplay: false,
             arrows: true,
             infinite: true,
             dots: true,

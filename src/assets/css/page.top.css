@@ -153,7 +153,7 @@ news
 .news__inner--textArea {
   position: absolute;
   text-align: center;
-  top: 180px;
+  top: 206px;
   display: block;
 }
 .news__inner--date {
@@ -183,7 +183,7 @@ news
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
 }
 .newsHuman__img {
   height: auto;
@@ -704,11 +704,15 @@ online
   right: 18vw;
   top: 92px;
   width: 100%;
+  transition: all 0.3s ease;
 }
 .online__sale--img::before {
   content: "";
   display: block;
   padding-top: 100%; /* 1:1 */
+}
+.online__sale--img:hover {
+  top: 84px;
 }
 .line__stamp--bg {
   width: 100%;
@@ -818,6 +822,15 @@ instagram
 @media screen and (min-width:1201px) {
   .message__container {
     padding: 0 5.12vw;
+  }
+}
+
+@media screen and (min-width:1600px) {
+  .about__chara--img2 {
+    bottom: -40px;
+  }
+  .about__chara--img3 {
+    bottom: -45px;
   }
 }
 
@@ -1120,7 +1133,7 @@ news
     margin-left: -15%;
   }
   .news__inner--textArea {
-    top: 175px;
+    top: 32vw;
   }
   .news__inner--man {
     left: -23px;
@@ -1484,6 +1497,20 @@ instagram
 @media screen and (max-width:450px) {
   .news__inner--textArea {
     top: 125px;
+  }
+  .page__info--inner {
+    align-items: center;
+    display: flex;
+    gap: 0 10px;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 180px;
+  }
+    .news .page__text {
+    margin: 0 auto;
+    text-align: left;
+    width: 240px;
+    font-weight: bold;
   }
 }
 @media screen and (max-width:388px) {

@@ -96,7 +96,7 @@ point
     bottom: -6px;
 } */
 .point__column--text {
-    margin-top: 45px;
+    margin-top: 25px;
     width: 364px;
 }
 .point__column--text p {
@@ -674,7 +674,7 @@ point
         letter-spacing: 0.04rem;
     }
     .point__column--text {
-        margin-top: 45px;
+        margin-top: 35px;
         /* width: 24.07vw; */
         width: 26.8vw;
     }

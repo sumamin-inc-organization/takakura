@@ -10,11 +10,13 @@
 .legal__item {
     width: 86%;
     margin: auto;
-    border-bottom: 1px solid #FFB4C8;
     padding-bottom: 30px;
 }
 .legal__item:not(:first-child) {
     padding-top: 30px;
+}
+.legal__item:not(:last-child) {
+    border-bottom: 1px solid #FFB4C8;
 }
 
 .legal__h3, .legal__text {

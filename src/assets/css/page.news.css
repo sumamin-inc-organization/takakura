@@ -144,11 +144,15 @@ news
     position: relative;
     top: -4px;
 }
-.news__pagenation .pagenation__list {
+.news__pagenation .pagenation__list, .news__pagenation li {
     font-size: var(--fontSize20);
     font-weight: bold;
     vertical-align: sub;
     cursor: pointer;
+    transition: color 0.2s ease;
+}
+.news__pagenation .pagenation__list:hover, .news__pagenation li:hover {
+    color: var(--palePink);
 }
 .news__pagenation .active, .news__pagenation .current {
     color: var(--palePink);
@@ -503,8 +507,8 @@ single
         font-size: 30px;
         font-family: var(--fontRoboto);
         letter-spacing: 0.02rem;
-        color: var(--main-color);
-        -webkit-text-fill-color: var(--main-color); 
+        color: var(--palePink);
+        -webkit-text-fill-color: var(--palePink); 
         -webkit-opacity: 1; 
     }
     .single__footer--bottom p.tel .small {

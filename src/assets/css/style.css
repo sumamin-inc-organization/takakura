@@ -843,13 +843,54 @@ footer
 .footer__snsInner {
   display: grid;
   gap: 33px;
-  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
 }
 .footer__snsIcon {
   transition: all 0.3s;
 }
 .footer__snsIcon:hover {
   opacity: 0.7;
+}
+.top__back {
+	position: relative;
+	display: block;;
+	color: #fff;
+	vertical-align: middle;
+	text-decoration: none;
+	font-size: 15px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+.top__back::before,
+.top__back::after {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	/* margin: auto; */
+	content: "";
+	vertical-align: middle;
+}
+.top__back::before{
+	box-sizing: border-box;
+	width: 60px;
+	height: 60px;
+	border: 3px solid #fff;
+	-webkit-border-radius: 100%;
+	border-radius: 100%;
+}
+.top__back::after{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+  -webkit-transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+	width: 10px;
+	height: 10px;
+	border-top: 3px solid #fff;
+	border-right: 3px solid #fff;
 }
 /* -------------------------
 lower common
@@ -1659,6 +1700,46 @@ footer
   }
   .copyright {
     font-size: var(--fontSize14);
+  }
+  .top__back {
+    position: relative;
+    display: block;;
+    color: #fff;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  .top__back::before,
+  .top__back::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    /* margin: auto; */
+    content: "";
+    vertical-align: middle;
+  }
+  .top__back::before{
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #fff;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+  }
+  .top__back::after{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+    -webkit-transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+    width: 5px;
+    height: 5px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
   }
   /* -------------------------
   lower common

@@ -588,6 +588,7 @@ message
     .point__grid--item {
         border: 2px solid var(--textBlack);
         padding: 20px;
+        padding-bottom: 30px;
         max-width: 360px;
         margin: auto;
     }

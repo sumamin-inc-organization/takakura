@@ -5,7 +5,7 @@
 lower main
 ----------------------------*/
 .characters__page .lower__textInner {
-    margin-top: 28px;
+    margin-top: 46px;
 }
 .characters__page .lower__chara--img1 {
     max-width: 444px;
@@ -17,18 +17,23 @@ lower main
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
     -webkit-transform: translateY(-50%) translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    justify-content: center;
+    align-items: flex-end;
 }
 .lower__chara--img .lower__chara--img01 {
-    width: 29%;
+    width: 26%;
 }
 .lower__chara--img .lower__chara--img02 {
-    width: 24%;
+    width: 22%;
 }
 .lower__chara--img .lower__chara--img03 {
-    width: 24%;
+    width: 22%;
 }
 .lower__chara--img .lower__chara--img04 {
-    width: 19%;
+    width: 17%;
 }
 /* -------------------------
 member
@@ -250,6 +255,7 @@ characters message
     }
     .lower__chara--img {
         max-width: 184px;
+        gap: 10px;
     }
     .lower__chara--img .lower__chara--img01 {
         width: 28%;
@@ -372,6 +378,8 @@ characters message
     }
     .lineBtn__wrap {
         padding-top: 190px;
+        position: relative;
+        z-index: -1;
     }
     .lineBtn {
         font-size: 20px;
