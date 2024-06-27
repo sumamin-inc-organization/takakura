@@ -191,13 +191,7 @@ $(document).ready(function () {
     //---------------------------news---------------------------
     //カテゴリー切り替え
     $('.news__tag li').on('click', function(){
-        if(!$(this).hasClass('active')) {
-            $('.news__tag li').each(function(index) {
-                $(this).removeClass('active');
-            });
-        }
-        $(this).addClass('active');
-        $('.news__table th button').text($(this).text());
+        switchNewsTab($(this));
     });
 
     //news pagenation setting
@@ -251,6 +245,7 @@ $(document).ready(function () {
     
 });
 
+//---------------------------functions---------------------------
 // slicksliderの設定
 function initializeSlider() {
     $(".js-slide").slick({
@@ -334,4 +329,20 @@ function switchSizeImg(condition) {
             $('.size__img').append(item);
         });
     }
+}
+
+function switchNewsTab(elem) {
+    if(!elem.hasClass('active')) {
+        $('.news__tag li').each(function(index) {
+            $(this).removeClass('active');
+        });
+    }
+    elem.addClass('active');
+
+    $('.news__table tbody').fadeOut();
+    setTimeout(function(){
+        $('.news__table th button').text(elem.text());
+        $('.news__table tbody').fadeIn(200);
+    }, 300);
+    
 }
