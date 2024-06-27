@@ -157,6 +157,12 @@ news
 .news__pagenation .active, .news__pagenation .current {
     color: var(--palePink);
 }
+.news__pagenation .active a, .news__pagenation .current a {
+    color: var(--palePink);
+}
+.news__pagenation .page-item:hover a {
+    color: var(--palePink);
+}
 .news__deco {
     position: absolute;
     bottom: -124px;
