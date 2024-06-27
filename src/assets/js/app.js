@@ -342,7 +342,7 @@ function switchNewsTab(elem) {
     $('.news__table tbody').fadeOut();
     setTimeout(function(){
         $('.news__table th button').text(elem.text());
-        $('.news__table tbody').fadeIn(200);
-    }, 300);
+        $('.news__table tbody').fadeIn(400);
+    }, 400);
     
 }
