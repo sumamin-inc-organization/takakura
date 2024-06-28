@@ -303,6 +303,11 @@ function charaSliderSetting(){
 
 //ダンボール紹介の大小を切り替える
 function switchSizeImg(condition) {
+    var link = $('.cardboard__img').first().attr('src');
+    console.log(link);
+    var delimiter = 'introduction';
+    var index = link.indexOf(delimiter);
+    var cutLink = link.substring(0, index);
     var smallList = ['introduction_small01', 'introduction_small02', 'introduction_small03', 'introduction_small04'];
     var largeList = ['introduction_large01', 'introduction_large02', 'introduction_large03', 'introduction_large04', 'introduction_large05'];
 
@@ -312,9 +317,9 @@ function switchSizeImg(condition) {
         $(smallList).each(function(index) {
             var num = index + 1;
             if (index <= 0) {
-                var item = $('<img class="cardboard__img small__cardboard01 active" src="./assets/images/service/'+ smallList[index] +'.png" alt="ダンボール画像" style="display: none;">')
+                var item = $('<img class="cardboard__img small__cardboard01 active" src="' + cutLink + smallList[index] +'.png" alt="ダンボール画像" style="display: none;">')
             } else {
-                var item = $('<img class="cardboard__img small__cardboard0'+ num +'" src="./assets/images/service/'+ smallList[index] +'.png" alt="ダンボール画像" style="display: none;">')
+                var item = $('<img class="cardboard__img small__cardboard0'+ num +'" src="' + cutLink + smallList[index] +'.png" alt="ダンボール画像" style="display: none;">')
             }
             $('.size__img').append(item);
         });
@@ -322,9 +327,9 @@ function switchSizeImg(condition) {
         $(largeList).each(function(index) {
             var num = index + 1;
             if (index <= 0) {
-                var item = $('<img class="cardboard__img large__cardboard01 active" src="./assets/images/service/'+ largeList[index] +'.png" alt="ダンボール画像" style="display: none;">')
+                var item = $('<img class="cardboard__img large__cardboard01 active" src="' + cutLink + largeList[index] +'.png" alt="ダンボール画像" style="display: none;">')
             } else {
-                var item = $('<img class="cardboard__img large__cardboard0'+ num +'" src="./assets/images/service/'+ largeList[index] +'.png" alt="ダンボール画像" style="display: none;">')
+                var item = $('<img class="cardboard__img large__cardboard0'+ num +'" src="' + cutLink + largeList[index] +'.png" alt="ダンボール画像" style="display: none;">')
             }
             $('.size__img').append(item);
         });
