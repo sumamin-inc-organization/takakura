@@ -782,6 +782,13 @@ instagram
 .instagram {
   padding: 80px 0;
 }
+/*インスタグラムフィード設定*/
+#sb_instagram {
+  width: auto;
+  margin: 75px auto 80px;
+  max-width: 1200px;
+  box-sizing: content-box;
+}
 .instagram__column {
   display: grid;
   gap: 20px;
@@ -862,6 +869,9 @@ mainvisual
   instagram
   ----------------------------*/
   .instagram__column {
+    padding: 0 20px;
+  }
+  #sb_instagram {
     padding: 0 20px;
   }
 }
@@ -954,6 +964,10 @@ instagram
   .instagram__column {
     max-width: 1000px;
   }
+  #sb_instagram {
+    max-width: 1000px;
+  }
+
 }
 @media screen and (max-width:1120px) {
   /* -------------------------
@@ -1023,6 +1037,9 @@ online
 instagram
 ----------------------------*/
   .instagram__column {
+    max-width: 800px;
+  }
+  #sb_instagram {
     max-width: 800px;
   }
 }
@@ -1490,6 +1507,14 @@ instagram
     max-width: 90%;
     gap: 10px;
   }
+  #sb_instagram {
+    margin: 40px auto;
+    max-width: 90%;
+  }
+  #sb_instagram.sbi_mob_col_2 #sbi_images {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px !important;
+  }
 }
 @media screen and (max-width:450px) {
   .news__inner--textArea {
@@ -1502,6 +1527,7 @@ instagram
     justify-content: space-between;
     margin: 0 auto;
     width: 180px;
+    width: fit-content;
   }
     .news .page__text {
     margin: 0 auto;
