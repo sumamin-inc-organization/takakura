@@ -277,6 +277,18 @@ function initializeSlider() {
             },
         ],
     });
+
+    $(".point__slick").slick({
+        autoplay: true,
+        fade: true,
+        dots: true,
+        infinite: true,
+        arrows: false,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        slidesToShow: 1,
+        autoplaySpeed: 5000
+    });
 }
 
 function checkWindowWidth() {
