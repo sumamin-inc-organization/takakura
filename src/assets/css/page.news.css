@@ -392,14 +392,14 @@ single
     line-height: 1.8;
     font-weight: bold;
 }
-.single__footer--bottom p.tel {
+.single__footer--bottom a.tel {
     margin-top: -2px;
     font-size: var(--fontSize30);
     font-family: var(--fontRoboto);
     letter-spacing: 0.02rem;
     color: var(--palePink);
 }
-.single__footer--bottom p.tel .small {
+.single__footer--bottom a.tel .small {
     font-size: var(--fontSize18);
     margin-right: 8px;
 }
@@ -510,7 +510,7 @@ single
         line-height: 1.8;
         font-weight: bold;
     }
-    .single__footer--bottom p.tel {
+    .single__footer--bottom a.tel {
         margin-top: -2px;
         font-size: 30px;
         font-family: var(--fontRoboto);
@@ -519,7 +519,7 @@ single
         -webkit-text-fill-color: var(--palePink); 
         -webkit-opacity: 1; 
     }
-    .single__footer--bottom p.tel .small {
+    .single__footer--bottom a.tel .small {
         margin-right: 8px;
     }
     .single__pagenation {
